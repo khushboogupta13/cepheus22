@@ -7,25 +7,22 @@ import cepheusLogo from "./assets/cepheusLogo.svg";
 export default class Home extends Component {
   render() {
     return (
-      <div className="container-fluid ">
-        <div class="row home">
-          <div className="left_div col-3">
-            <img src={leftSymbol} className="left_symbol"></img>
+      <div class="home container-fluid">
+        <img src={leftSymbol} className="left_symbol"></img>
+        <div className="left_div">
+          <div className="buttonsDiv">
+            <div className="buttonGlow">Log in</div>
+            <div className="buttonGlow">Sign in</div>
           </div>
-          <div className="center_div col-5">
-            <img src={centerSymbol} className="center_symbol"></img>
-            <div className="row festTitle">
-              <div className="col logoDiv">
-                <img src={cepheusLogo} className="festLogo"></img>
-              </div>
-              <div className="col number_text">22</div>
-            </div>
-            <div className="row title_text">
-              ANNUAL TECHNICAL FEST OF IITGOA
-            </div>
-          </div>
-          <div className="right_div col-4">Right</div>
         </div>
+        <div className="center_div">
+          <img src={centerSymbol} className="center_symbol"></img>
+          <div className="number_text">
+            <span className="fes_title">Cepheus</span>22
+          </div>
+          <div className="title_text">ANNUAL TECHNICAL FEST OF IITGOA</div>
+        </div>
+        <div className="right_div"></div>
       </div>
     );
   }

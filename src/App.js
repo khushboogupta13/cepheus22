@@ -7,7 +7,7 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import SchedulePage from "./components/SchedulePage/SchedulePage";
 import Sponsorship from "./components/Sponsorship/Sponsorship";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
