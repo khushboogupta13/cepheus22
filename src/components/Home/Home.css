@@ -1,8 +1,49 @@
-.home {
-  height: 100%;
-  width: 100%;
-  background-color: #111111;
+.container-fluid {
+  overflow: hidden;
 }
-.test {
+.home {
+  background-color: #111111;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.center_div {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.center_symbol {
+  height: 40vh;
+  max-height: 60%;
+}
+.left_symbol {
+  position: absolute;
+  height: 50vh;
+  max-height: 50%;
+  bottom: 0;
+  right: 80%;
+  opacity: 50%;
+}
+.festLogo {
+  width: 30vw;
+}
+.number_text {
   font-family: squidFont;
+  color: #006963;
+  font-size: 2.5rem;
+  padding-left: 0;
+}
+.festTitle {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.title_text {
+  font-family: squidFont;
+  color: #ffffff;
+  font-size: 2 rem;
+  padding-left: 0;
 }
