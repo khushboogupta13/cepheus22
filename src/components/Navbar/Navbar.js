@@ -3,6 +3,7 @@ import strip from "../../assets/Path_1320.svg";
 import navElems from "./NavElems";
 import NavElems from "./NavElems";
 import "./Navbar.css";
+import Scrollspy from "react-scrollspy";
 
 const navItems = [
   { elem: "Home", key: 0, curr: true, link: "home" },
@@ -17,9 +18,9 @@ const navItems = [
 const Navbar = () => {
   const [nav, setNav] = useState(navItems);
 
-  const onClickHanler=()=>{
-
-  }
+  const onChangeHandler = (event) => {
+    console.log(event.id);
+  };
 
   return (
     <div>
@@ -28,9 +29,23 @@ const Navbar = () => {
           <img src={strip} />
         </div>
         <div className="navElemsContainer">
-          <NavElems items={nav} onClick={onClickHanler}/>
+          <NavElems items={nav} onClick={onChangeHandler} />
         </div>
       </div>
+
+      <Scrollspy
+        items={[
+          "home",
+          "abtUs",
+          "events",
+          "schedule",
+          "faq",
+          "sponsors",
+          "contactUs",
+        ]}
+        currentClassName="is-current"
+        onUpdate={onChangeHandler}
+      ></Scrollspy>
     </div>
   );
 };
