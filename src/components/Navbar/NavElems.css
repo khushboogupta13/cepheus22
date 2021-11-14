@@ -1,0 +1,11 @@
+.firstItem{
+  width: 15em;
+  display: flex;
+  justify-content: center;
+
+}
+
+.restItems{
+  display: flex;
+  flex-wrap: nowrap;
+}

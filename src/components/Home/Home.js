@@ -25,7 +25,7 @@ export default class Home extends Component {
   render() {
     if (this.state.width > 1000) {
       return (
-        <div class="home container-fluid">
+        <div id="home" className="home container-fluid">
           <img src={leftSymbol} className="left_symbol"></img>
           <div className="left_div">
             <div className="buttonsDiv">
@@ -49,7 +49,7 @@ export default class Home extends Component {
       );
     } else {
       return (
-        <div class="home container-fluid">
+        <div id="home" class="home container-fluid">
           <img src={leftSymbol} className="left_symbol"></img>
           <div className="left_div">
             <div className="buttonsDiv">

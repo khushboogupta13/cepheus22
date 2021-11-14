@@ -1,0 +1,44 @@
+span{
+  cursor: pointer;
+  font-family: squidFont;
+}
+
+.e1{
+  font-size: 3em;
+  color: #F24687;
+}
+
+.e2{
+  font-size: 1.6em;
+  color:white;
+}
+
+.e3{
+  font-size: 1.6em;
+  color:white;
+}
+
+.e4{
+  font-size: 1.6em;
+  color:white;
+}
+
+.e5{
+  font-size: 1.6em;
+  color:white;
+}
+
+.e6{
+  font-size: 1.6em;
+  color:white;
+}
+
+.e7{
+  font-size: 1.6em;
+  color:white;
+}
+
+
+.e2,.e3,.e4,.e5,.e6,.e7{
+  padding: 0.3em;
+}

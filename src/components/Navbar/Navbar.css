@@ -1,0 +1,12 @@
+.navContainer{
+  position: fixed;
+  top: 5.40625em;
+}
+
+.navElemsContainer{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0.3em;
+  display: flex;
+}
