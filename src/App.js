@@ -17,6 +17,7 @@ function App() {
       <AboutUs />
       <Events />
       <SchedulePage />
+      <FAQ />
       <Sponsorship />
     </div>
   );
