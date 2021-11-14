@@ -7,6 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
 }
+html{
+  scroll-snap-type: y mandatory;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
 
 a{
   text-decoration: none !important;

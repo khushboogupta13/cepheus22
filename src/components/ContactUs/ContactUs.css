@@ -1,0 +1,6 @@
+.contactUs{
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+
+}

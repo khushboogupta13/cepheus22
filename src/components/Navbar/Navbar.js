@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className="navbar">
       <div className="navContainer">
         <div>
           <img src={strip} />
