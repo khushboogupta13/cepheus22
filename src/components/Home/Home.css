@@ -165,11 +165,11 @@
   flex-direction: column;
 
   background-color: gray;
-  transform: skewX(-30deg);
+  transform: skewX(-25deg);
 
   position: absolute;
   top: 0;
-  left: 22%;
+  right: 35%;
 
   height: 55%;
   width: 50%;
@@ -186,11 +186,11 @@
   flex-direction: column;
 
   background-color: gray;
-  transform: skewX(-30deg);
+  transform: skewX(-25deg);
 
   position: absolute;
   bottom: 0;
-  left: 28%;
+  right: 25%;
 
   height: 55%;
   width: 50%;
@@ -202,6 +202,48 @@
   border-radius: 30px;
   overflow: hidden;
 }
-.temp {
-  transform: skewX(30deg);
+
+@media screen and (max-width: 1300px) {
+  .top_gallery {
+    display: flex;
+    flex-direction: column;
+
+    background-color: gray;
+    transform: skewX(-25deg);
+
+    position: absolute;
+    top: 0;
+    right: 30%;
+
+    height: 50%;
+    width: 45%;
+    max-width: 200px;
+
+    border: solid 5px white;
+    outline: solid 2px black;
+    outline-offset: -5px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .bottom_gallery {
+    display: flex;
+    flex-direction: column;
+
+    background-color: gray;
+    transform: skewX(-25deg);
+
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+
+    height: 50%;
+    width: 45%;
+    max-width: 200px;
+
+    border: solid 5px white;
+    outline: solid 2px black;
+    outline-offset: -5px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
 }

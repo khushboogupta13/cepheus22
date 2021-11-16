@@ -3,6 +3,7 @@ import "./Home.css";
 import leftSymbol from "./assets/leftSymbol.svg";
 import centerSymbol from "./assets/centerSymbol.svg";
 import cepheusLogo from "./assets/cepheusLogo.svg";
+import ScrollingGallery from "./scrollingGallery/ScrollingGallery";
 
 export default class Home extends Component {
   constructor(props) {
@@ -44,18 +45,10 @@ export default class Home extends Component {
             <div className="backCoveringDiv">
               <div className="baseCoveringDiv">
                 <div className="top_gallery">
-                  <p className="temp">Lorem</p>
-                  <p>Lorem</p>
-                  <p>Lorem</p>
-                  <p>Lorem</p>
-                  <p>Lorem</p>
+                  <ScrollingGallery />
                 </div>
                 <div className="bottom_gallery">
-                  <p className="temp">Lorem</p>
-                  <p>Lorem</p>
-                  <p>Lorem</p>
-                  <p>Lorem</p>
-                  <p>Lorem</p>
+                  <ScrollingGallery />
                 </div>
               </div>
             </div>
