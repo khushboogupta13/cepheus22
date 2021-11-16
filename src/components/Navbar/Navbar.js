@@ -19,8 +19,29 @@ const Navbar = () => {
   const [nav, setNav] = useState(navItems);
 
   const onChangeHandler = (event) => {
-    console.log(event.id);
+    if(event===undefined || (event.id===nav[0].link && nav[0].curr) ){
+
+    }else{
+      let idx=0;
+      for(let i=0; i<7; i++){
+        if(nav[i].link == event.id){
+          idx=i;
+          break;
+        }
+      }
+      setNav(prevArr => {
+        let updatedArr=[];
+        for(let i=idx; i<7; i++){
+          updatedArr.push(prevArr[i]);
+        }
+        for(let i=0; i<idx; i++){
+          updatedArr.push(prevArr[i]);
+        }
+        return updatedArr;
+      })
+    }
   };
+
 
   return (
     <div className="navbar">
@@ -29,7 +50,7 @@ const Navbar = () => {
           <img src={strip} />
         </div>
         <div className="navElemsContainer">
-          <NavElems items={nav} onClick={onChangeHandler} />
+          <NavElems items={nav}/>
         </div>
       </div>
 

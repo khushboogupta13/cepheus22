@@ -3,6 +3,7 @@ import "./Home.css";
 import leftSymbol from "./assets/leftSymbol.svg";
 import centerSymbol from "./assets/centerSymbol.svg";
 import cepheusLogo from "./assets/cepheusLogo.svg";
+import ScrollingGallery from "./scrollingGallery/ScrollingGallery";
 
 export default class Home extends Component {
   constructor(props) {
@@ -36,35 +37,40 @@ export default class Home extends Component {
           <div className="center_div">
             <img src={centerSymbol} className="center_symbol"></img>
             <div className="number_text">
-              <span className="fes_title">Cepheus</span>22
+              <img src={cepheusLogo} className="fes_title" />
+              22
             </div>
             <div className="title_text">ANNUAL TECHNICAL FEST OF IITGOA</div>
           </div>
           <div className="right_div">
-            <div className="coveringDiv"></div>
-            <div className="top_gallery"></div>
-            <div className="bottom_gallery"></div>
+            <div className="top_gallery">
+              <ScrollingGallery />
+            </div>
+            <div className="bottom_gallery">
+              <ScrollingGallery />
+            </div>
           </div>
         </div>
       );
     } else {
       return (
-        <div id="home" class="home container-fluid">
-          <img src={leftSymbol} className="left_symbol"></img>
-          <div className="left_div">
-            <div className="buttonsDiv">
-              <div className="buttonGlow">Log in</div>
-              <div className="buttonGlow">Sign in</div>
+        <div id="home" className="home_mob container-fluid">
+          <div className="top_div">
+            <img src={centerSymbol} className="center_symbol_mob"></img>
+            <div className="number_text_mob">
+              <img src={cepheusLogo} className="fes_title_mob" />
+              22
+            </div>
+            <div className="title_text_mob">
+              ANNUAL TECHNICAL FEST OF IITGOA
             </div>
           </div>
-          <div className="center_div">
-            <img src={centerSymbol} className="center_symbol"></img>
-            <div className="number_text">
-              <span className="fes_title">Cepheus</span>22
+          <div className="bottom_div">
+            <div className="buttonsDiv_mob">
+              <div className="buttonGlow_mob">Log in</div>
+              <div className="buttonGlow_mob">Sign up</div>
             </div>
-            <div className="title_text">ANNUAL TECHNICAL FEST OF IITGOA</div>
           </div>
-          <div className="right_div"></div>
         </div>
       );
     }
