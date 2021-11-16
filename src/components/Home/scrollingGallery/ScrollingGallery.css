@@ -1,0 +1,37 @@
+.gallery {
+  display: flex;
+  background-color: #395650;
+  height: 100%;
+  width: 250%;
+  flex: 1;
+  position: absolute;
+  left: -80%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: skewX(25deg);
+  z-index: 2;
+}
+.column_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  overflow: hidden;
+}
+.img_card {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  margin: 30px;
+}
+.card_img {
+  display: flex;
+  width: 100%;
+  max-width: 250px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
