@@ -1,6 +1,21 @@
-.schedule{
+.schedule {
   height: 100vh;
   width: 100%;
   scroll-snap-align: start;
+  position: relative;
+  background-color: black;
+}
 
+.sch_title {
+  font-family: squidFont;
+  color: white;
+  font-size: 8vw;
+  padding-top: 13vh;
+  font-weight: lighter;
+}
+
+.big_s {
+  font-size: 13vw;
+  margin-right: -9px;
+  font-weight: 300;
 }
