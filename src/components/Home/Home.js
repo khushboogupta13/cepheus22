@@ -41,9 +41,24 @@ export default class Home extends Component {
             <div className="title_text">ANNUAL TECHNICAL FEST OF IITGOA</div>
           </div>
           <div className="right_div">
-            <div className="coveringDiv"></div>
-            <div className="top_gallery"></div>
-            <div className="bottom_gallery"></div>
+            <div className="backCoveringDiv">
+              <div className="baseCoveringDiv">
+                <div className="top_gallery">
+                  <p className="temp">Lorem</p>
+                  <p>Lorem</p>
+                  <p>Lorem</p>
+                  <p>Lorem</p>
+                  <p>Lorem</p>
+                </div>
+                <div className="bottom_gallery">
+                  <p className="temp">Lorem</p>
+                  <p>Lorem</p>
+                  <p>Lorem</p>
+                  <p>Lorem</p>
+                  <p>Lorem</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       );
