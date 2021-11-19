@@ -1,6 +1,9 @@
-.contactUs{
-  height: 100vh;
-  width: 100%;
-  scroll-snap-align: start;
-
+.contactUs {
+	height: 100vh;
+	width: 100%;
+	scroll-snap-align: start;
+	background-color: #131314;
+}
+.heading_c {
+	margin-top: 1.5rem;
 }
