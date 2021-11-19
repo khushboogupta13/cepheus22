@@ -3,19 +3,104 @@
   width: 100%;
   scroll-snap-align: start;
   position: relative;
-  background-color: black;
-}
-
-.sch_title {
+  background-color: #131314;
+  overflow: hidden;
   font-family: squidFont;
-  color: white;
-  font-size: 8vw;
-  padding-top: 13vh;
-  font-weight: lighter;
 }
 
-.big_s {
-  font-size: 13vw;
-  margin-right: -9px;
-  font-weight: 300;
+.menubar_space {
+  height: 23%;
 }
+
+.sch_body {
+  height: 77%;
+  display: flex;
+  flex-direction: row;
+}
+
+.sch_left {
+  width: 35%;
+}
+
+.sch_right {
+  width: 65%;
+  background-color: white;
+  border-radius: 50px 0 0 50px;
+  box-shadow: 20px 20px 20px 20px #131314;
+}
+
+.animate {
+  animation-name: right_to_left;
+  animation-duration: 2s;
+}
+
+@keyframes right_to_left {
+  0% {margin-left: 65vw;}
+}
+
+.sche {
+  margin-top: 3vh;
+  margin-left: -7vw;
+  height: 7.8vw;
+}
+
+.dule {
+  margin-top: -5.7vw;
+  margin-left: 2vw;
+  height: 15.3vw;
+}
+
+@media only screen and (max-width: 1200px) { .dule { margin-top: -5.5vw; } }
+@media only screen and (max-width: 1100px) { .dule { margin-top: -5.3vw; } }
+@media only screen and (max-width: 1000px) { .dule { margin-top: -5.1vw; } }
+@media only screen and (max-width: 900px) { .dule { margin-top: -4.8vw; } }
+@media only screen and (max-width: 800px) { .dule { margin-top: -4.5vw; } }
+
+.sch_calander {
+  color: white;
+  height: calc(100% - 7.8vw - 3vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: max(15px,1.2vmax);
+  font-size: max(10px,1.1vw);
+}
+
+.cal_title {
+  font-size: max(18px,2vw);
+  margin-bottom: 25px;
+}
+
+.cepheus_dates {
+  background-color: #712845;
+  border-radius: 10px 10px;
+}
+
+.active {
+  color: #ed4484;
+}
+
+.sch_events {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100% - 9.6vw);
+}
+
+.sch_event > img {
+  width: 5vw;
+  height: 3.5vh;
+}
+
+.sch_event {
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 2vw;
+  font-size: 0.9em;
+}
+
