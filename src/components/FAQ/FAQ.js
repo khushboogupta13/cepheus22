@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState} from 'react';
 import Slider from "react-slick";
 import "./FAQ.css";
-import FAQ_LOGO from "./assets/Faq_logo.svg";
+import FAQ_LOGO from "./assets/Faq.svg";
 import jQuery from 'jquery';
+import { Carousel } from "react-bootstrap";
 
 const Card = () => {
   return (
@@ -14,10 +15,88 @@ const Card = () => {
   );
 }
 
+const Mobile_FAQ_center = () => {
+  return(
+    <div className="mobile_FAQ_center">
+      <Carousel
+      indicators={false}
+      wrap={true}
+      prevLabel={""}
+      nextLabel={""}
+      interval={3000}
+      pause={"hover"}
+      >
+          <Carousel.Item>
+              <Card />
+          </Carousel.Item>
+          <Carousel.Item>
+              <Card />
+          </Carousel.Item>
+          <Carousel.Item>
+              <Card />
+          </Carousel.Item>
+      </Carousel>        
+    </div>
+  );
+}
 
+const FAQ_center = () => {
+  return (
+  <div className="FAQ_center">
+        <div className="_container" >
+            <div className="column_container" id="example1">
+                <div className="column1" id="col">
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
+            </div>    
 
+            <div className="column_container" id="example2">
+                <div className="column1" id="col">
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
+            </div>    
+
+            <div className="column_container" id="example3">
+                <div className="column1" id="col">
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
+            </div>    
+
+            <div className="column_container" id="example4">
+                <div className="column1" id="col">
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
+            </div>    
+
+            <div className="column_container" id="example5">
+                <div className="column1" id="col">
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
+            </div>    
+
+        </div>
+      </div> );
+  }
 const FAQ = () => {
   
+  const mediaMatch = window.matchMedia("(max-width: 720px)");
+  const [mobile, setMobile] = useState(mediaMatch.matches);
+ 
+  useEffect(() => {
+    const handler = (e) => setMobile(e.matches);
+    mediaMatch.addListener(handler);
+    return () => mediaMatch.removeListener(handler);
+  });
   useEffect(() => {
 
     (function($, undefined) {
@@ -90,51 +169,8 @@ const FAQ = () => {
       <div className="FAQ_top">
         <img src={FAQ_LOGO} alt="FAQ" className="Faq_logo" />
       </div>
-     
-      <div className="FAQ_center">
-        <div className="container" >
-            <div className="column_container" id="example1">
-                <div className="column1" id="col">
-                    <Card />
-                    <Card />
-                    <Card />
-                </div>
-            </div>    
-
-            <div className="column_container" id="example2">
-                <div className="column1" id="col">
-                    <Card />
-                    <Card />
-                    <Card />
-                </div>
-            </div>    
-
-            <div className="column_container" id="example3">
-                <div className="column1" id="col">
-                    <Card />
-                    <Card />
-                    <Card />
-                </div>
-            </div>    
-
-            <div className="column_container" id="example4">
-                <div className="column1" id="col">
-                    <Card />
-                    <Card />
-                    <Card />
-                </div>
-            </div>    
-
-            <div className="column_container" id="example5">
-                <div className="column1" id="col">
-                    <Card />
-                    <Card />
-                    <Card />
-                </div>
-            </div>    
-
-        </div>
-      </div>
+      {mobile ? <Mobile_FAQ_center /> : <FAQ_center />}
+      
 
       <div className="FAQ_bottom">
 
