@@ -22,7 +22,7 @@ export default class AboutUs extends Component {
   }
   render() {
     return (
-      <div className="about">
+      <div className="about" id="abtUs">
         <img src={aboutLogo} className="aboutLogo" />
         <div
           className={
