@@ -1,8 +1,10 @@
 import NavElem from "./NavElem";
 import { Fragment } from "react/cjs/react.production.min";
 import "./NavElems.css"
+import { useRef,useEffect, useState } from "react";
 
 const NavElems = (props) => {
+  
   return (
     <>
       <div className="firstItem">

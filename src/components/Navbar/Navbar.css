@@ -5,10 +5,11 @@
 
 .navElemsContainer{
   height: 100%;
-  width: 100%;
+  width: 94%;
   position: absolute;
-  top: 0.3em;
+  top:0;
   display: flex;
+  overflow: hidden;
 }
 
 .navbar{

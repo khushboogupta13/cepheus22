@@ -7,12 +7,12 @@ import Scrollspy from "react-scrollspy";
 
 const navItems = [
   { elem: "Home", key: 0, link: "home" },
-  { elem: "About Us", key: 1, link: "abtUs" },
+  { elem: "AboutUs", key: 1, link: "abtUs" },
   { elem: "Events", key: 2, link: "events" },
   { elem: "Schedule", key: 3, link: "schedule" },
   { elem: "FAQ", key: 4, link: "faq" },
   { elem: "Sponsors", key: 5, link: "sponsors" },
-  { elem: "Contact Us", key: 6, link: "contactUs" },
+  { elem: "ContactUs", key: 6, link: "contactUs" },
 ];
 
 const Navbar = () => {
