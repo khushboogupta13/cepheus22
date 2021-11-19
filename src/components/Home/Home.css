@@ -73,7 +73,7 @@
   position: relative;
 }
 .center_symbol {
-  height: 40vw;
+  height: 30vw;
   max-height: 60%;
   min-height: 250px;
 }
@@ -97,7 +97,7 @@
   display: flex;
   font-family: squidFont;
   color: #006963;
-  font-size: 3.5vw;
+  font-size: 5vw;
   justify-content: center;
 }
 .number_text_mob {
@@ -109,7 +109,7 @@
 }
 
 .fes_title {
-  width: 20vw;
+  width: 30vw;
 }
 .fes_title_mob {
   width: 60%;
@@ -161,6 +161,7 @@
   padding: 5px 20px;
   font-family: squidFont;
   box-shadow: 0 0 20px white;
+  cursor: pointer;
 }
 .buttonGlow_mob {
   display: flex;
@@ -174,6 +175,7 @@
   padding: 5px 20px;
   font-family: squidFont;
   box-shadow: 0 0 20px white;
+  cursor: pointer;
 }
 .buttonGlow:hover {
   animation: glowing 1300ms;

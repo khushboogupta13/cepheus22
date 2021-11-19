@@ -30,8 +30,12 @@ export default class Home extends Component {
           <img src={leftSymbol} className="left_symbol"></img>
           <div className="left_div">
             <div className="buttonsDiv">
-              <div className="buttonGlow">Log in</div>
-              <div className="buttonGlow">Sign up</div>
+              <div className="buttonGlow" onClick={() => alert("Login")}>
+                Log in
+              </div>
+              <div className="buttonGlow" onClick={() => alert("Signup")}>
+                Sign up
+              </div>
             </div>
           </div>
           <div className="center_div">
@@ -67,8 +71,12 @@ export default class Home extends Component {
           </div>
           <div className="bottom_div">
             <div className="buttonsDiv_mob">
-              <div className="buttonGlow_mob">Log in</div>
-              <div className="buttonGlow_mob">Sign up</div>
+              <div className="buttonGlow_mob" onClick={() => alert("Login")}>
+                Log in
+              </div>
+              <div className="buttonGlow_mob" onClick={() => alert("Signup")}>
+                Sign up
+              </div>
             </div>
           </div>
         </div>

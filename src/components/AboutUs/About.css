@@ -33,7 +33,15 @@
   color: white;
   box-shadow: inset black 0px 0px 30px 0px;
   flex-direction: column;
+
+  overflow: scroll;
+  overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
 .aboutText_vertical {
   display: flex;
   flex: 5;
