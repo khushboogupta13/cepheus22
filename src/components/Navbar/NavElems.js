@@ -10,7 +10,6 @@ const NavElems = (props) => {
           elem={props.items[0].elem}
           id="e1"
           key={props.key}
-          curr={props.items[0].curr}
           link={props.items[0].link}
           onClick={props.onClick}
         />
@@ -21,7 +20,6 @@ const NavElems = (props) => {
             elem={navElement.elem}
             id={`e${idx+2}`}
             key={navElement.key}
-            curr={navElement.curr}
             link={navElement.link}
             onClick={props.onClick}
           />

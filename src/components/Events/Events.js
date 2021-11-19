@@ -1,6 +1,8 @@
-const Events=()=>{
-  return(<div>
+import "./Events.css"
 
+const Events=()=>{
+  return(<div id="events" className="events">
+    Events
   </div>)
 }
 

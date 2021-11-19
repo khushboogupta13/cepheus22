@@ -9,9 +9,6 @@ import SchedulePage from "./components/SchedulePage/SchedulePage";
 import Sponsorship from "./components/Sponsorship/Sponsorship";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
-
-
-
   return (
     <div className="App">
       <Navbar />
@@ -21,8 +18,7 @@ function App() {
       <SchedulePage />
       <FAQ />
       <Sponsorship />
-      <ContactUs/>
-      
+      <ContactUs />
     </div>
   );
 }

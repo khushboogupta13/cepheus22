@@ -4,14 +4,22 @@
   background-color: #111111;
   overflow-y: hidden;
   scroll-snap-align: start;
+  position: relative;
 }
 
 .FAQ_top {
   width: 100%;
+  -webkit-box-shadow:0px 0px 46px 0px rgba(245,245,245,1);
+	-moz-box-shadow: 0px 0px 46px 0px rgba(245,245,245,1);
+	box-shadow: 0px 0px 46px 0px rgba(245,245,245,1); 
+}
+.Faq_logo {
+    width: 90%;
 }
 .FAQ_bottom {
   width: 100%;
-  height: 20vh;
+  height: 100%;
+  bottom: 0;
   -webkit-box-shadow: 0px 0px 135px 51px rgba(79, 82, 81, 0.9);
   -moz-box-shadow: 0px 0px 135px 51px rgba(79, 82, 81, 0.9);
   box-shadow: 0px 0px 135px 51px rgba(79, 82, 81, 0.9);
@@ -28,7 +36,8 @@
   /* -webkit-box-shadow:0px 0px 46px 0px rgba(245,245,245,1);
 	-moz-box-shadow: 0px 0px 46px 0px rgba(245,245,245,1);
 	box-shadow: 0px 0px 46px 0px rgba(245,245,245,1); */
-  margin-top: 10px;
+  margin-top: 20px;
+  
 }
 ._card-content {
   padding: 20px;
@@ -43,30 +52,49 @@
 
 .FAQ_center {
   width: 100%;
-}
-.container {
   display: flex;
-  flex: 1;
-  width: 70%;
   justify-content: center;
+}
+.mobile_FAQ_center {
+    width: 100%;
+    height: calc(100% - 20vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+._container {
+  display: flex;
+  justify-content: center;
+  width: 55%;
 }
 
 #col {
 }
 
 .column_container {
-  width: 100%;
   height: 60vh;
   overflow-y: hidden;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .column1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
   position: absolute;
-  left: 0;
   top: 0;
+}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    background-color: pink;
+    left: 0;
+}
+
+@media only screen and (max-width: 720px){
+    ._card {
+      min-width: 250px;
+      min-height: 350px;
+    }
 }

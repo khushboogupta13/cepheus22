@@ -4,11 +4,17 @@ import leftSymbol from "./assets/leftSymbol.svg";
 import centerSymbol from "./assets/centerSymbol.svg";
 import cepheusLogo from "./assets/cepheusLogo.svg";
 import ScrollingGallery from "./scrollingGallery/ScrollingGallery";
+import Login from "../LogIn/Login";
 
 export default class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = { width: 0, height: 0 };
+    this.state = {
+      width: 0,
+      height: 0,
+      loginVisible: false,
+      signinVisible: false,
+    };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
   componentDidMount() {
@@ -23,15 +29,26 @@ export default class Home extends Component {
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
+  closeLogin = () => {
+    this.setState({ loginVisible: false });
+  };
   render() {
     if (this.state.width > 1000) {
       return (
         <div id="home" className="home container-fluid">
+          {this.state.loginVisible ? <Login close={this.closeLogin} /> : null}
           <img src={leftSymbol} className="left_symbol"></img>
           <div className="left_div">
             <div className="buttonsDiv">
-              <div className="buttonGlow">Log in</div>
-              <div className="buttonGlow">Sign up</div>
+              <div
+                className="buttonGlow"
+                onClick={() => this.setState({ loginVisible: true })}
+              >
+                Log in
+              </div>
+              <div className="buttonGlow" onClick={() => alert("Signup")}>
+                Sign up
+              </div>
             </div>
           </div>
           <div className="center_div">
@@ -55,6 +72,8 @@ export default class Home extends Component {
     } else {
       return (
         <div id="home" className="home_mob container-fluid">
+          {this.state.loginVisible ? <Login close={this.closeLogin} /> : null}
+
           <div className="top_div">
             <img src={centerSymbol} className="center_symbol_mob"></img>
             <div className="number_text_mob">
@@ -67,8 +86,15 @@ export default class Home extends Component {
           </div>
           <div className="bottom_div">
             <div className="buttonsDiv_mob">
-              <div className="buttonGlow_mob">Log in</div>
-              <div className="buttonGlow_mob">Sign up</div>
+              <div
+                className="buttonGlow_mob"
+                onClick={() => this.setState({ loginVisible: true })}
+              >
+                Log in
+              </div>
+              <div className="buttonGlow_mob" onClick={() => alert("Signup")}>
+                Sign up
+              </div>
             </div>
           </div>
         </div>
