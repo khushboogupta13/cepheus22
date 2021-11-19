@@ -1,3 +1,5 @@
+import "./Events.css"
+
 const Events=()=>{
   return(<div id="events" className="events">
     Events

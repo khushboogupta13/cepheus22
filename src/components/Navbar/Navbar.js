@@ -1,5 +1,5 @@
 import { useState } from "react";
-import strip from "../../assets/Path_1320.svg";
+import strip from "../../assets/navContainer.svg";
 import navElems from "./NavElems";
 import NavElems from "./NavElems";
 import "./Navbar.css";
@@ -20,7 +20,7 @@ const Navbar = () => {
 
   const onChangeHandler = (event) => {
     if (event === undefined || (event.id === nav[0].link)) {
-      
+
     } else {
       let idx = 0;
       for (let i = 0; i < 7; i++) {
