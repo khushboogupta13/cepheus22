@@ -8,21 +8,19 @@ import Navbar from "./components/Navbar/Navbar";
 import SchedulePage from "./components/SchedulePage/SchedulePage";
 import Sponsorship from "./components/Sponsorship/Sponsorship";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Login from "./components/LogIn/Login";
 function App() {
-
-
-
   return (
     <div className="App">
       <Navbar />
       <Home />
+      <Login />
       <AboutUs />
       <Events />
       <SchedulePage />
       <FAQ />
       <Sponsorship />
-      <ContactUs/>
-      
+      <ContactUs />
     </div>
   );
 }
