@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './flipCard.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 
 const FlipCard = (props) => {
 	const [flipped, set] = useState(false);

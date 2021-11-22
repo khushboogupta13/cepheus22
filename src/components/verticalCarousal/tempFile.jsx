@@ -2,12 +2,12 @@ import React, { useState, useCallback, CSSProperties, useEffect, useRef } from '
 import FlipCard from '../flipCards/flipCards';
 import { useInViewport } from 'react-in-viewport';
 import './styles.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination } from 'swiper';
-import 'swiper/swiper-bundle.min.css';
-import 'swiper/swiper.min.css';
-// install Swiper modules
-SwiperCore.use([Pagination]);
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import SwiperCore, { Pagination } from 'swiper';
+// import 'swiper/swiper-bundle.min.css';
+// import 'swiper/swiper.min.css';
+// // install Swiper modules
+// SwiperCore.use([Pagination]);
 
 const Temp = (props) => {
 	const { images } = props;
