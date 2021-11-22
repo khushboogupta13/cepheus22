@@ -1,4 +1,7 @@
-
+.App{
+  width: 100%;
+  overflow: hidden;
+}
 
 .App-logo {
   height: 40vmin;

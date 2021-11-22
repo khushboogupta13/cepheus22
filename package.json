@@ -15,7 +15,8 @@
     "react-scripts": "4.0.3",
     "react-scrollspy": "^3.4.3",
     "react-slick": "^0.28.1",
-    "swiper": "^6.8.4",
+    "react-slider-swiper": "^2.0.6",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
