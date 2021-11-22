@@ -4,7 +4,7 @@
 }
 
 .stripContainer{
-  width: 60em;
+  width: 65em;
   height: auto;
 }
 
@@ -34,10 +34,10 @@
 
 @media only screen and (max-width: 500px) {
   .navbar{
-    font-size: 8px;
+    font-size: 11px;
   }
 
   .navContainer{
-    top: 2em;
+    top: 0em;
   }
 }

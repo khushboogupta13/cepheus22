@@ -8,6 +8,13 @@
 .headingContainer{
   display: flex;
   justify-content: end;
+  align-content: center;
+  height: 205px;
+}
+
+.headingContainer img{
+  width: 54vw;
+  height: auto;
 }
 
 .imagesContainer{
@@ -17,7 +24,7 @@
 }
 
 .lImage, .rImage{
-  height: 70vh;
+  height: 36vw;
   width: auto;
 }
 
@@ -29,4 +36,47 @@
 .rImage img{
   height: 100%;
   width: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .imagesContainer{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1343px) {
+  .headingContainer img {
+    width: 38vw ;
+    height: auto;
+  }
+  .headingContainer{
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 1343px) {
+  .headingContainer img{
+    width: 35vw;
+    height: auto;
+  }
+  .headingContainer{
+    height: 235px;
+  }
+}
+
+
+
+@media only screen and (max-width: 1450px) {
+  .lImage, .rImage{
+    height: 40vw;
+    width: auto;
+  }
+
+}
+
+@media only screen and (min-width: 1450px) {
+  .headingContainer img{
+    width: 47vw;
+    height: auto;
+  }
 }

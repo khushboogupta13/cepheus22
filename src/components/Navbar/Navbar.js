@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import strip from "../../assets/navContainer.svg";
 import navElems from "./NavElems";
 import NavElems from "./NavElems";
@@ -15,8 +15,31 @@ const navItems = [
   { elem: "ContactUs", key: 6, link: "contactUs" },
 ];
 
+
+
+function getWindowDimensions() {
+	const { innerWidth: width, innerHeight: height } = window;
+	return {
+		width,
+		height
+	};
+}
+
 const Navbar = () => {
+
   const [nav, setNav] = useState(navItems);
+	const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+	// useEffect(() => {
+	// 	function handleResize() {
+	// 		setWindowDimensions(getWindowDimensions());
+	// 	}
+	//
+	// 	window.addEventListener('resize', handleResize);
+	// 	return () => window.removeEventListener('resize', handleResize);
+	// }, []);
+	//
+	// console.log(windowDimensions);
 
   const onChangeHandler = (event) => {
     if (event === undefined || (event.id === nav[0].link)) {
