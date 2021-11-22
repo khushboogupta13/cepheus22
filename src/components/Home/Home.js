@@ -52,8 +52,10 @@ export default class Home extends Component {
             </div>
           </div>
           <div className="center_div">
-            <img src={centerSymbol} className="center_symbol"></img>
-            <div className="number_text">
+            <div className="centreSymbolContainer">
+              <img src={centerSymbol} className="center_symbol"></img>
+            </div>
+              <div className="number_text">
               <img src={cepheusLogo} className="fes_title" />
               22
             </div>

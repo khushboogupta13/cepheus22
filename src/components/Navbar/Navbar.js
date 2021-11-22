@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navContainer">
-        <div>
+        <div className="stripContainer">
           <img src={strip} />
         </div>
         <div className="navElemsContainer">
