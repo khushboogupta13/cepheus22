@@ -17,7 +17,6 @@ function App() {
       <Navbar />
       <Home />
       <AboutUs />
-      <Events />
       <SchedulePage />
       <FAQ />
       <Sponsorship />

@@ -1,7 +1,7 @@
 .FAQ {
   height: 100vh;
-  width: 100%;
-  background-color: #111111;
+  width: 100vw;
+  background-color: #131314;
   overflow-y: hidden;
   scroll-snap-align: start;
   position: relative;
@@ -9,20 +9,32 @@
 
 .FAQ_top {
   width: 100%;
-  -webkit-box-shadow:0px 0px 46px 0px rgba(245,245,245,1);
-	-moz-box-shadow: 0px 0px 46px 0px rgba(245,245,245,1);
-	box-shadow: 0px 0px 46px 0px rgba(245,245,245,1); 
+  position: absolute;
+  z-index: 10;
+  margin-top: -10px;
+}
+
+.top_wrap {
+  position: relative;
+}
+.Faq_box {
+  height: 22vh;
+  width: 100%;
 }
 .Faq_logo {
-    width: 90%;
+  position: absolute;
+  left: 0px;
+  width: 65%;
+  top: 10px;
 }
 .FAQ_bottom {
+  position: absolute;
+  bottom: 0px;
+  height: 15vh;
   width: 100%;
-  height: 100%;
-  bottom: 0;
-  -webkit-box-shadow: 0px 0px 135px 51px rgba(79, 82, 81, 0.9);
-  -moz-box-shadow: 0px 0px 135px 51px rgba(79, 82, 81, 0.9);
-  box-shadow: 0px 0px 135px 51px rgba(79, 82, 81, 0.9);
+}
+.Faq_bottom_box {
+  width: 100%;
 }
 /* .Faq_logo{
   
@@ -37,6 +49,8 @@
 	-moz-box-shadow: 0px 0px 46px 0px rgba(245,245,245,1);
 	box-shadow: 0px 0px 46px 0px rgba(245,245,245,1); */
   margin-top: 20px;
+  min-width: 180px;
+  min-height: 280px;
   
 }
 ._card-content {
@@ -54,47 +68,126 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100vh;
 }
-.mobile_FAQ_center {
-    width: 100%;
-    height: calc(100% - 20vh);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 ._container {
   display: flex;
   justify-content: center;
-  width: 55%;
+  width: 55% ;
+  height: 80%;
 }
 
 #col {
 }
 
-.column_container {
-  height: 60vh;
+._column_container {
   overflow-y: hidden;
   position: relative;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .column1 {
-  
   position: absolute;
-  top: 0;
+  height: 100%;
 }
 
-.carousel-control-prev-icon {
-    position: absolute;
-    background-color: pink;
-    left: 0;
+
+
+
+
+@media only screen and (max-width: 1500px)  {
+  ._container{
+    width: 70%;
+  }
+  
 }
 
-@media only screen and (max-width: 720px){
-    ._card {
-      min-width: 250px;
-      min-height: 350px;
-    }
+@media only screen and (max-width: 1300px)  {
+  ._container{
+    width: 70%;
+  }
+  .Faq_logo {
+    width: 80%;
+    height: 50%;
+    top: 5vh;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  ._card {
+    min-width: 180px;
+    min-height: 250px;
+    background-color: yellow;
+  }
+  ._container {
+
+  }
+}
+@media only screen and (max-width: 768px)  {
+  ._card {
+    min-width: 170px;
+    min-height: 200px;
+    background-color: white;
+  }
+  ._container{
+    width: 90%;
+  }
+  .Faq_logo {
+    width: 90%;
+    height: 50%;
+    top: 7vh;
+  }
+}
+
+@media only screen and (max-width: 400px)  {
+  ._card {
+    min-width: 150px;
+    min-height: 200px;
+    background-color: white;
+  }
+  ._container{
+    width: 90%;
+  }
+  .Faq_logo {
+    width: 80%;
+    height: 50%;
+    top: 5vh;
+  }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  ._card {
+    min-width: 160px;
+    min-height: 280px;
+    background-color: orange;
+  }
+  ._container{
+    width: 70%;
+  }
+  .Faq_logo {
+    width: 80%;
+    height: 50%;
+    top: 5vh;
+  }
+}
+@media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait){
+  ._card {
+    min-width: 28vw;
+    min-height: 30vh;
+    background-color: red;
+  }
+  ._container{
+    width: 90%;
+  }
+  .Faq_logo {
+    width: 80%;
+    height: 50%;
+    top: 5vh;
+  }
 }
