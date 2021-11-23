@@ -3,6 +3,16 @@
   top: 6.5em;
 }
 
+.stripContainer{
+  width: 65em;
+  height: auto;
+}
+
+.stripContainer img{
+  width: 100%;
+  height: auto;
+}
+
 .navElemsContainer{
   height: 100%;
   width: 94%;
@@ -14,4 +24,20 @@
 
 .navbar{
   z-index: 100;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar{
+    font-size: 11px;
+  }
+
+  .navContainer{
+    top: 0em;
+  }
 }

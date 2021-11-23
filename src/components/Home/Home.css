@@ -14,6 +14,17 @@
   position: relative;
   scroll-snap-align: start;
 }
+
+.centreSymbolContainer{
+  width: 30em;
+  height: auto;
+}
+
+.centreSymbolContainer img{
+  width: 100%;
+  height: auto;
+}
+
 .home_mob {
   display: flex;
   background-image: url("./assets/bgimg.jpg");
@@ -72,11 +83,7 @@
   flex-direction: column;
   position: relative;
 }
-.center_symbol {
-  height: 30vw;
-  max-height: 60%;
-  min-height: 250px;
-}
+
 .center_symbol_mob {
   height: 40vh;
   max-height: 60%;

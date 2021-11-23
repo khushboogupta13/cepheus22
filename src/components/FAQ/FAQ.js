@@ -1,5 +1,4 @@
 import React, { useEffect, useState} from 'react';
-import Slider from "react-slick";
 import "./FAQ.css";
 import FAQ_LOGO from "./assets/Faq.svg";
 import jQuery from 'jquery';
