@@ -4,6 +4,13 @@
 	flex-direction: row;
 	justify-content: center;
 	margin-top: -6vw;
+	/* animation: animatethis 0.2s ease;
+	animation: animatethis 0.2s ease;
+	-webkit-animation: animatethis 0.2s ease;
+	-moz-animation: animatethis 0.2s ease;
+	-o-animation: animatethis 0.2s ease;
+	-ms-transition: animatethis 0.2s ease;
+	animation-direction: reverse; */
 	/* width: 10%; */
 }
 .rowDiv:hover {
@@ -41,4 +48,29 @@
 }
 .slick-slide:first-child {
 	margin-left: -1%;
+}
+
+@media only screen and (max-width: 768px) {
+	.rowDiv {
+		/* height: 16vw; */
+		margin-top: 5vw;
+	}
+	.slick-arrow {
+		display: none !important;
+	}
+	.slick-initialized .slick-slide {
+		display: flex;
+		justify-content: center;
+	}
+	.mod {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100px !important;
+		/* width: 30vw; */
+	}
+	.flip-card {
+		height: 17vw;
+	}
 }
