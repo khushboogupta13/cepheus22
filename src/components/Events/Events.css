@@ -3,6 +3,7 @@
   height: 100vh;
   scroll-snap-align: start;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 /* check if the events heading needs to be aligned to the right */
