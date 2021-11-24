@@ -15,12 +15,12 @@
   scroll-snap-align: start;
 }
 
-.centreSymbolContainer{
-  width: 30em;
+.centreSymbolContainer {
+  width: 50vh;
   height: auto;
 }
 
-.centreSymbolContainer img{
+.centreSymbolContainer img {
   width: 100%;
   height: auto;
 }
@@ -54,9 +54,10 @@
   flex-direction: column;
   flex: 2;
   height: 100%;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   margin-right: 100px;
+  margin-bottom: 50px;
 }
 .top_div {
   padding-top: 30px;

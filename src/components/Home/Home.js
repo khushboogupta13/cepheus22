@@ -55,7 +55,7 @@ export default class Home extends Component {
             <div className="centreSymbolContainer">
               <img src={centerSymbol} className="center_symbol"></img>
             </div>
-              <div className="number_text">
+            <div className="number_text">
               <img src={cepheusLogo} className="fes_title" />
               22
             </div>
@@ -63,10 +63,10 @@ export default class Home extends Component {
           </div>
           <div className="right_div">
             <div className="top_gallery">
-              <ScrollingGallery />
+              <ScrollingGallery bias={0} />
             </div>
             <div className="bottom_gallery">
-              <ScrollingGallery />
+              <ScrollingGallery bias={2} />
             </div>
           </div>
         </div>
