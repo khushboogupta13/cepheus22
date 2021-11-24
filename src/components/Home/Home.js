@@ -36,7 +36,7 @@ export default class Home extends Component {
     if (this.state.width > 1000) {
       return (
         <div id="home" className="home container-fluid">
-          {this.state.loginVisible ? <Login close={this.closeLogin} /> : null}
+          {/* {this.state.loginVisible ? <Login close={this.closeLogin} /> : null} */}
           <img src={leftSymbol} className="left_symbol"></img>
           <div className="left_div">
             <div className="buttonsDiv">

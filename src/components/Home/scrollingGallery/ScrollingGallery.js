@@ -69,13 +69,13 @@ export default function ScrollingGallery(props) {
       jQuery("#example" + (props.bias + 1)).loopScroll({ speed: 10 });
       jQuery("#example" + (props.bias + 2)).loopScroll({
         direction: "downwards",
-        speed: 15,
+        speed: 13,
       });
     } else {
       jQuery("#example" + (props.bias + 2)).loopScroll({ speed: 20 });
       jQuery("#example" + (props.bias + 1)).loopScroll({
         direction: "downwards",
-        speed: 15,
+        speed: 17,
       });
     }
     // jQuery("#example3").loopScroll();
