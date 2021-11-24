@@ -38,6 +38,12 @@
   width: auto;
 }
 
+@media screen and (max-width: 600px){
+  .headingContainer{
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .imagesContainer{
     display: none;
