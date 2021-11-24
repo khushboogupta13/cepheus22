@@ -1,43 +1,48 @@
-.navContainer{
-  position: fixed;
-  top: 6.5em;
+.navContainer {
+	position: fixed;
+	top: 6.5em;
 }
 
-.stripContainer{
-  width: 65em;
-  height: auto;
+.stripContainer {
+	width: 65em;
+	height: auto;
 }
 
-.stripContainer img{
-  width: 100%;
-  height: auto;
+.stripContainer img {
+	width: 100%;
+	height: auto;
+	opacity: 0.5;
 }
 
-.navElemsContainer{
-  height: 100%;
-  width: 94%;
-  position: absolute;
-  top:0;
-  display: flex;
-  overflow: hidden;
+.navElemsContainer {
+	height: 100%;
+	width: 94%;
+	position: absolute;
+	top: 0.5em;
+	display: flex;
+	overflow: scroll;
 }
 
-.navbar{
-  z-index: 100;
+.navbar {
+	z-index: 100;
 }
 
 @media only screen and (max-width: 1200px) {
-  .navbar{
-    font-size: 12px;
-  }
+	.navbar {
+		font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
-  .navbar{
-    font-size: 11px;
-  }
+	.navbar {
+		font-size: 11px;
+	}
 
-  .navContainer{
-    top: 0em;
-  }
+	.navContainer {
+		top: 2em;
+	}
+
+	.navElemsContainer{
+		width: 66%;
+	}
 }

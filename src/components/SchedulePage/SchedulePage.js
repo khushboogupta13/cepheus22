@@ -81,9 +81,9 @@ const SchedulePage = () => {
 
 	return (
     <div className="schedule" id="schedule">
-      <div className="sch_desktop" ref={targetRef}>
+      <div className="sch_desktop">
         <div className='menubar_space'></div>
-        <div className='sch_body'>
+        <div className='sch_body' ref={targetRef}>
           <div className='sch_left'>
             <img src={Sche} alt='Sche' className='sche' />
             <Calander callback={x => setDate(x)} date={date} />
