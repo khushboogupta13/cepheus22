@@ -6,8 +6,25 @@ import Workshop from './assets/workshopButton.png';
 import Doll from './assets/Doll.svg';
 import Kids from './assets/Kids.svg';
 import BlackLine from './assets/blackLine.svg';
+import Slider from './swiper';
 
 const Events=()=>{
+
+  const settings = {
+    effect: "coverflow",
+    centeredSlides: false,
+    slidesPerView: 3,
+    coverflowEffect: {
+      rotate: 0, // Slide rotate in degrees
+      stretch: 40, // Stretch space between slides (in px)
+      depth: 300, // Depth offset in px (slides translate in Z axis)
+      modifier: 1, // Effect multipler
+      slideShadows: false // Enables slides shadows
+    }
+  };
+
+  const data = [...Array(10).keys()];
+
   return(
     <div id="events" className="events">
         <div id="eventsHeading" className="eventsHeading">
@@ -45,6 +62,13 @@ const Events=()=>{
             </div>
           </div>
   
+      <div className="eventCards" id="eventCards">
+            <Slider settings={settings}>
+                {data.map(item => (
+                  <img src="https://picsum.photos/200/300" key={item} alt="swipe" />
+                ))}
+            </Slider>
+      </div>
           
     </div>)
 }
