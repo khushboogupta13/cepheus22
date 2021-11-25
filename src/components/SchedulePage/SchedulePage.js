@@ -5,13 +5,14 @@ import Dule from './assets/Dule.svg';
 import talkIcon from './assets/Talk icon.svg';
 import competeIcon from './assets/Compitition icon.svg';
 import workshopIcon from './assets/workshop icon.svg';
+import { event } from 'jquery';
 
 const events = [
-	{ name: 'event1', icon: talkIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 1 },
-	{ name: 'event1', icon: competeIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 2 },
-	{ name: 'event1', icon: workshopIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 3 },
-	{ name: 'event1', icon: competeIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 4 },
-	{ name: 'event1', icon: workshopIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 5 },
+	{ name: 'event_one', icon: talkIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 1 },
+	{ name: 'event_two', icon: competeIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 2 },
+	{ name: 'event_three', icon: workshopIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 3 },
+	{ name: 'event_four', icon: competeIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 4 },
+	{ name: 'event_five', icon: workshopIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 5 },
 ];
 
 const Calander = ({callback, date}) => (
@@ -45,18 +46,17 @@ const Calander = ({callback, date}) => (
 ) 
 
 const EventList = ({date}) => (
-  <div className='sch_events'>
-    {events
-      .filter((event) => event.date === date)
-      .map((event) => (
-        <div className='sch_event' key={event.id}>
-          <img src={event.icon} alt='' />
-          {event.name} &nbsp; &nbsp; 
-          {event.start_time} &nbsp; &nbsp; &nbsp; &nbsp;
-          {event.end_time}
-        </div>
-      ))}
-  </div>
+  <table className="sch_events">
+    {events.filter(event => event.date == date).map(event => (
+      <tr className="sch_event">
+        <td><img src={event.icon} alt='' /></td>
+        <td className="sch_event_name">{event.name}</td>
+        <td className="sch_event_start">{event.start_time}</td>
+        <td className="sch_timeline"></td>
+        <td className="sch_event_end">{event.end_time}</td>
+      </tr>
+    ))}
+  </table>
 ) 
 
 const SchedulePage = () => {
@@ -70,7 +70,7 @@ const SchedulePage = () => {
 				const [entry] = entries;
 				setAnimate(entry.isIntersecting);
 			},
-			{ root: null, rootMargin: '0px' }
+			{ root: null, rootMargin: '0px', threshold: 0.1 }
 		);
 		const target = targetRef.current;
 		if (target) observer.observe(target);
