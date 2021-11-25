@@ -129,7 +129,7 @@ const FAQ_center = ({c}) => {
 const FAQ = () => {
    
   
-  const mediaMobileMatch = window.matchMedia("(max-width: 370px)");
+  const mediaMobileMatch = window.matchMedia("(max-width: 375px)");
   const [mobile, setMobile] = useState(mediaMobileMatch.matches);
 
   const mediaTab2Match = window.matchMedia("(max-width: 768px)");
@@ -213,6 +213,11 @@ const FAQ = () => {
           }).on("mouseout", function() {
             animate(); // resume animation
           });
+          $(this).on("onTouchStart", function() {
+            obj.stop();
+          }).on("onTouchEnd", function() {
+            animate(); // resume animation
+          });
           obj.css("top", start_y);
           animate(); // start animation
         });
@@ -255,7 +260,7 @@ const FAQ = () => {
       
       <div className="FAQ_top">   
         <div className="top_wrap">
-          <img src={mobile ? FAQ_LOGO_SVG : FAQ_LOGO} style={{width: mobile ? '95%' : '', display: mobile ? 'none': 'block'}}alt="FAQ" className="Faq_logo" />
+          <img src={FAQ_LOGO_SVG} style={{width: mobile ? '95%' : '', display: mobile ? 'none': 'block'}}alt="FAQ" className="Faq_logo" />
           <img src={FAQ_BOX} alt="FAQ" className="Faq_box" />
         </div>    
       </div>
