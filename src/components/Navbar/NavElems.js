@@ -1,12 +1,11 @@
 import NavElem from "./NavElem";
-import { Fragment } from "react/cjs/react.production.min";
 import "./NavElems.css"
-import { useRef,useEffect, useState } from "react";
+import React from "react";
 
 const NavElems = (props) => {
   
   return (
-    <>
+    <React.Fragment>
       <div className="firstItem">
         <NavElem
           elem={props.items[0].elem}
@@ -27,7 +26,7 @@ const NavElems = (props) => {
           />
         ))}
       </div>
-    </>
+    </React.Fragment>
   );
 };
 
