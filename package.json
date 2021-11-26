@@ -1,6 +1,10 @@
 {
   "name": "cepheus22",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.x",
+    "npm" : "7.x"
+  },
   "private": true,
   "dependencies": {
     "3": "^2.1.0",
