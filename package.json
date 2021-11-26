@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "3": "^2.1.0",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -13,7 +14,7 @@
     "react-bootstrap": "^2.0.2",
     "react-dom": "^17.0.2",
     "react-in-viewport": "^1.0.0-alpha.20",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^0.9.5",
     "react-scrollspy": "^3.4.3",
     "react-slick": "^0.28.1",
     "react-slider-swiper": "^2.0.6",
