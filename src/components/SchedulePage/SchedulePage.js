@@ -5,7 +5,6 @@ import Dule from './assets/Dule.svg';
 import talkIcon from './assets/Talk icon.svg';
 import competeIcon from './assets/Compitition icon.svg';
 import workshopIcon from './assets/workshop icon.svg';
-import { event } from 'jquery';
 
 const events = [
 	{ name: 'event_one', icon: talkIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 1 },

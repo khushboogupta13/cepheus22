@@ -15,14 +15,14 @@ import React from "react";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar />
       <Home />
-      <AboutUs />
+      <AboutUs /> */}
         <Events/>
-      <SchedulePage />
+      {/* <SchedulePage />
       <FAQ />
       <Sponsorship />
-      <ContactUs />
+      <ContactUs /> */}
     </div>
   );
 }
