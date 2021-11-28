@@ -129,7 +129,7 @@ const FAQ_center = ({c}) => {
 const FAQ = () => {
    
   
-  const mediaMobileMatch = window.matchMedia("(max-width: 375px)");
+  const mediaMobileMatch = window.matchMedia("(max-width: 450px)");
   const [mobile, setMobile] = useState(mediaMobileMatch.matches);
 
   const mediaTab2Match = window.matchMedia("(max-width: 768px)");
@@ -208,16 +208,25 @@ const FAQ = () => {
           };
     
           obj.find("._c").clone().appendTo(obj);
-          $(this).on("mouseover", function() {
-            obj.stop();
-          }).on("mouseout", function() {
-            animate(); // resume animation
-          });
-          $(this).on("onTouchStart", function() {
-            obj.stop();
-          }).on("onTouchEnd", function() {
-            animate(); // resume animation
-          });
+          
+          
+          if(!desk4){
+            $(this).on("mouseover", function() {
+              obj.stop();
+            }).on("mouseout", function() {
+              animate(); // resume animation
+            });
+          }
+          
+          if(desk4){
+            $(this).bind("touchstart", function () {
+              obj.stop();
+            });
+            $(this).bind("touchend", function () {
+              animate(); // resume animation
+            });
+          }
+          console.log("obj hobver",)
           obj.css("top", start_y);
           animate(); // start animation
         });
