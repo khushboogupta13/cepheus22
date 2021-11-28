@@ -113,7 +113,7 @@ const Columns = ({c}) => {
       
       
       return (
-        <>{cols}</>
+        <React.Fragment>{cols}</React.Fragment>
       );
 }
 

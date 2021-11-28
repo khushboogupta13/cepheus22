@@ -37,7 +37,7 @@ export default class Home extends Component {
       return (
         <div id="home" className="home container-fluid">
           {/* {this.state.loginVisible ? <Login close={this.closeLogin} /> : null} */}
-          <img src={leftSymbol} className="left_symbol"></img>
+          <img src={leftSymbol} alt=" " className="left_symbol"></img>
           <div className="left_div">
             <div className="buttonsDiv">
               <div
@@ -53,10 +53,10 @@ export default class Home extends Component {
           </div>
           <div className="center_div">
             <div className="centreSymbolContainer">
-              <img src={centerSymbol} className="center_symbol"></img>
+              <img src={centerSymbol} alt=" "  className="center_symbol"></img>
             </div>
             <div className="number_text">
-              <img src={cepheusLogo} className="fes_title" />
+              <img src={cepheusLogo} alt=" "  className="fes_title" />
               22
             </div>
             <div className="title_text">ANNUAL TECHNICAL FEST OF IITGOA</div>
