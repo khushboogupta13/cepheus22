@@ -48,12 +48,12 @@ export default function ScrollingGallery(props) {
             obj.animate(
               { top: end_y }, //scroll upwards
               (1000 * distance) / options.speed,
-              "linear",
-              function () {
-                // scroll to start position
-                obj.css("top", start_y);
-                animate();
-              }
+              "linear"
+              // function () {
+              //   // scroll to start position
+              //   obj.css("top", start_y);
+              //   animate();
+              // }
             );
           };
 
