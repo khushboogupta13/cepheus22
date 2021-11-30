@@ -44,7 +44,7 @@ export default class Home extends Component {
               >
                 Log in
               </div>
-              <div
+              {/* <div
                 className="buttonGlow"
                 onClick={() =>
                   window.open(
@@ -54,7 +54,7 @@ export default class Home extends Component {
                 }
               >
                 Sign up
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="center_div">
@@ -103,7 +103,7 @@ export default class Home extends Component {
               >
                 Log in
               </div>
-              <div
+              {/* <div
                 className="buttonGlow_mob"
                 onClick={() =>
                   window.open(
@@ -113,7 +113,7 @@ export default class Home extends Component {
                 }
               >
                 Sign up
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

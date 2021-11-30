@@ -23,7 +23,12 @@ export default class AboutUs extends Component {
   render() {
     return (
       <div className="about" id="abtUs">
-        <img src={aboutLogo} className="aboutLogo" />
+        <img
+          src={aboutLogo}
+          className={
+            this.state.width > 500 ? "aboutLogo" : "aboutInvisibleLogo"
+          }
+        />
         <div
           className={
             this.state.width > this.state.height

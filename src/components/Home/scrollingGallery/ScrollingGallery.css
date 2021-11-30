@@ -32,21 +32,6 @@
   height: min-content;
   overflow: hidden; */
 }
-@media screen and (max-width: 1200px) and (min-height: 700px) {
-  .gallery {
-    display: flex;
-    background-color: #10604d;
-    height: 100%;
-    width: 400%;
-    flex: 1;
-    position: absolute;
-    left: -150%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transform: skewX(25deg);
-  }
-}
 
 .img_card {
   display: flex;
