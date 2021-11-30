@@ -10,3 +10,11 @@
 	width: 47vw;
 }
 
+@media only screen and (max-width: 768px) {
+	.contactUs {
+		height: 100%;
+	}
+	.flip-card-back {
+		box-shadow: none;
+	}
+}
