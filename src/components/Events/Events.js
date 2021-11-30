@@ -62,13 +62,7 @@ const Events=()=>{
             </div>
           </div>
   
-      <div className="eventCards" id="eventCards">
-            <Slider settings={settings}>
-                {data.map(item => (
-                  <img src="https://picsum.photos/200/300" key={item} alt="swipe" />
-                ))}
-            </Slider>
-      </div>
+      
           
     </div>)
 }

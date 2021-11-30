@@ -3,6 +3,7 @@
   height: 100vh;
   scroll-snap-align: start;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 /* check if the events heading needs to be aligned to the right */
@@ -65,17 +66,5 @@
   float:right;
 }
 
-.eventCards{
-  background-color: #131314;
-  height: 50%;
-  width:100%;
-  margin-top: 8rem;
-  z-index: 1;
-  position: relative;
-  box-shadow:  rgba(0, 0, 0, 0.35) 15px 15px 15px 15px;
-}
 
-.cards{
-  height: 50%;
-}
 

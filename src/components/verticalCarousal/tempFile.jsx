@@ -23,7 +23,14 @@ const Temp = (props) => {
 	);
 	const myRef = useRef();
 	const { inViewport } = useInViewport(myRef, props);
-	const settings = { dots: false, infinite: false, speed: 500, slidesToShow: 5, slidesToScroll: 1, width: 700 };
+	const settings = {
+		dots: false,
+		infinite: false,
+		speed: 500,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		// width: 700,
+	};
 	// const image = images.reverse();
 	return (
 		<div className='carousalDiv'>
@@ -31,7 +38,21 @@ const Temp = (props) => {
 				{images.map((items, j) => (
 					<div className='rowDiv' style={{ zIndex: `${100 - j}` }}>
 						{/* <Swiper slidesPerView={5} spaceBetween={10}> */}
-						<Slider {...settings}>
+						<Slider
+							{...settings}
+							{...{
+								responsive: [
+									{
+										breakpoint: 768,
+										settings: {
+											slidesToShow: 4,
+											slidesToScroll: 1,
+											infinite: false,
+											dots: false,
+										},
+									},
+								],
+							}}>
 							{items.map((item, i) => (
 								// <SwiperSlide style={{ zIndex: 10 }}>
 								<FlipCard
