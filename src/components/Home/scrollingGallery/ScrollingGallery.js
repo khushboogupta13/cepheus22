@@ -30,11 +30,11 @@ export default function ScrollingGallery(props) {
           var text_height = obj.find(".column_container").height();
           var start_y, end_y;
           if (options.direction == "downwards") {
-            start_y = -200;
+            start_y = -500;
             end_y = 0;
           } else if (options.direction == "upwards") {
             start_y = 0;
-            end_y = -200;
+            end_y = -500;
           }
 
           var animate = function () {
@@ -48,12 +48,12 @@ export default function ScrollingGallery(props) {
             obj.animate(
               { top: end_y }, //scroll upwards
               (1000 * distance) / options.speed,
-              "linear"
-              // function () {
-              //   // scroll to start position
-              //   obj.css("top", start_y);
-              //   animate();
-              // }
+              "linear",
+              function () {
+                // scroll to start position
+                obj.css("top", start_y);
+                animate();
+              }
             );
           };
 
