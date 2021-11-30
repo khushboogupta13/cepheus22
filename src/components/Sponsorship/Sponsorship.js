@@ -2,6 +2,7 @@ import "./Sponsorship.css";
 import leftImage from "./asset/leftSponsorImage.svg";
 import rightImage from "./asset/rightSponsorImage.svg";
 import heading from "./asset/sponsorText.svg";
+import React from "react";
 
 const Sponsorship = () => {
   return (

@@ -113,7 +113,7 @@ const Columns = ({c}) => {
       
       
       return (
-        <>{cols}</>
+        <React.Fragment>{cols}</React.Fragment>
       );
 }
 
@@ -129,7 +129,7 @@ const FAQ_center = ({c}) => {
 const FAQ = () => {
    
   
-  const mediaMobileMatch = window.matchMedia("(max-width: 370px)");
+  const mediaMobileMatch = window.matchMedia("(max-width: 450px)");
   const [mobile, setMobile] = useState(mediaMobileMatch.matches);
 
   const mediaTab2Match = window.matchMedia("(max-width: 768px)");
@@ -208,11 +208,25 @@ const FAQ = () => {
           };
     
           obj.find("._c").clone().appendTo(obj);
-          $(this).on("mouseover", function() {
-            obj.stop();
-          }).on("mouseout", function() {
-            animate(); // resume animation
-          });
+          
+          
+          if(!desk4){
+            $(this).on("mouseover", function() {
+              obj.stop();
+            }).on("mouseout", function() {
+              animate(); // resume animation
+            });
+          }
+          
+          if(desk4){
+            $(this).bind("touchstart", function () {
+              obj.stop();
+            });
+            $(this).bind("touchend", function () {
+              animate(); // resume animation
+            });
+          }
+          console.log("obj hobver",)
           obj.css("top", start_y);
           animate(); // start animation
         });
@@ -255,7 +269,7 @@ const FAQ = () => {
       
       <div className="FAQ_top">   
         <div className="top_wrap">
-          <img src={mobile ? FAQ_LOGO_SVG : FAQ_LOGO} style={{width: mobile ? '95%' : '', display: mobile ? 'none': 'block'}}alt="FAQ" className="Faq_logo" />
+          <img src={FAQ_LOGO_SVG} style={{width: mobile ? '95%' : '', display: mobile ? 'none': 'block'}}alt="FAQ" className="Faq_logo" />
           <img src={FAQ_BOX} alt="FAQ" className="Faq_box" />
         </div>    
       </div>

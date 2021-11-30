@@ -1,3 +1,4 @@
+import React from "react";
 import Temp from '../verticalCarousal/tempFile';
 import data from './data.json';
 import './ContactUs.css';

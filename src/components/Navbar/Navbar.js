@@ -4,6 +4,7 @@ import navElems from "./NavElems";
 import NavElems from "./NavElems";
 import "./Navbar.css";
 import Scrollspy from "react-scrollspy";
+import React from "react";
 
 const navItems = [
   { elem: "Home", key: 0, link: "home" },

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState} from 'react';
 import './flipCard.css';
 // import { Swiper, SwiperSlide } from 'swiper/react';
 
