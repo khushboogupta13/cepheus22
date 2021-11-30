@@ -1,44 +1,43 @@
-.gallery {
+.gallery2 {
   display: flex;
   background-color: #10604d;
   height: 100%;
   width: 300%;
+}
+.gallery1 {
+  transform: skewX(25deg);
+
+  background-color: #10604d;
+  height: 100%;
+  width: 100%;
+}
+.gallery {
+  display: flex;
+  height: 100%;
+  width: 100%;
   flex: 1;
+  background-color: #10604d;
   position: absolute;
   left: -90%;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  transform: skewX(25deg);
-}
-@media screen and (max-width: 1200px) and (min-height: 700px) {
-  .gallery {
-    display: flex;
-    background-color: #10604d;
-    height: 100%;
-    width: 400%;
-    flex: 1;
-    position: absolute;
-    left: -150%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transform: skewX(25deg);
-  }
+  align-items: flex-start;
 }
 .column_container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex: 1;
-  overflow: hidden;
+  height: min-content;
+  overflow: hidden; */
 }
+
 .img_card {
   display: flex;
   width: fit-content;
   height: fit-content;
-  margin: 30px;
+  margin: 10px;
 }
 .card_img {
   display: flex;

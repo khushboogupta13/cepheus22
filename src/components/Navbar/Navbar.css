@@ -1,11 +1,12 @@
 .navContainer {
 	position: fixed;
-	top: 6.5em;
+	top: 4em;
+	width: 100%;
 }
 
 .stripContainer {
-	width: 65em;
 	height: auto;
+	width: 50%;
 }
 
 .stripContainer img {
@@ -16,11 +17,15 @@
 
 .navElemsContainer {
 	height: 100%;
-	width: 94%;
+
+	/*Overflow width*/
+	width: 46%;
 	position: absolute;
-	top: 0;
+	/*top: 0.5em;*/
+	top:55%;
+	transform: translateY(-50%);
 	display: flex;
-	overflow: hidden;
+	overflow: scroll;
 }
 
 .navbar {
@@ -39,6 +44,14 @@
 	}
 
 	.navContainer {
-		top: 0em;
+		top: 2em;
+	}
+
+	.stripContainer{
+		width: 150%;
+	}
+
+	.navElemsContainer{
+		width: 96%;
 	}
 }

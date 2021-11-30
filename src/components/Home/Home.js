@@ -4,7 +4,6 @@ import leftSymbol from "./assets/leftSymbol.svg";
 import centerSymbol from "./assets/centerSymbol.svg";
 import cepheusLogo from "./assets/cepheusLogo.svg";
 import ScrollingGallery from "./scrollingGallery/ScrollingGallery";
-import Login from "../LogIn/Login";
 
 export default class Home extends Component {
   constructor(props) {
@@ -12,8 +11,6 @@ export default class Home extends Component {
     this.state = {
       width: 0,
       height: 0,
-      loginVisible: false,
-      signinVisible: false,
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
@@ -29,44 +26,53 @@ export default class Home extends Component {
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
-  closeLogin = () => {
-    this.setState({ loginVisible: false });
-  };
   render() {
     if (this.state.width > 1000) {
       return (
         <div id="home" className="home container-fluid">
-          {this.state.loginVisible ? <Login close={this.closeLogin} /> : null}
-          <img src={leftSymbol} className="left_symbol"></img>
+          <img src={leftSymbol} alt=" " className="left_symbol"></img>
           <div className="left_div">
             <div className="buttonsDiv">
               <div
                 className="buttonGlow"
-                onClick={() => this.setState({ loginVisible: true })}
+                onClick={() =>
+                  window.open(
+                    process.env.REACT_APP_BACKEND_URL + "/login",
+                    "_blank"
+                  )
+                }
               >
                 Log in
               </div>
-              <div className="buttonGlow" onClick={() => alert("Signup")}>
+              {/* <div
+                className="buttonGlow"
+                onClick={() =>
+                  window.open(
+                    process.env.REACT_APP_BACKEND_URL + "/login",
+                    "_blank"
+                  )
+                }
+              >
                 Sign up
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="center_div">
             <div className="centreSymbolContainer">
-              <img src={centerSymbol} className="center_symbol"></img>
+              <img src={centerSymbol} alt=" " className="center_symbol"></img>
             </div>
-              <div className="number_text">
-              <img src={cepheusLogo} className="fes_title" />
+            <div className="number_text">
+              <img src={cepheusLogo} alt=" " className="fes_title" />
               22
             </div>
             <div className="title_text">ANNUAL TECHNICAL FEST OF IITGOA</div>
           </div>
           <div className="right_div">
             <div className="top_gallery">
-              <ScrollingGallery />
+              <ScrollingGallery bias={0} />
             </div>
             <div className="bottom_gallery">
-              <ScrollingGallery />
+              <ScrollingGallery bias={2} />
             </div>
           </div>
         </div>
@@ -74,8 +80,6 @@ export default class Home extends Component {
     } else {
       return (
         <div id="home" className="home_mob container-fluid">
-          {this.state.loginVisible ? <Login close={this.closeLogin} /> : null}
-
           <div className="top_div">
             <img src={centerSymbol} className="center_symbol_mob"></img>
             <div className="number_text_mob">
@@ -90,13 +94,26 @@ export default class Home extends Component {
             <div className="buttonsDiv_mob">
               <div
                 className="buttonGlow_mob"
-                onClick={() => this.setState({ loginVisible: true })}
+                onClick={() =>
+                  window.open(
+                    process.env.REACT_APP_BACKEND_URL + "/login",
+                    "_blank"
+                  )
+                }
               >
                 Log in
               </div>
-              <div className="buttonGlow_mob" onClick={() => alert("Signup")}>
+              {/* <div
+                className="buttonGlow_mob"
+                onClick={() =>
+                  window.open(
+                    process.env.REACT_APP_BACKEND_URL + "/login",
+                    "_blank"
+                  )
+                }
+              >
                 Sign up
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
