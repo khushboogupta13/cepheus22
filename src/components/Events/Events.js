@@ -60,75 +60,39 @@ const CompetitionCarousel = () => {
 )}
 
 const WorkshopCarousel = () => {
-  const setting = {
-    dots: true,
-    centerMode: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    cssEase: 'linear',
-    centerPadding: 0,
-    arrows: false,
-    focusOnSelect: true,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    responsive: [
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      }
-    ]
-  }
+  
   return (
 
-    <div className="event_slider">
-      <Slider {...setting}>
-        {/* Hack the games and bash it */}
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-      </Slider>
-    </div>
-)}
+    <div className="twoWorkshops">
+        <div className="d-flex justify-content-center" id = "boxes">
+
+        <div className="p-2 col-example text-left">
+          <div className="workshop">
+            <img src = {poster} alt = "Bash It!" id = "workshop1" />
+          </div>
+          </div>
+
+        <div className="p-2 col-example text-left">
+          <div className="workshop">
+            <img src = {poster} alt = "HackTheGames" id = "workshop2" />
+          </div>
+        </div>
+        </div>
+    </div>)}
 
 const TalkCarousel = () => {
-  const setting = {
-    dots: true,
-    centerMode: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    cssEase: 'linear',
-    centerPadding: 0,
-    arrows: false,
-    focusOnSelect: true,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    responsive: [
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      }
-    ]
-  }
   return (
 
-    <div className="event_slider">
-      <Slider {...setting}>
-        {/* making a career in robotics */}
-        <img src={poster} alt='' className="event_slide" /> 
-      </Slider>
+    <div className="oneTalk">
+
+      <div className="d-flex justify-content-center" id = "boxes">
+          <div className="p-2 col-example text-center">
+            <div className="talk" >
+              <img id="talk1" src = {poster} alt = "Make a Career in Robotics" />
+            </div>
+            </div>
+          </div>
+
     </div>
 )}
 
@@ -216,11 +180,11 @@ const Events=()=>{
             {talkCards?  <TalkCarousel /> : "" }
           </div> 
           
-          <div className="eventDescription">
+          {/* <div className="eventDescription">
             <p>
               Event Description 
             </p>
-          </div>
+          </div> */}
 
     </div>)
 }

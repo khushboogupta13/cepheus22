@@ -76,7 +76,51 @@
   float:right;
 }
 
-@media only screen and (max-width: 500px){
+#talk1{
+  width:20vw;
+  height:30vh;
+  margin: auto;
+  margin-top:2rem;
+  margin-left:2rem;
+  border-radius:5px
+}
+
+#workshop1{
+  width:20vw;
+  height:30vh;
+  margin-top:2rem;
+  margin-left:2rem;
+  border-radius:5px
+}
+
+#workshop2{
+  width:20vw;
+  height:30vh;
+  margin-top:2rem;
+  margin-left:2rem;
+  border-radius:5px
+}
+
+@media (max-width: 500px){
+  #talk1{
+    width:50vw;
+  }
+
+  #workshop1{
+    width:35vw;
+    height:25vh;
+    margin-top:2rem;
+    border-radius:5px;
+    margin-left: 0
+  }
+
+  #workshop2{
+    width:35vw;
+    height:25vh;
+    margin-top:2rem;
+    border-radius:5px
+  }
+
   .backgroundElements{
     display: none;
   }
@@ -121,17 +165,17 @@
     display: flex;
     flex: 5;
     font-size: 4vw;
-      overflow: scroll;
-      overflow-x: hidden;
-      margin: 0px 20px 20px;
-      text-align: center;
-      border: solid 3px black;
-      border-radius: 30px;
-      padding: 10px;
-      height: fit-content;
-      box-shadow: inset black 0px 0px 30px 0px;
-      flex-direction: column;
-      margin-top: -7rem !important;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 0px 20px 20px;
+    text-align: center;
+    border: solid 3px black;
+    border-radius: 30px;
+    padding: 10px;
+    height: fit-content;
+    box-shadow: inset black 0px 0px 30px 0px;
+    flex-direction: column;
+    margin-top: -9rem !important;
   }
 
 }
