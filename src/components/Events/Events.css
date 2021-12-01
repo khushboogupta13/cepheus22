@@ -31,6 +31,17 @@
   box-shadow: 0 10px 10px #131314;
 }
 
+@media (min-width: 1366px) {
+  .buttons{
+    width: 12vw;
+  }
+  
+  .kidsRight{
+    height: 18rem;
+    margin-top: -3rem;
+  }
+}
+
 #button1{
   margin-right: 1rem;
 }

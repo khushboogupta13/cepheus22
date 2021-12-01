@@ -169,7 +169,6 @@ const Events=()=>{
   const [talkCards, setTalkCards] = useState(false)
   const talkClick = () => {setTalkCards(true); setWorkshopCards(false); setCompetitionCards(false)};
 
-  
   return(
     <div id="events" className="events">
         <div id="eventsHeading" className="eventsHeading">
