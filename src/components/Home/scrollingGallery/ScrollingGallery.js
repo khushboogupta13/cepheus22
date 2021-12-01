@@ -8,6 +8,7 @@ const Card = () => {
       <img
         className="card_img"
         src="https://picsum.photos/seed/picsum/300/200"
+        alt=" "
       ></img>
     </div>
   );
@@ -27,12 +28,12 @@ export default function ScrollingGallery(props) {
 
         return this.each(function () {
           var obj = $(this).find(".gallery");
-          var text_height = obj.find(".column_container").height();
+          // var text_height = obj.find(".column_container").height();
           var start_y, end_y;
-          if (options.direction == "downwards") {
+          if (options.direction === "downwards") {
             start_y = -500;
             end_y = 0;
-          } else if (options.direction == "upwards") {
+          } else if (options.direction === "upwards") {
             start_y = 0;
             end_y = -500;
           }
@@ -65,7 +66,7 @@ export default function ScrollingGallery(props) {
       };
     })(jQuery);
 
-    if (props.bias == 0) {
+    if (props.bias === 0) {
       jQuery("#example" + (props.bias + 1)).loopScroll({ speed: 10 });
       jQuery("#example" + (props.bias + 2)).loopScroll({
         direction: "downwards",
