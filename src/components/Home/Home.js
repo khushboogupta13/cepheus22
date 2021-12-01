@@ -81,9 +81,9 @@ export default class Home extends Component {
       return (
         <div id="home" className="home_mob container-fluid">
           <div className="top_div">
-            <img src={centerSymbol} className="center_symbol_mob"></img>
+            <img src={centerSymbol} className="center_symbol_mob" alt=" "></img>
             <div className="number_text_mob">
-              <img src={cepheusLogo} className="fes_title_mob" />
+              <img src={cepheusLogo} className="fes_title_mob" alt=" " />
               22
             </div>
             <div className="title_text_mob">

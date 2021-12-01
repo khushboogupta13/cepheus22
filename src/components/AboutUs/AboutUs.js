@@ -28,6 +28,7 @@ export default class AboutUs extends Component {
           className={
             this.state.width > 500 ? "aboutLogo" : "aboutInvisibleLogo"
           }
+          alt="About us Logo"
         />
         <div
           className={

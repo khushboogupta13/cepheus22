@@ -1,6 +1,6 @@
 .home {
   display: flex;
-  background-image: url("./assets/bgimg.jpg");
+  background-image: url("https://res.cloudinary.com/dcydix7rc/image/upload/f_auto,q_auto/v1638325936/cepheus22/bgimg_n02qar.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
 
 .home_mob {
   display: flex;
-  background-image: url("./assets/bgimg.jpg");
+  background-image: url("https://res.cloudinary.com/dcydix7rc/image/upload/f_auto,q_auto/v1638325936/cepheus22/bgimg_n02qar.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
