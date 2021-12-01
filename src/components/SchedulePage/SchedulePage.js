@@ -69,15 +69,17 @@ const Calander = ({callback, date}) => (
 
 const EventList = ({date}) => (
   <table className="sch_events">
-    {events.filter(event => event.date == date).map(event => (
-      <tr className="sch_event">
-        <td><img src={event.icon} alt='' /></td>
-        <td className="sch_event_name">{event.name}</td>
-        <td className="sch_event_start">{event.start_time}</td>
-        <td className="sch_timeline"></td>
-        <td className="sch_event_end">{event.end_time}</td>
-      </tr>
-    ))}
+    <tbody>
+      {events.filter(event => event.date == date).map(event => (
+        <tr key={event.id} className="sch_event">
+          <td><img src={event.icon} alt='' /></td>
+          <td className="sch_event_name">{event.name}</td>
+          <td className="sch_event_start">{event.start_time}</td>
+          <td className="sch_timeline"></td>
+          <td className="sch_event_end">{event.end_time}</td>
+        </tr>
+      ))}
+    </tbody>
   </table>
 ) 
 
