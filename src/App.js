@@ -8,7 +8,7 @@ import Navbar from "./components/Navbar/Navbar";
 import SchedulePage from "./components/SchedulePage/SchedulePage";
 import Sponsorship from "./components/Sponsorship/Sponsorship";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 
@@ -18,7 +18,7 @@ function App() {
       <Navbar />
       <Home />
       <AboutUs />
-        <Events/>
+      <Events />
       <SchedulePage />
       <FAQ />
       <Sponsorship />
