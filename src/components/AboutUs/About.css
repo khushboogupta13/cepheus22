@@ -73,7 +73,7 @@
   .aboutText_vertical {
     display: flex;
     flex: 5;
-
+    
     font-size: 4vw;
     /* line-height: 22px; */
     overflow: scroll;

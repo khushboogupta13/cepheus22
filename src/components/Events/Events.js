@@ -39,12 +39,12 @@ const CompetitionCarousel = () => {
       }
     ]
   }
+
+  
   return (
 
     <div className="event_slider">
       <Slider {...setting}>
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
         <img src={poster} alt='' className="event_slide" />
         <img src={poster} alt='' className="event_slide" />
         <img src={poster} alt='' className="event_slide" />
@@ -168,9 +168,23 @@ const Events=()=>{
   
   const [talkCards, setTalkCards] = useState(false)
   const talkClick = () => {setTalkCards(true); setWorkshopCards(false); setCompetitionCards(false)};
-
+  
+  const [treasureHuntDescription, setTreasureHuntDescription] = useState(true);
+  const [fizzbuzzDescription, setFizzbuzzDescription] = useState(false);
+  const [circuitalDilemmaDescription, setCircuitalDilemmaDescription] = useState(false);
+  const [hackTheGamesDescription, setHacktheGamesDescription] = useState(true);
+  const [hackOverflowDescription, setHackOverflowDescription] = useState(false);
+  const [beatTheStreetDescription, setBeatTheStreetDescription] = useState(false);
+  const [bashItDescription, setBashItDescription] = useState(true);
+  const [arduinoTrialDescription, setArduinoTrialDescription] = useState(false);
+  const [roboticsCareerDescription, setRoboticsCareerDescription] = useState(false);
+  const [loremIpsumDescription, setLoremIpsumDescription] = useState(true);
+  const [ctfDescription, setCtfDescription] = useState(false);
+  const [builderBridgeDescription, setBuilderBridgeDescription] = useState(false);
+  
   return(
     <div id="events" className="events">
+
         <div id="eventsHeading" className="eventsHeading">
           <img src = {Heading} alt = "Events" className="eventHeadingRight" />
         </div>
@@ -213,8 +227,14 @@ const Events=()=>{
             {competitionCards?  <CompetitionCarousel /> : "" }
             {workshopCards?  <WorkshopCarousel /> : "" }
             {talkCards?  <TalkCarousel /> : "" }
-
+          </div> 
+          
+          <div className="eventDescription">
+            <p>
+              Event Description 
+            </p>
           </div>
+
     </div>)
 }
 

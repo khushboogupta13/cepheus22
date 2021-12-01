@@ -6,11 +6,6 @@
   overflow: hidden;
 }
 
-/* check if the events heading needs to be aligned to the right */
-/* .eventsHeadingRight{
-
-} */
-
 #boxes{
   margin-top: 2rem;
   z-index: 2;
@@ -56,15 +51,14 @@
 }
 
 .dollLeft{
-  width: 10rem;
-  height: 10rem;
-  margin-top: 1rem;
+  width: 20vw;
+  height: 30vh;
 }
 
 .kidsRight{
-  width: 13rem;
-  height: 17rem;
-  margin-top: -3.5rem;
+  width: 25vw;
+  height: 35vh;
+  margin-top: -3rem;
   float: right;
 }
 
@@ -80,6 +74,66 @@
 
 .kids{
   float:right;
+}
+
+@media only screen and (max-width: 500px){
+  .backgroundElements{
+    display: none;
+  }
+
+  .backgroundLine{
+    display: none;
+  }
+
+  .buttons{
+    width: 6rem;
+    height: 5rem;
+  }
+  
+  #button1{
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+  }
+
+  #button3{
+    margin-right: 2rem;
+    margin-left: 0.5rem;
+  }
+
+  .eventsHeading{
+    display: none;
+  }
+
+  #boxes{
+    margin-top: 7rem;
+  }
+
+  .carousel{
+    margin-top: 10vh;
+    height: 55vh !important;
+  }
+
+  .eventDescription{
+    background-color: #111111;
+    position: relative;
+    z-index: 1000;
+    color: white;
+    display: flex;
+    flex: 5;
+    font-size: 4vw;
+      overflow: scroll;
+      overflow-x: hidden;
+      margin: 0px 20px 20px;
+      text-align: center;
+      border: solid 3px black;
+      border-radius: 30px;
+      padding: 10px;
+      height: fit-content;
+      box-shadow: inset black 0px 0px 30px 0px;
+      flex-direction: column;
+      margin-top: -7rem !important;
+  }
+
 }
 
 .carousel {

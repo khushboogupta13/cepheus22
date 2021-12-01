@@ -1,4 +1,5 @@
 import "./IndividualEvent.css";
+import poster from './assets/poster.png'
 
 const IndividualEvent =()=>{
       
