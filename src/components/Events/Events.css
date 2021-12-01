@@ -1,5 +1,5 @@
 .events{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
   background-color: #FFFFFF;
@@ -7,12 +7,12 @@
 }
 
 /* check if the events heading needs to be aligned to the right */
-.eventsHeadingRight{
+/* .eventsHeadingRight{
 
-}
+} */
 
 #boxes{
-  margin-top: 3rem;
+  margin-top: 2rem;
   z-index: 2;
   position: relative;
 }
@@ -24,6 +24,11 @@
   width: 8rem;
   box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
+}
+
+.buttons:hover{
+  transform: scale(1.02) perspective(0px);
+  box-shadow: 0 10px 10px #131314;
 }
 
 #button1{
@@ -58,16 +63,6 @@
   z-index: 1;
 }
 
-.eventsCard{
-  background-color: #131314;
-  box-shadow:  rgba(0, 0, 0, 0.35) 15px 15px 15px 15px;
-  height: 100%;
-  width: 100%;
-  margin-top: -7rem;
-  position: relative;
-  z-index: 2;
-}
-
 .doll{
   float:left;
 }
@@ -75,3 +70,72 @@
 .kids{
   float:right;
 }
+
+.carousel {
+  background-color:#131314;
+  height: 70vh;
+  margin-top: 20vh;
+  z-index: 1;
+}
+
+.event_slider {
+  width: min(60vw,700px);
+  background-color: #131314;
+  margin-left: 27.5vw;
+  padding-top: 6vh;
+}
+
+.event_slide {
+  margin-left: min(2.7vw,35px);
+  height: 22vh;
+  border-radius: 2vh;
+  transform: scaleY(0.9);
+}
+
+.slick-center {
+  transform: scale(1.1);
+  position: relative;
+  z-index: 1000;
+}
+
+ul.slick-dots {
+  background-color: #131314;
+  width: 60%;
+  left: 10vw;
+  height: 2vh;
+  overflow: hidden;
+}
+
+li.slick-active {
+  background-color: #712845;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #712845 !important;
+}
+
+.slick-dots button:before {
+  color: #131314 !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  .event_slider {
+    width: 45vw;
+    margin-left: 28vw;
+  }
+  .event_slide {
+    margin-left: 3.5vw;
+  }
+  ul.slick-dots {
+    width: 70%;
+    left: 8vw;
+  }
+  ul.slick-dots > li {
+    width: 10px;
+  }
+}
+
+
+
+
+

@@ -30,11 +30,11 @@ export default function ScrollingGallery(props) {
           var text_height = obj.find(".column_container").height();
           var start_y, end_y;
           if (options.direction == "downwards") {
-            start_y = -200;
+            start_y = -500;
             end_y = 0;
           } else if (options.direction == "upwards") {
             start_y = 0;
-            end_y = -200;
+            end_y = -500;
           }
 
           var animate = function () {

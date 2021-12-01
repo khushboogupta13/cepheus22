@@ -5,14 +5,36 @@ import Dule from './assets/Dule.svg';
 import talkIcon from './assets/Talk icon.svg';
 import competeIcon from './assets/Compitition icon.svg';
 import workshopIcon from './assets/workshop icon.svg';
-import { event } from 'jquery';
 
 const events = [
-	{ name: 'event_one', icon: talkIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 1 },
-	{ name: 'event_two', icon: competeIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 2 },
-	{ name: 'event_three', icon: workshopIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 3 },
-	{ name: 'event_four', icon: competeIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 4 },
-	{ name: 'event_five', icon: workshopIcon, date: 7, start_time: '9:00 PM', end_time: '11:00 PM', id: 5 },
+	{ name: 'CTF', icon: competeIcon, date: 7, start_time: '10:00 AM', end_time: '9:00 PM', id: 1 },
+	{ name: 'Bridge Builder', icon: competeIcon, date: 7, start_time: '10:00 AM', end_time: '9:00 PM', id: 2 },
+	{ name: 'DSC Template', icon: workshopIcon, date: 7, start_time: '11:00 AM', end_time: '1:00 PM', id: 3 },
+	{ name: 'Treasure Hunt', icon: competeIcon, date: 7, start_time: '1:00 PM', end_time: '9:00 PM', id: 4 },
+  { name: 'Arduino\'s Trail', icon: competeIcon, date: 7, start_time: '2:00 PM', end_time: '4:00 PM', id: 5 },
+	{ name: 'Hackoverflow', icon: competeIcon, date: 7, start_time: '3:00 PM', end_time: '9:00 PM', id: 6 },
+  { name: 'Opening Ceremony', icon: talkIcon, date: 7, start_time: '5:00 PM', end_time: '7:00 PM', id: 7 },
+  { name: 'Fizzbuzz', icon: competeIcon, date: 7, start_time: '7:00 PM', end_time: '9:00 PM', id: 8 },
+  { name: 'CTF', icon: competeIcon, date: 8, start_time: '10:00 AM', end_time: '9:00 PM', id: 9 },
+	{ name: 'Bridge Builder', icon: competeIcon, date: 8, start_time: '10:00 AM', end_time: '9:00 PM', id: 10 },
+  { name: 'Hackoverflow', icon: competeIcon, date: 8, start_time: '10:00 AM', end_time: '1:00 PM', id: 11 },
+  { name: 'Treasure Hunt', icon: competeIcon, date: 7, start_time: '10:00 AM', end_time: '3:00 PM', id: 12 },
+  { name: 'Circuital Dilemma', icon: competeIcon, date: 8, start_time: '10:00 AM', end_time: '9:00 PM', id: 13 },
+  { name: 'Arduino\'s Trail', icon: competeIcon, date: 8, start_time: '10:00 AM', end_time: '9:00 PM', id: 14 },
+  { name: 'EnR Talk', icon: talkIcon, date: 8, start_time: '12:00 PM', end_time: '1:00 PM', id: 15 },
+  { name: 'IEEE', icon: workshopIcon, date: 8, start_time: '1:00 PM', end_time: '3:00 PM', id: 16 },
+  { name: 'DSC Template', icon: workshopIcon, date: 8, start_time: '1:00 PM', end_time: '9:00 PM', id: 17 },
+  { name: 'Design Event', icon: competeIcon, date: 8, start_time: '3:00 PM', end_time: '7:00 PM', id: 18 },
+  { name: 'Fizzbuzz', icon: competeIcon, date: 8, start_time: '7:00 PM', end_time: '9:00 PM', id: 19 },
+  { name: 'CTF', icon: competeIcon, date: 9, start_time: '10:00 AM', end_time: '9:00 PM', id: 20 },
+  { name: 'Bridge Builder', icon: competeIcon, date: 9, start_time: '10:00 AM', end_time: '9:00 PM', id: 21 },
+  { name: 'Circuital Dilemma', icon: competeIcon, date: 9, start_time: '10:00 AM', end_time: '12:00 PM', id: 22 },
+  { name: 'DSC Template', icon: workshopIcon, date: 9, start_time: '10:00 AM', end_time: '1:00 PM', id: 23 },
+  { name: 'DTU', icon: workshopIcon, date: 9, start_time: '10:00 AM', end_time: '1:00 PM', id: 24 },
+  { name: 'Infosec Talk', icon: talkIcon, date: 9, start_time: '1:00 PM', end_time: '2:00 PM', id: 25 },
+  { name: 'Bash', icon: workshopIcon, date: 9, start_time: '2:00 PM', end_time: '4:00 PM', id: 26 },
+  { name: 'Fizzbuzz', icon: competeIcon, date: 9, start_time: '4:00 PM', end_time: '7:00 PM', id: 27 },
+  { name: 'MDash Talk', icon: talkIcon, date: 9, start_time: '5:00 PM', end_time: '7:00 PM', id: 28 },
 ];
 
 const Calander = ({callback, date}) => (
@@ -95,9 +117,6 @@ const SchedulePage = () => {
         </div>
       </div>
       <div className="sch_mobile">
-        <div className="schm_title">
-          Schedule
-        </div>
         <div className="schm_calander">
           <Calander callback={x => setDate(x)} date={date} />
         </div>
