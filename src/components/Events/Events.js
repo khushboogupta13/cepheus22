@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { Link } from "react-router-dom";
 import "./Events.css";
 import Heading from "./assets/Events.svg";
 import Competition from './assets/competitionbutton.png';
@@ -53,6 +54,7 @@ const CompetitionCarousel = () => {
         <img src={poster} alt='' className="event_slide" />
         <img src={poster} alt='' className="event_slide" />
         <img src={poster} alt='' className="event_slide" />
+        <img src={poster} alt='' className="event_slide" />
       </Slider>
     </div>
 )}
@@ -63,7 +65,7 @@ const WorkshopCarousel = () => {
     centerMode: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 2,
     slidesToScroll: 1,
     cssEase: 'linear',
     centerPadding: 0,
@@ -87,14 +89,7 @@ const WorkshopCarousel = () => {
 
     <div className="event_slider">
       <Slider {...setting}>
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
+        {/* Hack the games and bash it */}
         <img src={poster} alt='' className="event_slide" />
         <img src={poster} alt='' className="event_slide" />
       </Slider>
@@ -107,7 +102,7 @@ const TalkCarousel = () => {
     centerMode: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 1,
     slidesToScroll: 1,
     cssEase: 'linear',
     centerPadding: 0,
@@ -131,16 +126,8 @@ const TalkCarousel = () => {
 
     <div className="event_slider">
       <Slider {...setting}>
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
+        {/* making a career in robotics */}
+        <img src={poster} alt='' className="event_slide" /> 
       </Slider>
     </div>
 )}
@@ -193,19 +180,19 @@ const Events=()=>{
 
           <div className="p-2 col-example text-left">
             <div className="buttons" id = "button1" onClick={competitionClick}>
-              <img src = {Competition} alt = "competitions" style={{maxHeight:"60%", maxWidth:"60%", margin:"auto"}} />
+              <img src = {Competition} alt = "competitions" style={{maxHeight:"70%", maxWidth:"70%", margin:"auto"}} />
             </div>
             </div>
 
           <div className="p-2 col-example text-left">
             <div className="buttons" id = "button2" onClick={workshopClick}>
-              <img src = {Workshop} alt = "workshops" style={{maxHeight:"60%", maxWidth:"60%", margin: "auto"}}/>
+              <img src = {Workshop} alt = "workshops" style={{maxHeight:"70%", maxWidth:"70%", margin: "auto"}}/>
             </div>
           </div>
 
           <div className="p-2 col-example text-left">
             <div className="buttons" id = "button3" onClick={talkClick}>
-              <img src = {Talk} alt = "talks" style={{maxHeight:"60%", maxWidth:"60%", margin:"auto"}} />
+              <img src = {Talk} alt = "talks" style={{maxHeight:"70%", maxWidth:"70%", margin:"auto"}} />
             </div>
           </div>
           </div>

@@ -1,0 +1,42 @@
+[
+      {
+            "eventName":"treasureHunt",
+            "posterURL": "",
+            "content" : "The Treasure Hunt is going to be organised in several levels, each level being a knockout event. Participants would be given fun challenges in the technical domain ranging from coding challenges to cryptography, and much more. "
+      },
+      {
+            "eventName" : "fizzBuzz",
+            "posterURL" : "",
+            "content" : "FizzBuzz is a competitive coding contest. It will have 3 different rounds 2-3 hrs long. The difficulty level will gradually increase after every round. But do not fret, even if you are an absolute beginner, this event ensures that everyone, nomatter what their level is, will get something to solve. Do you have what it takes to survive Fizzbuzz and come out on the top?"
+      },
+      {
+            "eventName": "beatTheStreet",
+            "posterURL" : "",
+            "content" : "Whether you are a newbie to the trading and investing world or have some prior experience in markets, Cepheus brings to you its first ever mock trading competition organised by Alpha (Finance Club of IIT GOA). The stakes are high and so are the rewards. The trading of assets will happen with virtual money but the winners on the leaderboard (ranking based on profits made) can walk home with cash prizes and more."
+      },
+      {
+            "eventName" : "arduinosTrial",
+            "posterURL" : "",
+            "content" : "In this event participants get an opportunity to test their skills of Arduino programming, opening doors to infinite possibilities along the way. The event is conducted in 2 rounds, with each round spanning over 3 hours. In each round, participants are quizzed to hone their theoretical knowledge of Arduino and its working, and given gripping problem statements to devise creative solutions for."
+      },
+      {
+            "eventName" : "loremIpsum",
+            "posterURL" : "",
+            "content" : "Lorem Ipsum is a website designing event. In this event, you will be given a very basic Wikipedia page which you must redesign with reference to the theme ‘Squid Game’, within a given time period of 4 hours. It’s time to get those creative juices flowing and put your designing skills to test!"
+      },
+      {
+            "eventName" : "ctf",
+            "posterURL" : "",
+            "content" : "This 3-day Capture The Flag contest involves participants testing themselves in the domains of Infosec while being subjected to the intriguing theme of the show Squid Game. The participants securing maximum points till the end of the contest will be declared the winners!"
+      },
+      {
+            "eventName" : "builderBridge",
+            "posterURL" : "",
+            "content" : "This competition involves participants making a Module Type Truss Bridge using CAD. The bridge is to be made using different panels and components for easy installation, with the links between the components being made using Pins only. Rolled or Welded sections will be allowed to make truss members - all this, keeping in mind the dimensional constraints given in the contest manual."
+      },
+      {
+            "eventName" : "circuitalDilemma",
+            "posterURL" : "",
+            "content" : "This event offers you an opportunity to test your digital circuit problem-solving skills using logic and innovation while retaining the spirit of collective learning. The two-stage submission process involves tackling some real-life problems while being constrained to a given time."
+      }
+]

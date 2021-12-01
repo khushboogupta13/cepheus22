@@ -1,5 +1,5 @@
 import "./IndividualEvent.css";
-import poster from './assets/poster.png'
+import data from "./IndividualEvents.json"
 
 const IndividualEvent =()=>{
       
