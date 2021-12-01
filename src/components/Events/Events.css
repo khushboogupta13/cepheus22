@@ -200,6 +200,44 @@ li.slick-active {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .event_slider {
+    width: 70vw;
+    margin-left: 15vw;
+    padding-top: 20vh;
+  }
+
+  .event_slide {
+    margin-left: 5.5vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .event_slider {
+    width: 90vw;
+    margin-left: 5vw;
+    padding-top: 20vh;
+  }
+
+  div.slick-list {
+    width: 90vw;
+  }
+
+  div.slick-slider {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event_slide {
+    margin-left: 7vw;
+  }
+
+  ul.slick-dots {
+    width: 90vw;
+    left: 1vw;
+  }
+}
+
 
 
 
