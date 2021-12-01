@@ -51,7 +51,7 @@
   display: flex;
   flex: 5;
 
-  font-size: 3vw;
+  font-size: 2.7vw;
   overflow: scroll;
   overflow-x: hidden;
 
@@ -88,5 +88,51 @@
     color: white;
     box-shadow: inset black 0px 0px 30px 0px;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .aboutText {
+    display: flex;
+    flex: 5;
+    /* font-family: squidFont; */
+    font-size: 1.7vw;
+    /* justify-content: center;
+    align-items: center; */
+    margin: 0px 20px 20px;
+    text-align: center;
+    border: solid 3px black;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    box-shadow: inset black 0px 0px 30px 0px;
+    flex-direction: column;
+
+    overflow: scroll;
+    overflow-x: hidden;
+    /* max-width: 1300px; */
+  }
+}
+
+@media screen and (max-width: 120px) {
+  .aboutText {
+    display: flex;
+    flex: 5;
+    /* font-family: squidFont; */
+    font-size: 1.5vw;
+    /* justify-content: center;
+    align-items: center; */
+    margin: 0px 20px 20px;
+    text-align: center;
+    border: solid 3px black;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    box-shadow: inset black 0px 0px 30px 0px;
+    flex-direction: column;
+
+    overflow: scroll;
+    overflow-x: hidden;
+    /* max-width: 1300px; */
   }
 }
