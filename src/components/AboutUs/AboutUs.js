@@ -32,9 +32,7 @@ export default class AboutUs extends Component {
         />
         <div
           className={
-            this.state.width > this.state.height
-              ? "aboutText"
-              : "aboutText_vertical"
+            this.state.width > 1000 ? "aboutText" : "aboutText_vertical"
           }
         >
           <p>
