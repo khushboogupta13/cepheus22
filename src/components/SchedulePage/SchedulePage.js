@@ -2,236 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "./SchedulePage.css";
 import Sche from "./assets/Sche.svg";
 import Dule from "./assets/Dule.svg";
-import talkIcon from "./assets/Talk icon.svg";
-import competeIcon from "./assets/Compitition icon.svg";
-import workshopIcon from "./assets/workshop icon.svg";
-
-const events = [
-  {
-    name: "CTF",
-    icon: competeIcon,
-    date: 7,
-    start_time: "10:00 AM",
-    end_time: "9:00 PM",
-    id: 1,
-  },
-  {
-    name: "Bridge Builder",
-    icon: competeIcon,
-    date: 7,
-    start_time: "10:00 AM",
-    end_time: "9:00 PM",
-    id: 2,
-  },
-  {
-    name: "DSC Template",
-    icon: workshopIcon,
-    date: 7,
-    start_time: "11:00 AM",
-    end_time: "1:00 PM",
-    id: 3,
-  },
-  {
-    name: "Treasure Hunt",
-    icon: competeIcon,
-    date: 7,
-    start_time: "1:00 PM",
-    end_time: "9:00 PM",
-    id: 4,
-  },
-  {
-    name: "Arduino's Trail",
-    icon: competeIcon,
-    date: 7,
-    start_time: "2:00 PM",
-    end_time: "4:00 PM",
-    id: 5,
-  },
-  {
-    name: "Hackoverflow",
-    icon: competeIcon,
-    date: 7,
-    start_time: "3:00 PM",
-    end_time: "9:00 PM",
-    id: 6,
-  },
-  {
-    name: "Opening Ceremony",
-    icon: talkIcon,
-    date: 7,
-    start_time: "5:00 PM",
-    end_time: "7:00 PM",
-    id: 7,
-  },
-  {
-    name: "Fizzbuzz",
-    icon: competeIcon,
-    date: 7,
-    start_time: "7:00 PM",
-    end_time: "9:00 PM",
-    id: 8,
-  },
-  {
-    name: "CTF",
-    icon: competeIcon,
-    date: 8,
-    start_time: "10:00 AM",
-    end_time: "9:00 PM",
-    id: 9,
-  },
-  {
-    name: "Bridge Builder",
-    icon: competeIcon,
-    date: 8,
-    start_time: "10:00 AM",
-    end_time: "9:00 PM",
-    id: 10,
-  },
-  {
-    name: "Hackoverflow",
-    icon: competeIcon,
-    date: 8,
-    start_time: "10:00 AM",
-    end_time: "1:00 PM",
-    id: 11,
-  },
-  {
-    name: "Treasure Hunt",
-    icon: competeIcon,
-    date: 7,
-    start_time: "10:00 AM",
-    end_time: "3:00 PM",
-    id: 12,
-  },
-  {
-    name: "Circuital Dilemma",
-    icon: competeIcon,
-    date: 8,
-    start_time: "10:00 AM",
-    end_time: "9:00 PM",
-    id: 13,
-  },
-  {
-    name: "Arduino's Trail",
-    icon: competeIcon,
-    date: 8,
-    start_time: "10:00 AM",
-    end_time: "9:00 PM",
-    id: 14,
-  },
-  {
-    name: "EnR Talk",
-    icon: talkIcon,
-    date: 8,
-    start_time: "12:00 PM",
-    end_time: "1:00 PM",
-    id: 15,
-  },
-  {
-    name: "IEEE",
-    icon: workshopIcon,
-    date: 8,
-    start_time: "1:00 PM",
-    end_time: "3:00 PM",
-    id: 16,
-  },
-  {
-    name: "DSC Template",
-    icon: workshopIcon,
-    date: 8,
-    start_time: "1:00 PM",
-    end_time: "9:00 PM",
-    id: 17,
-  },
-  {
-    name: "Design Event",
-    icon: competeIcon,
-    date: 8,
-    start_time: "3:00 PM",
-    end_time: "7:00 PM",
-    id: 18,
-  },
-  {
-    name: "Fizzbuzz",
-    icon: competeIcon,
-    date: 8,
-    start_time: "7:00 PM",
-    end_time: "9:00 PM",
-    id: 19,
-  },
-  {
-    name: "CTF",
-    icon: competeIcon,
-    date: 9,
-    start_time: "10:00 AM",
-    end_time: "9:00 PM",
-    id: 20,
-  },
-  {
-    name: "Bridge Builder",
-    icon: competeIcon,
-    date: 9,
-    start_time: "10:00 AM",
-    end_time: "9:00 PM",
-    id: 21,
-  },
-  {
-    name: "Circuital Dilemma",
-    icon: competeIcon,
-    date: 9,
-    start_time: "10:00 AM",
-    end_time: "12:00 PM",
-    id: 22,
-  },
-  {
-    name: "DSC Template",
-    icon: workshopIcon,
-    date: 9,
-    start_time: "10:00 AM",
-    end_time: "1:00 PM",
-    id: 23,
-  },
-  {
-    name: "DTU",
-    icon: workshopIcon,
-    date: 9,
-    start_time: "10:00 AM",
-    end_time: "1:00 PM",
-    id: 24,
-  },
-  {
-    name: "Infosec Talk",
-    icon: talkIcon,
-    date: 9,
-    start_time: "1:00 PM",
-    end_time: "2:00 PM",
-    id: 25,
-  },
-  {
-    name: "Bash",
-    icon: workshopIcon,
-    date: 9,
-    start_time: "2:00 PM",
-    end_time: "4:00 PM",
-    id: 26,
-  },
-  {
-    name: "Fizzbuzz",
-    icon: competeIcon,
-    date: 9,
-    start_time: "4:00 PM",
-    end_time: "7:00 PM",
-    id: 27,
-  },
-  {
-    name: "MDash Talk",
-    icon: talkIcon,
-    date: 9,
-    start_time: "5:00 PM",
-    end_time: "7:00 PM",
-    id: 28,
-  },
-];
+import events  from "./assets/schedule.js"
 
 const Calander = ({ callback, date }) => (
   <div className="sch_calander">
@@ -283,19 +54,21 @@ const Calander = ({ callback, date }) => (
 
 const EventList = ({ date }) => (
   <table className="sch_events">
-    {events
-      .filter((event) => event.date == date)
-      .map((event) => (
-        <tr className="sch_event">
-          <td>
-            <img src={event.icon} alt="" />
-          </td>
-          <td className="sch_event_name">{event.name}</td>
-          <td className="sch_event_start">{event.start_time}</td>
-          <td className="sch_timeline"></td>
-          <td className="sch_event_end">{event.end_time}</td>
-        </tr>
-      ))}
+    <tbody>
+      {events
+        .filter((event) => event.date == date)
+        .map((event) => (
+          <tr className="sch_event" key={event.id}>
+            <td>
+              <img src={event.icon} alt="" />
+            </td>
+            <td className="sch_event_name">{event.name}</td>
+            <td className="sch_event_start">{event.start_time}</td>
+            <td className="sch_timeline"></td>
+            <td className="sch_event_end">{event.end_time}</td>
+          </tr>
+        ))}
+      </tbody>
   </table>
 );
 
