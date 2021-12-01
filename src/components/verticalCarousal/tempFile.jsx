@@ -70,6 +70,26 @@ const Temp = (props) => {
 						</Slider>
 					</div>
 				))}
+				{images.map((items, j) => (
+					<div className='rowDivMobile'>
+						{/* <Swiper slidesPerView={5} spaceBetween={10}> */}
+
+						{items.map((item, i) => (
+							// <SwiperSlide style={{ zIndex: 10 }}>
+							<FlipCard
+								front={`${item.front}`}
+								back={`${item.back}`}
+								zIndex={100 - j - i}
+								order={j}
+								anime={i + j}
+								inViewport={inViewport}
+							/>
+							// </SwiperSlide>
+						))}
+						{/* </Swiper> */}
+						{/* </Slider> */}
+					</div>
+				))}
 			</div>
 		</div>
 	);
