@@ -1,7 +1,7 @@
 import talkIcon from "./Talk icon.svg";
 import competeIcon from "./Compitition icon.svg";
 import workshopIcon from "./workshop icon.svg";
-
+// eslint-disable-next-line
 export default [
   {
     name: "CTF",

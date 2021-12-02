@@ -1,6 +1,6 @@
 import {useState} from 'react';
-import { Link } from "react-router-dom";
 import "./Events.css";
+import {Link } from 'react-router-dom'
 import Heading from "./assets/Events.svg";
 import Competition from './assets/competitionbutton.png';
 import Talk from './assets/talkButton.png';
@@ -13,8 +13,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import data from './data.json';
-
+import data from './data.json'
+/* eslint-disable */
 const CompetitionCarousel = () => {
   const setting = {
     dots: true,

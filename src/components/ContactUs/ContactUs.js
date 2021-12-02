@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Temp from '../verticalCarousal/tempFile';
 import data from './data.json';
 import './ContactUs.css';
@@ -10,12 +10,12 @@ const ContactUs = () => {
 			<div
 				className='headingContainer mod'
 				// style={{  }}
-				>
-				<img src={contact} />
+			>
+				<img src={contact} alt='' />
 			</div>
 			<Temp images={data.images} />
 		</div>
 	);
 };
-
+/* eslint-disable */
 export default ContactUs;

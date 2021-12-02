@@ -13,7 +13,7 @@ const Card = () => {
     </div>
   );
 };
-
+/* eslint-disable */
 export default function ScrollingGallery(props) {
   useEffect(() => {
     (function ($, undefined) {

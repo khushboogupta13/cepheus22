@@ -24,7 +24,7 @@ const IndividualEvent =()=>{
       console.log(event.posterURL);
       return(
             <div id="individualEvent" className="individualEvent">
-
+                  
                   <div className="eventHeading">
                         <img src={eventHeading} alt="eventHeading" />
                   </div>
