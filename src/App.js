@@ -12,20 +12,31 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
+import { Route , Switch} from "react-router-dom";
+import SiteContainer from "./siteContainer";
 
-function App() {
+
+const App = () =>{
   return (
-    <div className="App">
-      <Navbar />
-      <Home />
-      <AboutUs />
-      <Events />
-      <SchedulePage />
-      <FAQ />
-      <Sponsorship />
-      <ContactUs />
-      <IndividualEvent />
-    </div>
+      <div className="App">
+      <Switch>
+        <Route path='/' exact>
+          <SiteContainer />
+        </Route>
+        <Route
+          path="/event/:eventName" exact>
+                <IndividualEvent />
+          </Route>
+          <Route
+          path="/workshops/:eventName" exact>
+                <IndividualEvent />
+          </Route>
+          <Route
+          path="/talks/:eventName" exact>
+                <IndividualEvent />
+          </Route>
+        </Switch>
+      </div>  
   );
 }
 

@@ -19,6 +19,7 @@
     "react-dom": "^17.0.2",
     "react-id-swiper": "^4.0.0",
     "react-in-viewport": "^1.0.0-alpha.20",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^0.9.5",
     "react-scrollspy": "^3.4.3",
     "react-slick": "^0.28.1",
