@@ -1,6 +1,6 @@
 import {useState} from 'react';
-import { Link } from "react-router-dom";
 import "./Events.css";
+import {Link } from 'react-router-dom'
 import Heading from "./assets/Events.svg";
 import Competition from './assets/competitionbutton.png';
 import Talk from './assets/talkButton.png';
@@ -13,7 +13,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
+import data from './data.json'
+/* eslint-disable */
 const CompetitionCarousel = () => {
   const setting = {
     dots: true,
@@ -40,21 +41,18 @@ const CompetitionCarousel = () => {
       }
     ]
   }
-
+  
   
   return (
 
     <div className="event_slider">
       <Slider {...setting}>
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
-        <img src={poster} alt='' className="event_slide" />
+        {data.event.map((item) => (
+          <Link to={`event/${item.eventName}`}>
+              <img src={poster} alt='' className="event_slide" />
+          </Link>
+          ))}
+        
       </Slider>
     </div>
 )}
@@ -68,13 +66,17 @@ const WorkshopCarousel = () => {
 
         <div className="p-2 col-example text-left">
           <div className="workshop">
-            <img src = {poster} alt = "Bash It!" id = "workshop1" />
+          <Link to={`workshops/bashIt`}>
+              <img src={poster} alt='Bash It!' id = "workshop1" />
+          </Link>
           </div>
           </div>
 
         <div className="p-2 col-example text-left">
           <div className="workshop">
-            <img src = {poster} alt = "HackTheGames" id = "workshop2" />
+            <Link to={`workshops/hackTheGames`}>
+              <img src = {poster} alt = "HackTheGames" id = "workshop2" />
+            </Link>
           </div>
         </div>
         </div>
@@ -88,7 +90,9 @@ const TalkCarousel = () => {
       <div className="d-flex justify-content-center" id = "boxes">
           <div className="p-2 col-example text-center">
             <div className="talk" >
-              <img id="talk1" src = {poster} alt = "Make a Career in Robotics" />
+                <Link to={`talks/roboticsCareer`}>
+                  <img src = {poster} alt = "Make a Career in Robotics" id = "talk1" />
+                </Link>
             </div>
             </div>
           </div>
@@ -185,7 +189,7 @@ const Events=()=>{
               Event Description 
             </p>
           </div> */}
-
+    
     </div>)
 }
 

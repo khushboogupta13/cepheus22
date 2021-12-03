@@ -1,3 +1,68 @@
 .individualEvent{
       background-color: #131314;
+      color: white;
+      height: 110vh;
+      width: 100vw;
+}
+
+.content{
+      background-color: #111111;
+      justify-content: space-evenly;
+      position: relative;
+      z-index: 1000;
+      color: white;
+      display: flex;
+      flex: 5;
+      font-size: 2vw;
+      overflow: scroll;
+      overflow-x: hidden;
+      text-align: center;
+      border: solid 3px black;
+      border-radius: 30px;
+      padding: 15px;
+      /* height: fit-content; */
+      box-shadow: inset black 0px 0px 30px 0px;
+      flex-direction: column;
+      width: 45vw;
+      max-height: 60vh;
+      margin-left: 3rem !important;
+}
+
+#poster{
+      width: 30vw;
+      margin-left: 2rem;
+      border-radius: 10px;
+}
+
+#mainContent{
+      display: flex;
+      align-items: center;
+}
+
+.eventHeading{
+      margin-top: -2rem;
+      margin-bottom: 3rem;
+}
+
+@media (max-width: 500px){
+      #mainContent{
+            flex-direction: column;
+      }
+
+      #poster{
+            width: 50vw;
+            margin-left: 0;
+      }
+
+      .content{
+            width: 60vw;
+            font-size: 4vw;
+            margin-left: 0 !important;
+            max-height: 50vh;
+      }
+
+      .eventHeading{
+            margin-top: -1.5rem;
+            margin-bottom: 2rem;
+      }
 }
