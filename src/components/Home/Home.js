@@ -11,12 +11,14 @@ export default class Home extends Component {
     this.state = {
       width: 0,
       height: 0,
+      token: localStorage.getItem('token'),
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
   componentDidMount() {
     this.updateWindowDimensions();
     window.addEventListener("resize", this.updateWindowDimensions);
+    console.log(this.state.token);
   }
 
   componentWillUnmount() {
@@ -26,6 +28,7 @@ export default class Home extends Component {
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
+  
   render() {
     if (this.state.width > 1000) {
       return (
@@ -35,14 +38,12 @@ export default class Home extends Component {
             <div className="buttonsDiv">
               <div
                 className="buttonGlow"
-                onClick={() =>
-                  window.open(
-                    process.env.REACT_APP_BACKEND_URL + "/login",
-                    "_blank"
-                  )
-                }
               >
+                {this.state.token ? <div onClick={() => {this.setState({ token: null});localStorage.removeItem('token')}}>Log out</div> : 
+                <a href={process.env.React_App_Backend_url}>
                 Log in
+                </a>
+                }
               </div>
               {/* <div
                 className="buttonGlow"
@@ -96,8 +97,7 @@ export default class Home extends Component {
                 className="buttonGlow_mob"
                 onClick={() =>
                   window.open(
-                    process.env.REACT_APP_BACKEND_URL + "/login",
-                    "_blank"
+                    process.env.REACT_APP_BACKEND_URL
                   )
                 }
               >

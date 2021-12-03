@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './FAQ.css';
-// import FAQ_LOGO from './assets/Faq.png';
 import FAQ_LOGO_SVG from './assets/Faq.svg';
 import FAQ_BOX from './assets/box.png';
 import FAQ_BOTTOM_BOX from './assets/bottom_box.png';
