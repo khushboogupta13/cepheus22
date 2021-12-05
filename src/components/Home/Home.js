@@ -38,6 +38,7 @@ export default class Home extends Component {
             <div className="buttonsDiv">
               <div
                 className="buttonGlow"
+                onClick={()=>{console.log(process.env.React_App_Backend_url)}}
               >
                 {this.state.token ? <div onClick={() => {this.setState({ token: null});localStorage.removeItem('token')}}>Log out</div> : 
                 <a href={process.env.React_App_Backend_url}>
