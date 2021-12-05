@@ -4,7 +4,7 @@ import "./IndividualEvent.css";
 import data from "../Events/data.json";
 import poster from "./assets/poster.png";
 import eventHeading from "./assets/EventName.svg";
-import EventForm from "../Events/HostForm/EventForm";
+import EventForm from "../Events/EventRegistrationForm/EventForm";
 
 const IndividualEvent = () => {
   const { eventName } = useParams();
