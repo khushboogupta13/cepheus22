@@ -23,7 +23,6 @@ const AuctionHostDetails = (props) => {
       <div className={classes.input}>
         <label htmlFor={`playerid${i + 2}`}> Player ID {i + 2}:</label>
         <input id={`playerid${i + 2}`} type="text" placeholder="88888888" />
-        
       </div>
     );
     playersDetails.push(playerDetail);
@@ -32,7 +31,8 @@ const AuctionHostDetails = (props) => {
   return (
     <div className={classes.form_container}>
       <form>
-        <h2 className={classes.hi}>{`${props.eventName} Registration Form`}</h2>
+        <h2 className={classes.hi}>{props.eventName}</h2>
+        <h2 className={classes.hi}>Registration Form</h2>
         <hr className={classes.bline} />
         <div className={classes.input}>
           <label htmlFor="playerid1">Player ID 1:</label>
