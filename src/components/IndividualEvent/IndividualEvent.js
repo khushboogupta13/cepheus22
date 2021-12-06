@@ -41,6 +41,7 @@ const IndividualEvent = () => {
         <EventForm
           onCloseForm={hideEventRegistrationFormHandler}
           teamSize={event.size}
+          eventName={eventName}
         />
       )}
       <div id="individualEvent" className="individualEvent">

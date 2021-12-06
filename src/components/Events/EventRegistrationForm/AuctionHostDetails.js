@@ -1,51 +1,43 @@
-import React, { Component }  from 'react';
+import React, { Component } from "react";
 
 import { useState } from "react";
 import classes from "./AuctionHostDetails.module.css";
 
-const AuctionHostDetails = () => {
-  const [passwordInp, setPasswordInp] = useState("");
+const AuctionHostDetails = (props) => {
+  const teamSize = props.teamSize;
+  const [idInp, setidInp] = useState("");
   const [passIsValid, setPassIsValid] = useState(false);
 
-  const passwordChangeHandler = (event) => {
-    setPasswordInp(event.target.value);
-    if(passwordInp.trim().length >= 8){
+  const idChangeHandler = (event) => {
+    setidInp(event.target.value);
+    if (idInp.trim().length >= 8) {
       setPassIsValid(true);
-    }else{
+    } else {
       setPassIsValid(false);
     }
   };
 
+  const playersDetails = [];
+  for (var i = 0; i < teamSize; i++) {
+    const playerDetail = (
+      <div className={classes.input}>
+        <label htmlFor={`playerid${i + 2}`}> Player ID {i + 2}:</label>
+        <input id={`playerid${i + 2}`} type="text" placeholder="88888888"/>
+      </div>
+    );
+    playersDetails.push(playerDetail);
+  }
   return (
     <form>
-      <h2>Auction Host Details</h2>
+      <h2>{`${props.eventName} Registration Form`}</h2>
       <div className={classes.input}>
-        <label htmlFor="HostName">Name of the Host</label>
-        <input id="HostName" type="text" placeholder="John Watson" />
+        <label htmlFor="playerid1">Player ID 1:</label>
+        <input id="playerid1" type="text" value="12345678" readOnly />
       </div>
-
-      <div className={classes.input}>
-        <label htmlFor="Hostid">Host Id</label>
-        <input id="Hostid" type="text" placeholder="johnwatson1234" />
-      </div>
-
-      <div className={classes.input}>
-        <label htmlFor="Password">Password</label>
-        <div>
-          <input
-            id="Password"
-            type="password"
-            placeholder="*********"
-            onChange={passwordChangeHandler}
-            value={passwordInp}
-          />
-          {!passIsValid && (
-            <p className={classes.min}>
-              <span>*</span> Minimum 8 charcters required
-            </p>
-          )}
-        </div>
-      </div>
+      {teamSize > 1 ? playersDetails : <></>}
+      <h5>Are you sure you want to register?</h5>
+      <button type="submit">Yes, I want to register</button>
+      <button onClick={props.onCloseForm}>Cancel</button>
     </form>
   );
 };
