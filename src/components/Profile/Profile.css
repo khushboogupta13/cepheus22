@@ -6,7 +6,7 @@
 }
 
 .playerIdContainer {
-    height: 20vh;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@
     border: 0px solid black;
     background-color: white;
     border-radius: 10px;
-    width: 50vw;
+    width: 50%;
     padding: 10px;
     height: 50px;
     font-size: 1.5em; 
@@ -49,8 +49,8 @@
 }
 .registeredEvents {
     overflow-y: scroll;
-    height: 75vh;
-    width: 100vw;
+    height: 75%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -68,8 +68,8 @@
     box-shadow: 0px 6px 18px -9px rgba(0, 0, 0,0.75);
     transition: transform 100ms;
     cursor: pointer;
-    height: 35vh;
-    width: 40vw;
+    height: 35%;
+    width: 40%;
 }
 .eventCard:hover {
     transform: scale(1.05);

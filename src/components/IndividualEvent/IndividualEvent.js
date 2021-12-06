@@ -42,6 +42,7 @@ const IndividualEvent = () => {
           onCloseForm={hideEventRegistrationFormHandler}
           teamSize={event.size}
           eventName={eventName}
+          isWider="0"
         />
       )}
       <div id="individualEvent" className="individualEvent">

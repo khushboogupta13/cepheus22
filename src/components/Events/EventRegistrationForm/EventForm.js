@@ -18,7 +18,7 @@ const EventForm = (props) => {
   };
   console.log(props.teamSize);
   return (
-    <Modal onClose={props.onCloseForm}>
+    <Modal onClose={props.onCloseForm} isWider={props.isWider}>
       {!showObjFillForm && (
         <AuctionHostDetails
           teamSize={props.teamSize}

@@ -16,7 +16,6 @@ export default class Home extends Component {
       PopupProfile: false,
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-    
   }
   componentDidMount() {
     this.updateWindowDimensions();
@@ -32,16 +31,17 @@ export default class Home extends Component {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
 
-  closeProfile() {
-    this.setState({ PopupProfile: false });
-  }
-
   render() {
     if (this.state.width > 1030) {
       return (
         <>
           {this.state.PopupProfile && (
-            <Profile onCloseProfile={this.closeProfile} />
+            <Profile
+              onCloseProfile={() => {
+                this.setState({ PopupProfile: false });
+              }}
+              isWider="1"
+            />
           )}
           <div id="home" className="home container-fluid">
             <img src={leftSymbol} alt=" " className="left_symbol"></img>
