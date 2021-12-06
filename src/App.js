@@ -6,8 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import React,{useEffect} from "react";
 import { Route , Switch, useParams, useHistory,useLocation} from "react-router-dom";
 import SiteContainer from "./siteContainer";
-import Profile from "./components/Profile/Profile";
-
+import toast,{Toaster} from 'react-hot-toast';
 
 
 const App = () =>{
@@ -18,7 +17,8 @@ const App = () =>{
     console.log("window location", location.pathname === "/callback/")
     if(location.pathname === "/callback/"){
       localStorage.setItem('token', location.search.substring(1));
-      //console.log("callback  called",location.search.substring(1))
+      //console.log("callback  called")
+      toast.success("Successfully Loged In");
       history.push("/");
     }
   }
@@ -28,6 +28,7 @@ const App = () =>{
   
   return (
       <div className="App">
+      <Toaster />
       <Switch>
         <Route path='/' exact>
           <SiteContainer />

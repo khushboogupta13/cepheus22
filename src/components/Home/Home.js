@@ -4,7 +4,11 @@ import leftSymbol from "./assets/leftSymbol.svg";
 import centerSymbol from "./assets/centerSymbol.svg";
 import cepheusLogo from "./assets/cepheusLogo.svg";
 import ScrollingGallery from "./scrollingGallery/ScrollingGallery";
+<<<<<<< HEAD
+import toast,{Toaster} from 'react-hot-toast';
+=======
 import Profile from "../Profile/Profile";
+>>>>>>> 3d1f38b76b7eb7e96c0fb9b91deab22094c302db
 
 export default class Home extends Component {
   constructor(props) {
@@ -51,7 +55,10 @@ export default class Home extends Component {
                   <div
                     className="buttonGlow"
                     onClick={() => {
-                      this.setState({ PopupProfile: true });
+                      
+                      this.setState({ token: null });
+                      localStorage.removeItem("token");
+                      toast.success("Successfully LogOut!!")
                     }}
                   >
                     Profile
