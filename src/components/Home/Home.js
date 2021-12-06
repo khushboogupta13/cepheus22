@@ -4,6 +4,7 @@ import leftSymbol from "./assets/leftSymbol.svg";
 import centerSymbol from "./assets/centerSymbol.svg";
 import cepheusLogo from "./assets/cepheusLogo.svg";
 import ScrollingGallery from "./scrollingGallery/ScrollingGallery";
+import toast,{Toaster} from 'react-hot-toast';
 
 export default class Home extends Component {
   constructor(props) {
@@ -46,14 +47,16 @@ export default class Home extends Component {
                 {this.state.token ? (
                   <div
                     onClick={() => {
+                      
                       this.setState({ token: null });
                       localStorage.removeItem("token");
+                      toast.success("Successfully LogOut!!")
                     }}
                   >
                     Log out
                   </div>
                 ) : (
-                  <a href={process.env.React_App_Backend_url}>Log in</a>
+                  <a href={process.env.React_App_Backend_url+"/user/login"}>Log in</a>
                 )}
               </div>
               
