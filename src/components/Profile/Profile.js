@@ -14,7 +14,7 @@ const Profile = (props) => {
   }
 
   return (
-    <Modal onClose={props.onCloseProfile}>
+    <Modal onClose={props.onCloseProfile} isWider={props.isWider}>
       <div className="profile">
         <div className="playerIdContainer">
           <p className="playerIDText">Player ID:</p>
