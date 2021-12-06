@@ -36,6 +36,12 @@ export default class Home extends Component {
           <img src={leftSymbol} alt=" " className="left_symbol"></img>
           <div className="left_div">
             <div className="buttonsDiv">
+              {
+                this.state.token && 
+                <div className="buttonGlow" >
+                Profile
+                </div> 
+              }
               <div className="buttonGlow">
                 {this.state.token ? (
                   <div
@@ -50,17 +56,7 @@ export default class Home extends Component {
                   <a href={process.env.React_App_Backend_url}>Log in</a>
                 )}
               </div>
-              {/* <div
-                className="buttonGlow"
-                onClick={() =>
-                  window.open(
-                    process.env.REACT_APP_BACKEND_URL + "/login",
-                    "_blank"
-                  )
-                }
-              >
-                Sign up
-              </div> */}
+              
             </div>
           </div>
           <div className="center_div">

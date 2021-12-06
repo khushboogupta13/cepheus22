@@ -1,0 +1,116 @@
+
+.profile {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+.playerIdContainer {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerIDText {
+    color: white;
+    font-family: squidFont;
+    margin-right: 10px;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+.playerId {
+    border: 0px solid black;
+    background-color: white;
+    border-radius: 10px;
+    width: 50vw;
+    padding: 10px;
+    height: 50px;
+    font-size: 1.5em; 
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.playerId > img {
+    cursor: pointer;
+
+}
+
+.playerId > p {
+    font-family: squidFont;
+}
+
+.registeredEventsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registeredEvents {
+    overflow-y: scroll;
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.registeredEvents::-webkit-scrollbar {
+    display: none;
+  }
+  
+.eventCard {
+    margin: 20px;
+    border: 0px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px -9px rgba(0, 0, 0,0.75);
+    transition: transform 100ms;
+    cursor: pointer;
+    height: 35vh;
+    width: 40vw;
+}
+.eventCard:hover {
+    transform: scale(1.05);
+}
+.eventCard > img {
+    object-fit: fill;
+    width: 100%;
+    height: 25vh;
+    
+}
+.eventInfo {
+    margin-top: -9px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    border: 1;
+    background-color: white;
+}
+.eventInfo > h2 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: squidFont;
+}
+
+.copyText{
+    display: none;
+    position: absolute;
+    right: 0px;
+    bottom: -45px;
+    color: white;
+    font-size: 12px;
+}
+.copyIcon:hover + .copyText{
+    display: block;
+}
+
+.myEventsText {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+     color: white;
+     font-size: 1.5em;
+    font-family: squidFont;
+}

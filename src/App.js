@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import React,{useEffect} from "react";
 import { Route , Switch, useParams, useHistory,useLocation} from "react-router-dom";
 import SiteContainer from "./siteContainer";
+import Profile from "./components/Profile/Profile";
 
 
 
