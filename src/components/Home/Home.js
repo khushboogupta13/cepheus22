@@ -1,10 +1,14 @@
-import React, { Component } from "react";
+import React, { Component, Profiler } from "react";
 import "./Home.css";
 import leftSymbol from "./assets/leftSymbol.svg";
 import centerSymbol from "./assets/centerSymbol.svg";
 import cepheusLogo from "./assets/cepheusLogo.svg";
 import ScrollingGallery from "./scrollingGallery/ScrollingGallery";
+<<<<<<< HEAD
 import toast,{Toaster} from 'react-hot-toast';
+=======
+import Profile from "../Profile/Profile";
+>>>>>>> 3d1f38b76b7eb7e96c0fb9b91deab22094c302db
 
 export default class Home extends Component {
   constructor(props) {
@@ -13,8 +17,10 @@ export default class Home extends Component {
       width: 0,
       height: 0,
       token: localStorage.getItem("token"),
+      PopupProfile: false,
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    
   }
   componentDidMount() {
     this.updateWindowDimensions();
@@ -30,22 +36,24 @@ export default class Home extends Component {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
 
+  closeProfile() {
+    this.setState({ PopupProfile: false });
+  }
+
   render() {
     if (this.state.width > 1030) {
       return (
-        <div id="home" className="home container-fluid">
-          <img src={leftSymbol} alt=" " className="left_symbol"></img>
-          <div className="left_div">
-            <div className="buttonsDiv">
-              {
-                this.state.token && 
-                <div className="buttonGlow" >
-                Profile
-                </div> 
-              }
-              <div className="buttonGlow">
-                {this.state.token ? (
+        <>
+          {this.state.PopupProfile && (
+            <Profile onCloseProfile={this.closeProfile} />
+          )}
+          <div id="home" className="home container-fluid">
+            <img src={leftSymbol} alt=" " className="left_symbol"></img>
+            <div className="left_div">
+              <div className="buttonsDiv">
+                {this.state.token && (
                   <div
+                    className="buttonGlow"
                     onClick={() => {
                       
                       this.setState({ token: null });
@@ -53,34 +61,45 @@ export default class Home extends Component {
                       toast.success("Successfully LogOut!!")
                     }}
                   >
-                    Log out
+                    Profile
                   </div>
-                ) : (
-                  <a href={process.env.React_App_Backend_url+"/user/login"}>Log in</a>
                 )}
+                <div className="buttonGlow">
+                  {this.state.token ? (
+                    <div
+                      onClick={() => {
+                        this.setState({ token: null });
+                        localStorage.removeItem("token");
+                      }}
+                    >
+                      Log out
+                    </div>
+                  ) : (
+                    <a href={process.env.React_App_Backend_url}>Log in</a>
+                  )}
+                </div>
               </div>
-              
+            </div>
+            <div className="center_div">
+              <div className="centreSymbolContainer">
+                <img src={centerSymbol} alt=" " className="center_symbol"></img>
+              </div>
+              <div className="number_text">
+                <img src={cepheusLogo} alt=" " className="fes_title" />
+                22
+              </div>
+              <div className="title_text">ANNUAL TECHNICAL FEST OF IITGOA</div>
+            </div>
+            <div className="right_div">
+              <div className="top_gallery">
+                <ScrollingGallery bias={0} />
+              </div>
+              <div className="bottom_gallery">
+                <ScrollingGallery bias={2} />
+              </div>
             </div>
           </div>
-          <div className="center_div">
-            <div className="centreSymbolContainer">
-              <img src={centerSymbol} alt=" " className="center_symbol"></img>
-            </div>
-            <div className="number_text">
-              <img src={cepheusLogo} alt=" " className="fes_title" />
-              22
-            </div>
-            <div className="title_text">ANNUAL TECHNICAL FEST OF IITGOA</div>
-          </div>
-          <div className="right_div">
-            <div className="top_gallery">
-              <ScrollingGallery bias={0} />
-            </div>
-            <div className="bottom_gallery">
-              <ScrollingGallery bias={2} />
-            </div>
-          </div>
-        </div>
+        </>
       );
     } else {
       return (

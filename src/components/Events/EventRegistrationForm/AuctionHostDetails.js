@@ -27,6 +27,7 @@ const AuctionHostDetails = (props) => {
     );
     playersDetails.push(playerDetail);
   }
+
   return (
     <form>
       <h2 className={classes.hi}>{`${props.eventName} Registration Form`}</h2>
