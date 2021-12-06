@@ -32,7 +32,8 @@ const AuctionHostDetails = (props) => {
   return (
     <div className={classes.form_container}>
       <form>
-        <h2 className={classes.hi}>{`${props.eventName} Registration Form`}</h2>
+        <h2 className={classes.event_title}>{`${props.eventName}`}</h2>
+        <h2 className={classes.event_title}>Registration Form</h2>
         <hr className={classes.bline} />
         <div className={classes.input}>
           <label htmlFor="playerid1">Player ID 1:</label>
