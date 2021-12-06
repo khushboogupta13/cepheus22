@@ -9,7 +9,7 @@
       background-color: #111111;
       justify-content: space-evenly;
       position: relative;
-      z-index: 1000;
+      z-index: 100;
       color: white;
       display: flex;
       flex: 5;
