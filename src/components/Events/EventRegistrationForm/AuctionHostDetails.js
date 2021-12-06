@@ -22,24 +22,35 @@ const AuctionHostDetails = (props) => {
     const playerDetail = (
       <div className={classes.input}>
         <label htmlFor={`playerid${i + 2}`}> Player ID {i + 2}:</label>
-        <input id={`playerid${i + 2}`} type="text" placeholder="88888888"/>
+        <input id={`playerid${i + 2}`} type="text" placeholder="88888888" />
+        
       </div>
     );
     playersDetails.push(playerDetail);
   }
 
   return (
-    <form>
-      <h2 className={classes.hi}>{`${props.eventName} Registration Form`}</h2>
-      <div className={classes.input}>
-        <label htmlFor="playerid1">Player ID 1:</label>
-        <input id="playerid1" type="text" value="12345678" readOnly />
-      </div>
-      {teamSize > 1 ? playersDetails : <></>}
-      <h5>Are you sure you want to register?</h5>
-      <button type="submit">Yes, I want to register</button>
-      <button onClick={props.onCloseForm}>Cancel</button>
-    </form>
+    <div className={classes.form_container}>
+      <form>
+        <h2 className={classes.hi}>{`${props.eventName} Registration Form`}</h2>
+        <hr className={classes.bline} />
+        <div className={classes.input}>
+          <label htmlFor="playerid1">Player ID 1:</label>
+          <input id="playerid1" type="text" value="12345678" readOnly />
+        </div>
+        {teamSize > 1 ? playersDetails : <></>}
+        <hr className={classes.bline} />
+        <h5 className={classes.confmsg}>Are you sure you want to register?</h5>
+        <div className={classes.btn_container}>
+          <button className={classes.yes_btn} type="submit">
+            O
+          </button>
+          <button className={classes.no_btn} onClick={props.onCloseForm}>
+            X
+          </button>
+        </div>
+      </form>
+    </div>
   );
 };
 
