@@ -44,7 +44,7 @@
   font-family: squidFont;
   border-radius: 100%;
   background-color: rgb(30, 146, 30);
-  width: 8%;
+  width: 40px;
   font-size: 25px;
   color: white;
   border: none;
@@ -54,7 +54,7 @@
   font-family: squidFont;
   border-radius: 100%;
   background-color: rgb(211, 0, 0);
-  width: 8%;
+  width: 40px;
   font-size: 25px;
   /* padding: 10px; */
   color: white;
