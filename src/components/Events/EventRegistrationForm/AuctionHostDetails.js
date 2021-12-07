@@ -23,7 +23,6 @@ const AuctionHostDetails = (props) => {
       <div className={classes.input}>
         <label htmlFor={`playerid${i + 2}`}> Player ID {i + 2}:</label>
         <input id={`playerid${i + 2}`} type="text" placeholder="88888888" />
-        
       </div>
     );
     playersDetails.push(playerDetail);
