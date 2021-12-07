@@ -148,21 +148,29 @@ const Events=()=>{
 
           <div className="p-2 col-example text-left">
             <div className="buttons" id = "button1" onClick={competitionClick}>
-              <img src = {Competition} alt = "competitions" style={{maxHeight:"70%", maxWidth:"70%", margin:"auto"}} />
+              <img src = {Competition} alt = "competitions" id = "competitionImg"  />
             </div>
             </div>
 
           <div className="p-2 col-example text-left">
             <div className="buttons" id = "button2" onClick={workshopClick}>
-              <img src = {Workshop} alt = "workshops" style={{maxHeight:"70%", maxWidth:"70%", margin: "auto"}}/>
+              <img src = {Workshop} alt = "workshops" id="workshopImg" />
             </div>
           </div>
 
           <div className="p-2 col-example text-left">
             <div className="buttons" id = "button3" onClick={talkClick}>
-              <img src = {Talk} alt = "talks" style={{maxHeight:"70%", maxWidth:"70%", margin:"auto"}} />
+              <img src = {Talk} alt = "talks" id="talkImg" />
             </div>
           </div>
+          </div>
+
+          <div className="d-flex justify-content-center" id = "boxesMobile">
+            <div className="p-2 col-example text-left">
+              <div className="buttons" id = "buttonMobile" onClick={talkClick}>
+                <img src = {Talk} alt = "talks" id="talkImgMobile" />
+              </div>
+            </div>
           </div>
 
           <div className="backgroundLine" id = "backgroundLine">

@@ -101,23 +101,77 @@
   border-radius:5px
 }
 
+#competitionImg{
+  max-height: 70%;
+  max-width:70%;
+  margin:auto;
+}
+
+#workshopImg{
+  max-height: 70%;
+  max-width:70%;
+  margin:auto;
+}
+
+#talkImg{
+  max-height: 70%;
+  max-width:70%;
+  margin:auto;
+}
+
+
+#buttonMobile{
+  display: none;
+}
+
 @media (max-width: 500px){
+
+  #buttonMobile{
+    display: flex;
+  }
+
+  #talkImgMobile{
+    max-height: 85%;
+    max-width: 85%;
+    margin:auto;
+  }
+
+  #competitionImg{
+    max-height: 85%;
+    max-width:85%;
+    margin:auto;
+  }
+  
+  #workshopImg{
+    max-height: 85%;
+    max-width:85%;
+    margin:auto;
+  }
+
+  #buttonMobile{
+    margin-top: 2rem;
+  }
+
+  #button3{
+    display: none;
+  }
+
   #talk1{
     width:50vw;
   }
 
   #workshop1{
     width:35vw;
-    height:25vh;
-    margin-top:2rem;
+    height:20vh;
+    margin-top:4rem;
     border-radius:5px;
     margin-left: 0
   }
 
   #workshop2{
     width:35vw;
-    height:25vh;
-    margin-top:2rem;
+    height:20vh;
+    margin-top:4rem;
     border-radius:5px
   }
 
@@ -130,8 +184,8 @@
   }
 
   .buttons{
-    width: 6rem;
-    height: 5rem;
+    width: 30vw;
+    height: 10vh;
   }
   
   #button1{
@@ -149,11 +203,11 @@
   }
 
   #boxes{
-    margin-top: 7rem;
+    margin-top: 8rem;
   }
 
   .carousel{
-    margin-top: 10vh;
+    margin-top: 10vh !important;
     height: 55vh !important;
   }
 
