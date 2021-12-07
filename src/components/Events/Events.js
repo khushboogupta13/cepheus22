@@ -14,7 +14,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import data from './data.json'
-/* eslint-disable */
+
 const CompetitionCarousel = () => {
   const setting = {
     dots: true,
@@ -161,7 +161,7 @@ const Events=()=>{
           </div>
 
           <div className="backgroundLine" id = "backgroundLine">
-            <img src={BlackLine} style={{marginTop: "-9rem", zIndex:1, position: "relative"}} />
+            <img src={BlackLine} style={{marginTop: "-11rem", zIndex:1, position: "relative"}} />
           </div>
 
           <div className="backgroundElements" id="backgroundElements">
