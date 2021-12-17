@@ -3,52 +3,53 @@ import IndividualEvent from "./components/IndividualEvent/IndividualEvent";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React,{useEffect} from "react";
-import { Route , Switch, useParams, useHistory,useLocation} from "react-router-dom";
+import React, { useEffect } from "react";
+import {
+  Route,
+  Switch,
+  useParams,
+  useHistory,
+  useLocation,
+} from "react-router-dom";
 import SiteContainer from "./siteContainer";
-import toast,{Toaster} from 'react-hot-toast';
+import toast, { Toaster } from "react-hot-toast";
 
-
-const App = () =>{
+const App = () => {
   const history = useHistory();
   const location = useLocation();
-  
+
   function headerView() {
-    console.log("window location", location.pathname === "/callback/")
-    if(location.pathname === "/callback/"){
-      localStorage.setItem('token', location.search.substring(1));
+    console.log("window location", location.pathname === "/callback/");
+    if (location.pathname === "/callback/") {
+      localStorage.setItem("token", location.search.substring(1));
       //console.log("callback  called")
       toast.success("Successfully Loged In");
       history.push("/");
     }
   }
   useEffect(() => {
-    headerView();    
-  })
-  
+    headerView();
+  });
+
   return (
-      <div className="App">
+    <div className="App">
       <Toaster />
       <Switch>
-        <Route path='/' exact>
+        <Route path="/" exact>
           <SiteContainer />
         </Route>
-        <Route
-          path="/event/:eventName" exact>
-                <IndividualEvent />
-          </Route>
-          <Route
-          path="/workshops/:eventName" exact>
-                <IndividualEvent />
-          </Route>
-          <Route
-          path="/talks/:eventName" exact>
-                <IndividualEvent />
-          </Route>
-          
-        </Switch>
-      </div>  
+        <Route path="/event/:eventName" exact>
+          <IndividualEvent />
+        </Route>
+        <Route path="/workshops/:eventName" exact>
+          <IndividualEvent />
+        </Route>
+        <Route path="/talks/:eventName" exact>
+          <IndividualEvent />
+        </Route>
+      </Switch>
+    </div>
   );
-}
+};
 
 export default App;

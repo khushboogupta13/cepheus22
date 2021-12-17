@@ -13,7 +13,6 @@
 .stripContainer img {
 	width: 100%;
 	height: auto;
-	opacity: 0.5;
 }
 
 .navElemsContainer {
@@ -35,7 +34,14 @@
 
 @media only screen and (max-width: 1200px) {
 	.navbar {
-		font-size: 12px;
+		font-size: 11px;
+	}
+	.stripContainer{
+		width: 70%;
+
+	}
+	.navElemsContainer{
+		width: 64.5%;
 	}
 }
 
