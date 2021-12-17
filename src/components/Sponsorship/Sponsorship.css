@@ -7,8 +7,8 @@
 
 .headingContainer{
   position: relative;
-  width: 50%;
-  right: -50%;
+  width: 40%;
+  right: -45%;
 }
 
 .headingContainer img{
@@ -17,13 +17,14 @@
 }
 
 .imagesContainer{
-  margin-top: 3em;
+  position: relative;
+  top: 5em;
   display: flex;
   justify-content: space-between;
 }
 
 .lImage, .rImage{
-  height: 35em;
+  height: 45em;
   width: auto;
 }
 
@@ -41,6 +42,20 @@
 @media only screen and (max-width: 1200px) {
   .headingContainer{
     width: 30%;
+    right: -65%;
+    top:2.8em;
+  }
+  .imagesContainer{
+    top: 10em;
+  }
+  .lImage, .rImage{
+    height: 30em;
+  }
+}
+
+@media only screen and (max-width:700px) {
+  .imagesContainer{
+    display: none;
   }
 }
 
