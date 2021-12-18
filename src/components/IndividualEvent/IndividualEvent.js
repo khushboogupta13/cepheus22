@@ -4,10 +4,11 @@ import "./IndividualEvent.css";
 import data from "../Events/data.json";
 import poster from "./assets/poster.png";
 import EventForm from "../Events/EventRegistrationForm/EventForm";
+import Register from './assets/register.svg';
 /* eslint-disable spaced-comment */
 /// <reference types="react-scripts" />
 
-const baseURL = "./assets/";
+const baseURL = process.env.PUBLIC_URL + '/images/';
 
 const IndividualEvent = () => {
   const { eventName } = useParams();
@@ -50,7 +51,7 @@ const IndividualEvent = () => {
       )}
       <div id="individualEvent" className="individualEvent">
         <div className="eventHeading">
-          <img src={require(`${ baseURL + event.eventHeading }`)} alt="eventHeading" />
+          <img src={`${ baseURL + event.eventHeading }`} alt="eventHeading" />
         </div>
 
         <div className="d-flex justify-content-center" id="mainContent">
@@ -65,8 +66,14 @@ const IndividualEvent = () => {
               <p className="eventContent"> {event.content} </p>
               <p> Team size: {event.size}</p>
             </div>
-            <button onClick={formPopUp}>Register</button>
+
+            <div className="registerButton" onClick={formPopUp}>
+              <img src={Register} alt="register" />
+            </div>
+
+            {/* <button className="registerButton" onClick={formPopUp}>Register</button> */}
           </div>
+
         </div>
       </div>
     </Fragment>

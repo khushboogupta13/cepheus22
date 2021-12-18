@@ -15,14 +15,14 @@
       },
       {
             "eventName": "beatTheStreet",
-            "eventHeading" : "EventName.svg",
+            "eventHeading" : "beat_the_street.svg",
             "size": 3,
             "posterURL": "images/Overall.png",
             "content" : "Whether you are a newbie to the trading and investing world or have some prior experience in markets, Cepheus brings to you its first ever mock trading competition organised by Alpha (Finance Club of IIT GOA). The stakes are high and so are the rewards. The trading of assets will happen with virtual money but the winners on the leaderboard (ranking based on profits made) can walk home with cash prizes and more."
       },
       {
             "eventName" : "arduinosTrial",
-            "eventHeading" : "EventName.svg",
+            "eventHeading" : "arduino_trial.svg",
             "size": 3,
             "posterURL": "images/Overall.png",
             "content" : "In this event participants get an opportunity to test their skills of Arduino programming, opening doors to infinite possibilities along the way. The event is conducted in 2 rounds, with each round spanning over 3 hours. In each round, participants are quizzed to hone their theoretical knowledge of Arduino and its working, and given gripping problem statements to devise creative solutions for."
@@ -54,6 +54,20 @@
             "size": 3,
             "posterURL": "images/Overall.png",
             "content" : "This event offers you an opportunity to test your digital circuit problem-solving skills using logic and innovation while retaining the spirit of collective learning. The two-stage submission process involves tackling some real-life problems while being constrained to a given time."
+      },
+      {
+            "eventName" : "hackOverflow",
+            "eventHeading" : "hackoverflow.svg",
+            "size" : 3,
+            "posterURL": "images/Overall.png",
+            "content" : "HackOverflow is a 36-hour long hackathon, where you will compete against other teams to build an application that solves a technological problem. Join in groups of 3 in this race against time to win HackOverflow."
+      },
+      {
+            "eventName" : "stratathon",
+            "eventHeading" : "stratathon.svg",
+            "size" : 1,
+            "posterURL" : "images/Overall.png",
+            "content" : "What if we told you that you could play games and learn at the same time? This event, being conducted in collaboration with DTU, will give participants a chance to employ their mental faculties into solving strategy based games involving the complex but beautiful concepts of Game Theory.  The event consists of a number of intriguing mind-based games on day-to-day situations. Participants will be facing opponents in multiplayer 1v1 formats and only a few selected after each round will proceed to the finals. After each game, participants can observe the scores to try and exploit their opponent’s weaknesses, while themselves playing to their strength! Get, set, Strategize!"
       }
 ],
 "workshops":[
