@@ -13,7 +13,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import data from './data.json'
-import poster from './assets/poster.png';
 
 const baseURL = process.env.PUBLIC_URL + '/images/';
 
