@@ -3,8 +3,11 @@ import { useLocation, useParams } from "react-router";
 import "./IndividualEvent.css";
 import data from "../Events/data.json";
 import poster from "./assets/poster.png";
-import eventHeading from "./assets/EventName.svg";
 import EventForm from "../Events/EventRegistrationForm/EventForm";
+/* eslint-disable spaced-comment */
+/// <reference types="react-scripts" />
+
+const baseURL = "./assets/";
 
 const IndividualEvent = () => {
   const { eventName } = useParams();
@@ -47,7 +50,7 @@ const IndividualEvent = () => {
       )}
       <div id="individualEvent" className="individualEvent">
         <div className="eventHeading">
-          <img src={eventHeading} alt="eventHeading" />
+          <img src={require(`${ baseURL + event.eventHeading }`)} alt="eventHeading" />
         </div>
 
         <div className="d-flex justify-content-center" id="mainContent">
@@ -59,7 +62,7 @@ const IndividualEvent = () => {
 
           <div className="p-2 col-example text-left">
             <div className="content">
-              <p> {event.content} </p>
+              <p className="eventContent"> {event.content} </p>
               <p> Team size: {event.size}</p>
             </div>
             <button onClick={formPopUp}>Register</button>
