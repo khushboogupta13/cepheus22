@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import "./Events.css";
 import {Link } from 'react-router-dom'
-import Heading from "./assets/Events.svg";
+import Heading from "./assets/event_heading.svg";
 import Competition from './assets/competitionbutton.png';
 import Talk from './assets/talkButton.png';
 import Workshop from './assets/workshopButton.png';
