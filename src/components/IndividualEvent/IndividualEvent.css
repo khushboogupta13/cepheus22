@@ -33,6 +33,11 @@
       border-radius: 10px;
 }
 
+#eventPoster{
+      border-width: 2rem;
+      border-color: white;
+}
+
 #mainContent{
       display: flex;
       align-items: center;
@@ -65,7 +70,7 @@
       }
 
       #poster{
-            width: 50vw;
+            width: 80vw;
             margin-left: 0;
       }
 

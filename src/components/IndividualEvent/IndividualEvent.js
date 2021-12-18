@@ -2,7 +2,6 @@ import React, { Fragment, useState } from "react";
 import { useLocation, useParams } from "react-router";
 import "./IndividualEvent.css";
 import data from "../Events/data.json";
-import poster from "./assets/poster.png";
 import EventForm from "../Events/EventRegistrationForm/EventForm";
 import Register from './assets/register.svg';
 /* eslint-disable spaced-comment */
@@ -57,10 +56,10 @@ const IndividualEvent = () => {
         <div className="d-flex justify-content-center" id="mainContent">
           <div className="p-2 col-example text-left">
             <div className="poster">
-              <img src={poster} alt={event.eventName} id="poster" />
+              <img id="eventPoster" src={`${ baseURL + event.posterURL }`} alt={event.eventName} id="poster" />
             </div>
           </div>
-
+          
           <div className="p-2 col-example text-left">
             <div className="content">
               <p className="eventContent"> {event.content} </p>
