@@ -58,6 +58,12 @@
       margin-left: 18rem;
 }
 
+.registerButton:hover{
+      transform: scale(1.02) perspective(0px);
+      box-shadow: 0 10px 10px #131314;
+      cursor: pointer;
+}
+
 @media (max-width: 500px){
       
       .registerButton{
