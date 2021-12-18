@@ -8,12 +8,14 @@ import Workshop from './assets/workshopButton.png';
 import Doll from './assets/Doll.svg';
 import Kids from './assets/Kids.svg';
 import BlackLine from './assets/blackLine.svg';
-import poster from './assets/poster.png'
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import data from './data.json'
+import poster from './assets/poster.png';
+
+const baseURL = process.env.PUBLIC_URL + '/images/';
 
 const CompetitionCarousel = () => {
   const setting = {
@@ -49,7 +51,7 @@ const CompetitionCarousel = () => {
       <Slider {...setting}>
         {data.event.map((item) => (
           <Link to={`event/${item.eventName}`}>
-              <img src={poster} alt='' className="event_slide" />
+              <img src={`${ baseURL + item.posterURL }`} alt='' className="event_slide" />
           </Link>
           ))}
         
