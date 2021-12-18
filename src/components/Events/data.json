@@ -84,6 +84,13 @@
             "posterURL": "images/Overall.png",
             "size": 1,
             "content" : "In this workshop, you will learn to write Shell Scripts for Bash, the world-famous login shell for most Linux distributions. Bash is an essential skill in development fields like Cloud technology, Linux system administration, DevOps and much more. Where 90% of the world's technological infrastructure runs on Linux, you should not leave behind this incredible skill on your way to becoming a software developer. Don't have a Linux system? No worries! We will take care of that. So, be prepared to be amazed by the power of bash and its automation capabilities."
+      },
+      {
+            "eventName" : "playWithMicro",
+            "eventHeading" : "EventName.svg",
+            "posterURL": "images/Overall.png",
+            "size": 1,
+            "content" : "Play with Micro:bit is an interactive avenue for newcomers to learn more about Micro:bit, its implications, and programming, thus enabling them to delve deeper into the world of the amazingly handy device. The workshop will also include the building of small-scale beginner-friendly projects to give participants a hands-on experience!"
       }
 ],
 "talks":[
@@ -93,6 +100,13 @@
             "size": 1,
             "posterURL": "images/Overall.png",
             "content" : "Robotics is a mixture of science, engineering and technology. Considered as a high-end professional career, there is a demand for robotic engineers which we only expect to grow in the future. In this talk by Sarthak Upadhyay from Addverb, we’ll learn how to successfully make an excellent career in Robotics."
+      },
+      {
+            "eventName" : "cybersecWebinar",
+            "eventHeading" : "EventName.svg",
+            "size" : 1,
+            "posterURL": "images/Overall.png",
+            "content" : "In a world of growing dependency on the virtual, the domain of cybersecurity has become increasingly quintessential. Presenting his insights on that, Speaker will be delivering a webinar that will help prospective aspirants understand the importance and scope of cybersecurity in this day and age."
       }
 ]
 }
