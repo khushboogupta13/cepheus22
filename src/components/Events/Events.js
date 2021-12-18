@@ -69,37 +69,57 @@ const WorkshopCarousel = () => {
         <div className="p-2 col-example text-left">
           <div className="workshop">
           <Link to={`workshops/bashIt`}>
-              <img src={poster} alt='Bash It!' id = "workshop1" />
+              <img src={`${ baseURL + 'bash_it.png' }`} alt='Bash It!' id = "workshop1" />
           </Link>
           </div>
           </div>
 
         <div className="p-2 col-example text-left">
           <div className="workshop">
-            <Link to={`workshops/hackTheGames`}>
-              <img src = {poster} alt = "HackTheGames" id = "workshop2" />
+            <Link to={`workshops/playWithMicro`}>
+              <img src = {`${ baseURL + 'play_microbit.png' }`} alt = "PlayWithMicro" id = "workshop2" />
             </Link>
           </div>
         </div>
+
+        <div className="p-2 col-example text-left">
+          <div className="workshop">
+            <Link to={`workshops/hackTheGames`}>
+              <img src = {`${ baseURL + 'hack_the_game.png' }`} alt = "HackTheGames" id = "workshop2" />
+            </Link>
+          </div>
+        </div>
+
+
         </div>
     </div>)}
 
 const TalkCarousel = () => {
   return (
 
-    <div className="oneTalk">
+    <div className="twoWorkshops">
 
       <div className="d-flex justify-content-center" id = "boxes">
-          <div className="p-2 col-example text-center">
-            <div className="talk" >
+          <div className="p-2 col-example text-left">
+            <div className="workshop" >
                 <Link to={`talks/roboticsCareer`}>
-                  <img src = {poster} alt = "Make a Career in Robotics" id = "talk1" />
+                  <img src = {`${ baseURL + 'robotics_career.png' }`} alt = "Make a Career in Robotics" id = "workshop1" />
                 </Link>
             </div>
+          </div>
+            
+            <div className="p-2 col-example text-left">
+              <div className="workshop" >
+                  <Link to={`talks/cybersecWebinar`}>
+                    <img src = {`${ baseURL + 'cybersec_webinar.png' }`} alt = "Cybersec Webinar" id = "workshop2" />
+                  </Link>
+              </div>
+            </div>
+
+            
+
             </div>
           </div>
-
-    </div>
 )}
 
 const Events=()=>{
