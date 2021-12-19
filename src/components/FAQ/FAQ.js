@@ -66,8 +66,15 @@ const a14 = 'All the submissions will be checked for plagiarism using a high end
 const q15 = 'Q15. Can we skip one level and go to the next level?';
 const a15 = 'No. The next level can be unlocked only when all of the previous levels have been successfully completed. There would be five levels in total.';
 
-const q16 = 'Q16.';
-const a16 = '';
+const q16 = 'Q16. Name some resources, references and  some softwares for CTF ';
+const a16 = `Try to watch Cybermentor videos for web or pwn challenges. Also you can try some pentesting on Tryhackme. You may need debian OS for some questions too. The best option is to do a google search on your queries as Google surfing can provide easiest solutions to all problems. `;
+
+const q17 = "Q17. Do we need any hardware for the workshop?";
+const a17 = `No, we’ll be doing it on an online simulation. If you wish to do it on the hardware, you can purchase a micro:bit.`;
+
+const q18 = 'Q18. What tech stacks are allowed in Hackoverflow?';
+const a18 = `MERN, MEAN, Flask, Django, React Native, Flutter, Java, Kotlin`;
+
 const faqList = [
 	<Card que={q1} ans={a1} />,
 	<Card que={q2} ans={a2} />,
@@ -144,7 +151,6 @@ const FAQ = () => {
 	const mediaDesk4Match = window.matchMedia('(max-width: 1500px)');
 	const [desk4, setDesk4] = useState(mediaDesk4Match.matches);
 
-	const [col, setCol] = useState(5);
 
 	useEffect(() => {
 		const handlerMobile = (e) => setMobile(e.matches);
@@ -235,10 +241,10 @@ const FAQ = () => {
 		})(jQuery);
 
 		 jQuery('#example1').loopScroll();
-		// jQuery('#example2').loopScroll({ direction: 'downwards', speed: 120 });
-		// jQuery('#example3').loopScroll();
-		// jQuery('#example4').loopScroll({ direction: 'downwards', speed: 120 });
-		// jQuery('#example5').loopScroll();
+		jQuery('#example2').loopScroll({ direction: 'downwards', speed: 120 });
+		jQuery('#example3').loopScroll();
+		jQuery('#example4').loopScroll({ direction: 'downwards', speed: 120 });
+		jQuery('#example5').loopScroll();
 	});
 
 	function handler() {

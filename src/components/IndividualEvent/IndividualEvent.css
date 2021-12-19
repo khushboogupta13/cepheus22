@@ -64,11 +64,30 @@
       cursor: pointer;
 }
 
+.rulebookButton{
+      border-radius: 12px;
+      background-color: white;
+      width: 20vw;
+      margin-top: 2rem;
+      margin-left: 16rem;
+}
+
+.rulebookButton:hover{
+      transform: scale(1.02) perspective(0px);
+      box-shadow: 0 10px 10px #131314;
+      cursor: pointer;
+}
+
 @media (max-width: 500px){
       
       .registerButton{
             width: 40vw;
             margin-left: 2rem;
+      }
+
+      .rulebookButton{
+            width: 60vw;
+            margin-left: 0rem;
       }
 
       #mainContent{

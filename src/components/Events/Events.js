@@ -3,7 +3,7 @@ import "./Events.css";
 import {Link } from 'react-router-dom'
 import Heading from "./assets/event_heading.svg";
 import Competition from './assets/competitionbutton.png';
-import Talk from './assets/talkButton.png';
+import Rulebook from './assets/rulebook.png';
 import Workshop from './assets/workshopButton.png';
 import Doll from './assets/Doll.svg';
 import Kids from './assets/Kids.svg';
@@ -63,7 +63,7 @@ const mobile_settings = {
     centerMode: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     cssEase: 'linear',
     centerPadding: 0,
@@ -90,39 +90,19 @@ const WorkshopCarousel = () => {
 
     <div className="twoWorkshops">
         
-        {/* desktop view */}
         <div className="workshopsDesktop">
-        <div className="d-flex justify-content-center" id = "boxes">
-        
-        <div className="p-2 col-example text-left">
-          <div className="workshop">
-          <Link to={`workshops/bashIt`}>
-              <img src={`${ baseURL + 'bash_it.png' }`} alt='Bash It!' id = "workshop1" />
-          </Link>
-          </div>
-          </div>
-
-        <div className="p-2 col-example text-left">
-          <div className="workshop">
-            <Link to={`workshops/playWithMicro`}>
-              <img src = {`${ baseURL + 'play_microbit.png' }`} alt = "PlayWithMicro" id = "workshop2" />
-            </Link>
+            <div className="event_slider">
+              <Slider {...mobile_settings}>
+                {data.workshops.map((item) => (
+                  <Link to={`workshops/${item.eventName}`}>
+                      <img src={`${ baseURL + item.posterURL }`} alt='' className="event_slide" />
+                  </Link>
+                  ))}
+            </Slider>
           </div>
         </div>
 
-        <div className="p-2 col-example text-left">
-          <div className="workshop">
-            <Link to={`workshops/hackTheGames`}>
-              <img src = {`${ baseURL + 'hack_the_game.png' }`} alt = "HackTheGames" id = "workshop2" />
-            </Link>
-          </div>
-        </div>
-
-        </div>
-        </div>
-      
-      {/* mobile view */}
-      <div className="workshopsMobile">
+        <div className="workshopsMobile">
         <Slider {...mobile_settings}>
                 <div>
                   <img
@@ -144,40 +124,7 @@ const WorkshopCarousel = () => {
                     style={{ width: '60vw', height: '65vw', marginTop:"3rem"}}
                   />
                 </div>
-              </Slider>
-      </div>
 
-    </div>)}
-
-const TalkCarousel = () => {
-  return (
-    
-    <div className="twoWorkshops">
-      
-      <div className="talksDesktop">
-        <div className="d-flex justify-content-center" id = "boxes">
-            <div className="p-2 col-example text-left">
-              <div className="workshop" >
-                  <Link to={`talks/roboticsCareer`}>
-                    <img src = {`${ baseURL + 'robotics_career.png' }`} alt = "Make a Career in Robotics" id = "workshop1" />
-                  </Link>
-              </div>
-            </div>
-              
-              <div className="p-2 col-example text-left">
-                <div className="workshop" >
-                    <Link to={`talks/cybersecWebinar`}>
-                      <img src = {`${ baseURL + 'cybersec_webinar.png' }`} alt = "Cybersec Webinar" id = "workshop2" />
-                    </Link>
-                </div>
-              </div>
-
-              </div>
-            </div>
-
-            {/* mobile view */}
-      <div className="talksMobile">
-        <Slider {...mobile_settings}>
                 <div>
                   <img
                     src={`${ baseURL + 'robotics_career.png' }`}
@@ -185,17 +132,10 @@ const TalkCarousel = () => {
                   />
                 </div>
 
-                <div>
-                  <img
-                    src={`${ baseURL + 'cybersec_webinar.png' }`}
-                    style={{ width: '60vw', height: '65vw', marginTop:"3rem" }}
-                  />
-                </div>
               </Slider>
-      </div>
-
-          </div>
-)}
+      </div> 
+    
+    </div>)}
 
 const Events=()=>{
 
@@ -213,13 +153,10 @@ const Events=()=>{
   };
 
   const [competitionCards, setCompetitionCards] = useState(true);
-  const competitionClick = () => {setCompetitionCards(true); setTalkCards(false); setWorkshopCards(false)};
+  const competitionClick = () => {setCompetitionCards(true); setWorkshopCards(false)};
 
   const [workshopCards, setWorkshopCards] = useState(false)
-  const workshopClick = () => {setWorkshopCards(true); setCompetitionCards(false); setTalkCards(false)};
-  
-  const [talkCards, setTalkCards] = useState(false)
-  const talkClick = () => {setTalkCards(true); setWorkshopCards(false); setCompetitionCards(false)};
+  const workshopClick = () => {setWorkshopCards(true); setCompetitionCards(false)};
   
   return(
     <div id="events" className="events">
@@ -243,16 +180,16 @@ const Events=()=>{
           </div>
 
           <div className="p-2 col-example text-left">
-            <div className="buttons" id = "button3" onClick={talkClick}>
-              <img src = {Talk} alt = "talks" id="talkImg" />
+            <div className="buttons" id = "button3" >
+              <img src = {Rulebook} alt = "Rulebook" id="talkImg" />
             </div>
           </div>
           </div>
 
           <div className="d-flex justify-content-center" id = "boxesMobile">
             <div className="p-2 col-example text-left">
-              <div className="buttons" id = "buttonMobile" onClick={talkClick}>
-                <img src = {Talk} alt = "talks" id="talkImgMobile" />
+              <div className="buttons" id = "buttonMobile" >
+                <img src = {Rulebook} alt = "rulebook" id="talkImgMobile" />
               </div>
             </div>
           </div>
@@ -273,7 +210,6 @@ const Events=()=>{
           <div className="carousel">
             {competitionCards?  <CompetitionCarousel /> : "" }
             {workshopCards?  <WorkshopCarousel /> : "" }
-            {talkCards?  <TalkCarousel /> : "" }
           </div> 
 
     
