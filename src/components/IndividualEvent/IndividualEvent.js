@@ -74,14 +74,7 @@ const IndividualEvent = () => {
             <div className="registerButton" onClick={formPopUp}>
               <img src={Register} alt="Register" style={{ maxWidth: "100%" }} />
             </div>
-
-            <div className="rulebookButton">
-              <img
-                src={Rulebook}
-                alt="Fest Rulebook"
-                style={{ maxWidth: "100%" }}
-              />
-            </div>
+          
           </div>
         </div>
       </div>
