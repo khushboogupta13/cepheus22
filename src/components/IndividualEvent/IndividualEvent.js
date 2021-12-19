@@ -3,7 +3,7 @@ import { useLocation, useParams } from "react-router";
 import "./IndividualEvent.css";
 import data from "../Events/data.json";
 import EventForm from "../Events/EventRegistrationForm/EventForm";
-import Register from './assets/register.svg';
+import Register from './assets/register.png';
 /* eslint-disable spaced-comment */
 /// <reference types="react-scripts" />
 
@@ -67,7 +67,7 @@ const IndividualEvent = () => {
             </div>
 
             <div className="registerButton" onClick={formPopUp}>
-              <img src={Register} alt="register" />
+              <img src={Register} alt="register" style={{maxWidth:"100%"}}/>
             </div>
 
             {/* <button className="registerButton" onClick={formPopUp}>Register</button> */}
