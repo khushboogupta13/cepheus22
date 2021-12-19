@@ -111,23 +111,37 @@ export default class Home extends Component {
           </div>
           <div className="bottom_div">
             <div className="buttonsDiv_mob">
+              {this.state.token && (
+                  <div
+                    className="buttonGlow_mob"
+                    onClick={() => {
+                      this.setState({ PopupProfile: true });
+                    }}
+                  >
+                    Profile
+                  </div>
+              )}
               <div
                 className="buttonGlow_mob"
                 onClick={() => window.open(process.env.REACT_APP_BACKEND_URL)}
               >
                 Log in
               </div>
-              {/* <div
-                className="buttonGlow_mob"
-                onClick={() =>
-                  window.open(
-                    process.env.REACT_APP_BACKEND_URL + "/login",
-                    "_blank"
-                  )
-                }
-              >
-                Sign up
-              </div> */}
+              <div className="buttonGlow_mob">
+                  {this.state.token ? (
+                    <div
+                      onClick={() => {
+                        this.setState({ token: null });
+                        localStorage.removeItem("token");
+                        toast.success("Successfully LogOut!!!")
+                      }}
+                    >
+                      Log out
+                    </div>
+                  ) : (
+                    <a href={process.env.React_App_Backend_url+"user/login"}>Log in</a>
+                  )}
+                </div>
             </div>
           </div>
         </div>
