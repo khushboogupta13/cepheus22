@@ -13,11 +13,11 @@ const baseURL = process.env.PUBLIC_URL + '/images/';
 const IndividualEvent = () => {
   const { eventName } = useParams();
   const [PopupRegistration, setPopupRegistration] = useState(false);
-
+  
   let event;
   let eventi = useLocation();
   eventi = eventi.pathname.substring(1, eventi.pathname.length);
-
+  
   const eventType = eventi.substring(0, eventi.indexOf("/"));
 
   if (eventType === "event") {
@@ -26,10 +26,6 @@ const IndividualEvent = () => {
   if (eventType === "workshops") {
     event = data.workshops.find((e) => e.eventName === eventName);
   }
-  if (eventType === "talks") {
-    event = data.talks.find((e) => e.eventName === eventName);
-  }
-  console.log(event.posterURL);
 
   const formPopUp = () => {
     setPopupRegistration(true);
@@ -69,10 +65,6 @@ const IndividualEvent = () => {
 
             <div className="registerButton" onClick={formPopUp}>
               <img src={Register} alt="Register" style={{maxWidth:"100%"}}/>
-            </div>
-
-            <div className="rulebookButton">
-              <img src={Rulebook} alt="Fest Rulebook" style={{maxWidth:"100%"}}/>
             </div>
 
           </div>
