@@ -4,6 +4,7 @@ import "./IndividualEvent.css";
 import data from "../Events/data.json";
 import EventForm from "../Events/EventRegistrationForm/EventForm";
 import Register from './assets/register.png';
+import Rulebook from './assets/fest_rulebook.png'
 /* eslint-disable spaced-comment */
 /// <reference types="react-scripts" />
 
@@ -67,10 +68,13 @@ const IndividualEvent = () => {
             </div>
 
             <div className="registerButton" onClick={formPopUp}>
-              <img src={Register} alt="register" style={{maxWidth:"100%"}}/>
+              <img src={Register} alt="Register" style={{maxWidth:"100%"}}/>
             </div>
 
-            {/* <button className="registerButton" onClick={formPopUp}>Register</button> */}
+            <div className="rulebookButton">
+              <img src={Rulebook} alt="Fest Rulebook" style={{maxWidth:"100%"}}/>
+            </div>
+
           </div>
 
         </div>
