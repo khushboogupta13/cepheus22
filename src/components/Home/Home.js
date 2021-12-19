@@ -52,7 +52,7 @@ export default class Home extends Component {
                   <div
                     className="buttonGlow"
                     onClick={() => {
-                      this.setState({ PopupProfile: true });
+                       this.setState({PopupProfile:true});
                     }}
                   >
                     Profile

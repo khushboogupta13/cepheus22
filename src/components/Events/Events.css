@@ -7,7 +7,6 @@
 }
 
 #boxes{
-  margin-top: 2rem;
   z-index: 2;
   position: relative;
 }
@@ -15,7 +14,7 @@
 .buttons{
   background-color: #FFFFFF;
   border-radius: 1rem;
-  height: 7rem;
+  height: 18vh;
   width: 8rem;
   box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
@@ -24,6 +23,7 @@
 .buttons:hover{
   transform: scale(1.02) perspective(0px);
   box-shadow: 0 10px 10px #131314;
+  cursor: pointer;
 }
 
 @media (min-width: 1366px) {
@@ -101,23 +101,77 @@
   border-radius:5px
 }
 
+#competitionImg{
+  max-height: 70%;
+  max-width:70%;
+  margin:auto;
+}
+
+#workshopImg{
+  max-height: 70%;
+  max-width:70%;
+  margin:auto;
+}
+
+#talkImg{
+  max-height: 70%;
+  max-width:70%;
+  margin:auto;
+}
+
+
+#buttonMobile{
+  display: none;
+}
+
 @media (max-width: 500px){
+
+  #buttonMobile{
+    display: flex;
+  }
+
+  #talkImgMobile{
+    max-height: 85%;
+    max-width: 85%;
+    margin:auto;
+  }
+
+  #competitionImg{
+    max-height: 85%;
+    max-width:85%;
+    margin:auto;
+  }
+  
+  #workshopImg{
+    max-height: 85%;
+    max-width:85%;
+    margin:auto;
+  }
+
+  #buttonMobile{
+    margin-top: 2rem;
+  }
+
+  #button3{
+    display: none;
+  }
+
   #talk1{
     width:50vw;
   }
 
   #workshop1{
     width:35vw;
-    height:25vh;
-    margin-top:2rem;
+    height:20vh;
+    margin-top:4rem;
     border-radius:5px;
     margin-left: 0
   }
 
   #workshop2{
     width:35vw;
-    height:25vh;
-    margin-top:2rem;
+    height:20vh;
+    margin-top:4rem;
     border-radius:5px
   }
 
@@ -130,8 +184,8 @@
   }
 
   .buttons{
-    width: 6rem;
-    height: 5rem;
+    width: 30vw;
+    height: 10vh;
   }
   
   #button1{
@@ -149,11 +203,11 @@
   }
 
   #boxes{
-    margin-top: 7rem;
+    margin-top: 8rem;
   }
 
   .carousel{
-    margin-top: 10vh;
+    margin-top: 10vh !important;
     height: 55vh !important;
   }
 
@@ -183,7 +237,7 @@
 .carousel {
   background-color:#131314;
   height: 70vh;
-  margin-top: 20vh;
+  margin-top: 18vh;
   z-index: 1;
 }
 
@@ -195,10 +249,10 @@
 }
 
 .event_slide {
-  margin-left: 2.2vw;
+  margin-left: 2.1vw;
   height: 24vh;
   border-radius: 2vh;
-  transform: scaleY(0.9);
+  transform: scale(0.93, 0.9);
 }
 
 .slick-center {
@@ -227,13 +281,28 @@ li.slick-active {
   color: #131314 !important;
 }
 
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1367px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+  .event_slider {
+    width: 60vw;
+    margin-left: 25vw;
+  }
+  .event_slide {
+    transform: scale(0.9,0.9);
+    margin-left: -8vw;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .event_slider {
     width: 45vw;
     margin-left: 28vw;
   }
   .event_slide {
-    margin-left: 3.5vw;
+    margin-left: 3vw;
   }
   ul.slick-dots {
     width: 70%;
@@ -241,6 +310,21 @@ li.slick-active {
   }
   ul.slick-dots > li {
     width: 10px;
+  }
+}
+
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-height: 1025px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+  .event_slider {
+    width: 60vw;
+    margin-left: 25vw;
+  }
+  .event_slide {
+    margin-left: 12vw;
   }
 }
 
@@ -273,7 +357,8 @@ li.slick-active {
   }
 
   .event_slide {
-    margin-left: 7vw;
+    margin-left: 14vw;
+    transform: scale(0.7,0.85);
   }
 
   ul.slick-dots {

@@ -26,7 +26,57 @@
 .min span{
   color: red;
 }
-.hi{
-  color: green;
+.event_title{
+  /* color: green; */
   font-family:squidFont;
+  text-align: center;
+}
+
+.form_container{
+  /* height: 100px; */
+  /* background-color:black; */
+  padding: 4%;
+  background-color:#131313;
+  color: white;
+}
+
+.yes_btn{
+  font-family: squidFont;
+  border-radius: 100%;
+  background-color: rgb(30, 146, 30);
+  width: 40px;
+  font-size: 25px;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 10px 1px rgb(30, 146, 30);
+}
+.no_btn{
+  font-family: squidFont;
+  border-radius: 100%;
+  background-color: rgb(211, 0, 0);
+  width: 40px;
+  font-size: 25px;
+  /* padding: 10px; */
+  color: white;
+  border: none;
+  margin-left: 5%;
+  box-shadow: 0px 0px 10px 1px rgb(211, 0, 0);
+
+}
+
+.btn_container{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.bline{
+    border: 0;
+    border-top: 1px solid rgb(56, 56, 56);
+    width: 85%;
+}
+
+.confmsg{
+  text-align: center;
 }
