@@ -53,18 +53,47 @@ const CompetitionCarousel = () => {
               <img src={`${ baseURL + item.posterURL }`} alt='' className="event_slide" />
           </Link>
           ))}
-        
       </Slider>
     </div>
 )}
+
+// carousel for mobile view
+const mobile_settings = {
+  dots: true,
+    centerMode: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    cssEase: 'linear',
+    centerPadding: 0,
+    arrows: false,
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }
+    ]
+};
 
 const WorkshopCarousel = () => {
   
   return (
 
     <div className="twoWorkshops">
+        
+        {/* desktop view */}
+        <div className="workshopsDesktop">
         <div className="d-flex justify-content-center" id = "boxes">
-
+        
         <div className="p-2 col-example text-left">
           <div className="workshop">
           <Link to={`workshops/bashIt`}>
@@ -89,8 +118,35 @@ const WorkshopCarousel = () => {
           </div>
         </div>
 
-
         </div>
+        </div>
+      
+      {/* mobile view */}
+      <div className="workshopsMobile">
+        <Slider {...mobile_settings}>
+                <div>
+                  <img
+                    src={`${ baseURL + 'play_microbit.png' }`}
+                    style={{ width: '60vw', height: '70vw', marginTop:"3rem"}}
+                  />
+                </div>
+
+                <div>
+                  <img
+                    src={`${ baseURL + 'bash_it.png' }`}
+                    style={{ width: '60vw', height: '70vw', marginTop:"3rem" }}
+                  />
+                </div>
+
+                <div>
+                  <img
+                    src={`${ baseURL + 'hack_the_game.png' }`}
+                    style={{ width: '60vw', height: '70vw', marginTop:"3rem"}}
+                  />
+                </div>
+              </Slider>
+      </div>
+
     </div>)}
 
 const TalkCarousel = () => {

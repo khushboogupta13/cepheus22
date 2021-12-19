@@ -119,12 +119,24 @@
   margin:auto;
 }
 
-
 #buttonMobile{
   display: none;
 }
 
+.workshopsMobile{
+  display:hidden;
+}
+
 @media (max-width: 500px){
+
+  .workshopsDesktop{
+    display: none;
+  }
+
+  .workshopsMobile{
+    display:flex;
+    margin-left: 4rem;
+  }
 
   #buttonMobile{
     display: flex;
