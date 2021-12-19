@@ -25,6 +25,9 @@
   align-self: flex-end;
   width: 90vw;
 }
+.welcome_mobile {
+  display: none;
+}
 .mainContent {
   display: flex;
   width: 100%;
@@ -59,7 +62,7 @@
   padding: 20px;
 }
 .login_text {
-  font-size: 2vw;
+  font-size: 2em;
   color: #f24687;
   margin-bottom: 0;
 }
@@ -71,10 +74,9 @@
   width: 80%;
 }
 .input_label {
-  font-size: 1vw;
+  font-size: 1em;
   margin-bottom: 5px;
   margin-top: 10px;
-  
 }
 input[type="text"] {
   border: none;
@@ -94,7 +96,7 @@ input[type="password"] {
   padding: 5px 10px;
 }
 
-input[type="number"]{
+input[type="number"] {
   border: none;
   border-radius: 10px;
   background-color: black;
@@ -103,7 +105,7 @@ input[type="number"]{
   width: 100%;
   padding: 5px 10px;
 }
-input[type=number]::-webkit-inner-spin-button {
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
@@ -126,7 +128,7 @@ input[type=number]::-webkit-inner-spin-button {
   border-radius: 50px;
   font-family: squidFont;
   color: #f24687;
-  font-size: 1.7vw;
+  font-size: 1.7em;
 
   justify-content: center;
   align-items: center;
@@ -141,7 +143,55 @@ input[type=number]::-webkit-inner-spin-button {
   justify-content: center;
   font-family: squidFont;
   color: black;
-  font-size: 1.7vw;
+  font-size: 1.7em;
   align-items: center;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .left_image {
+    visibility: hidden;
+  }
+  .right_image {
+    visibility: hidden;
+  }
+  .loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .left_image {
+    visibility: hidden;
+  }
+  .right_image {
+    visibility: hidden;
+  }
+  .loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 55%;
+    position: relative;
+  }
+  .welcome_title {
+    display: none;
+  }
+  .welcome_mobile {
+    display: flex;
+    font-family: squidfont;
+    align-self: center;
+    justify-self: center;
+    font-size: 2em;
+    color: white;
+    padding-top: 20px;
+  }
 }
