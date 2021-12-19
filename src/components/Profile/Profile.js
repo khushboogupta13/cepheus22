@@ -36,6 +36,22 @@ const Profile = (props) => {
             </div>
           </div>
         </div>
+        <div className="mobile-no-container">
+          <div className="mobile-no">
+            <p>MobileNo: </p>
+          </div>
+          <div className="mobile-input-container">
+              <input type="text" placeholder="99999999999" />
+            </div>
+        </div>
+        <div className="clg-name-container">
+          <div className="clg-name">
+            <p>College: </p>
+          </div>
+          <div className="clg-input-container">
+              <input type="text" placeholder="IIT GOA" />
+            </div>
+        </div>
         <div className="myEventsText">
           <p>My Events</p>
         </div>

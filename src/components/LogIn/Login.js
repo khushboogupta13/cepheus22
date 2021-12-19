@@ -1,12 +1,15 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import leftImg from "./assets/left.svg";
 import rightImg from "./assets/right.svg";
 import welcome from "./assets/welcome.svg";
+import axios from "axios";
 
-export default class Login extends Component {
-  state = { rememberMe: false, userName: "", password: "" };
-  render() {
+export default function Login() {
+
+    const [playerID, setPlayerID] = useState( window.location.search.split('?')[1]);
+    const [mobile,setMobile] = useState();
+    const [clg, setClg] = useState();
     return (
       <div className="loginPage">
         <img src={leftImg} className="left_image" />
@@ -16,64 +19,69 @@ export default class Login extends Component {
         <div className="mainContent">
           <div className="loginContainer">
             <div className="logininDiv">
-              <p className="login_text">Log In</p>
+              <p className="login_text">Profile</p>
               <div className="input_div">
-                <p className="input_label">User Id:</p>
+                <p className="input_label">Player ID:</p>
                 <input
                   type="text"
-                  value={this.state.userName}
-                  onChange={(e) => {
-                    this.setState({ userName: e.target.value });
-                  }}
+                  value={playerID}
+                  readOnly
                 />
               </div>
               <div className="input_div">
-                <p className="input_label">Password:</p>
+                <p className="input_label">Mobile No:</p>
                 <input
-                  type="password"
-                  value={this.state.password}
+                  type="number"
+                  value={mobile}
                   onChange={(e) => {
-                    this.setState({ password: e.target.value });
+                    setMobile(e.target.value);
                   }}
                 />
               </div>
-              <div className="forgot_remember_div">
-                <div className="remember_div">
-                  <div
-                    className={
-                      this.state.rememberMe
-                        ? "remember_button_tick"
-                        : "remember_button_notick"
-                    }
-                    onClick={() => {
-                      this.setState({ rememberMe: !this.state.rememberMe });
-                    }}
-                  >
-                    ✓
-                  </div>
-                  Remember Me
-                </div>
-                <div className="forgot_div" onClick={() => alert("Forgot")}>
-                  Forgot Password
-                </div>
+              
+              <div className="input_div">
+                <p className="input_label">college Name:</p>
+                <input
+                  type="text"
+                  value={clg}
+                  onChange={(e) => {
+                    setClg(e.target.value);
+                  }}
+                />
               </div>
             </div>
             <div className="signupButtonDiv">
               <div
                 className="signupButton"
-                onClick={() =>
-                  alert(this.state.userName + " " + this.state.password)
+                onClick={async (e) => {
+                  const res = await axios.post(process.env.React_App_Backend_url+'/user/complete_profile', 
+                  { 
+                    phone_no: mobile,
+                    college: clg
+                  },
+                  {
+                    headers: {                  
+                      'content-type': 'text/json',
+                      'Authorization': playerID,
+                    }
+                  });
+                  if(res.status == 200){
+                    console.log("okk");
+
+                  }else{
+                    console.log("error!!")
+                  }
+                 }                  
                 }
+
               >
-                SignUp
+                Save
               </div>
-              <div className="closeButton" onClick={this.props.close}>
-                Close
-              </div>
+            
             </div>
           </div>
         </div>
       </div>
     );
-  }
+  
 }

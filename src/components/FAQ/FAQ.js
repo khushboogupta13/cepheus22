@@ -9,45 +9,65 @@ const Card = ({ que, ans }) => {
 	return (
 		<div className='_card'>
 			<div className='_card-content'>
-				<p>{que}..</p>
-				<br />
-				<p>{ans}..</p>
+				<p className="que">{que}</p>
+				<p className="ans">{ans}</p>
 			</div>
 		</div>
 	);
 };
 /* eslint-disable */
-const q1 = 'Q1';
-const a1 = 'A1';
-const q2 = 'Q2';
-const a2 = 'A2';
-const q3 = 'Q3';
-const a3 = 'A3';
-const q4 = 'Q4';
-const a4 = 'A4';
-const q5 = 'Q5';
-const a5 = 'A5';
-const q6 = 'Q6';
-const a6 = 'A6';
-const q7 = 'Q7';
-const a7 = 'A7';
-const q8 = 'Q8';
-const a8 = 'A8';
-const q9 = 'Q9';
-const a9 = 'A9';
-const q10 = 'Q10';
-const a10 = 'A10';
-const q11 = 'Q11';
-const a11 = 'A11';
-const q12 = 'Q12';
-const a12 = 'A12';
-const q13 = 'Q13';
-const a13 = 'A13';
-const q14 = 'Q14';
-const a14 = 'A14';
-const q15 = 'Q15';
-const a15 = 'A15';
+const q1 = 'Q1. How to Become a Mechatronics Engineer? Which degree to pursue?';
+const a1 = `Many mechatronics engineers start their careers by earning a bachelor’s degree in either mechanical or electrical engineering. They gain knowledge of other engineering disciplines throughout their careers, moving serendipitously toward mechatronics along the way. Though this is a viable path, it isn’t the most efficient way of breaking into the field. You can also start with a bachelor's degree in mechatronics to gain the specific knowledge and skills employers look for when hiring mechatronics engineers. Earning a specialized degree can make it much easier to start your career.`;
 
+const q2 = 'Q2. Is a mechatronics degree worth it or we should go for a focussed program?';
+const a2 = `Mechatronics is a multifaceted field. You have to learn about motors, control systems, software development for making things autonomous, sensors and how to use them, electronic components and embedded hardware, along with various other things.  It depends on you, you the type who would be interested in learning a bit about the many fields and choosing one of these to be your 'core'? Or do you want to focus your career on improving the problems available in one field of engineering, without bothering about how a completely unrelated field would perform? 
+But mostly companies in India prefer a focussed program more than mechatronics, there are more opportunities for those with focussed degrees.`;
+
+const q3 = 'Q3. Will a mechatronic engineer have a good future in the upcoming 5-10 years?';
+const a3 = `Mechatronics leading to robotics and automation is indeed a hot field these days and will surely be one of the top fields in the upcoming years.
+Things change quickly in technology, but being a mechatronics engineer gives you a versatile skillset to help adapt. 
+`;
+
+const q4 = 'Q4. How to Become a Mechatronics Engineer? Which degree to pursue?';
+const a4 = `Many mechatronics engineers start their careers by earning a bachelor’s degree in either mechanical or electrical engineering. They gain knowledge of other engineering disciplines throughout their careers, moving serendipitously toward mechatronics along the way. Though this is a viable path, it isn’t the most efficient way of breaking into the field. You can also start with a bachelor's degree in mechatronics to gain the specific knowledge and skills employers look for when hiring mechatronics engineers. Earning a specialized degree can make it much easier to start your career.`;
+
+const q5 = 'Q5. Can I use the open-source code of someone to enhance my program/model?';
+const a5 = `Yes, You can use the open-source code(only the libraries/module), you can not copy past the whole code and you have to clearly mention the source
+and also explain the working of the code. Also it is mandatory to include the libraries and functions used in the workshop.`;
+
+const q6 = 'Q6. How I am supposed to submit the code ?';
+const a6 = `You have to submit the whole project folder which include the code file's in .ipynb format, along with the images(template), a ReadMe/AboutMe file and game(if possible).`;
+
+const q7 = 'Q7. is it necessary to use Jupyter notebook or can we use other editors also?';
+const a7 = `Yes, it is mandatory to use Jupyter Notebook for the submission of your code(file in .ipynb format) for the hackathon.
+you can use anaconda navigator, vs-code(Jupyter Notebook extension), google Colab etc...`;
+
+const q8 = 'Q8. Can we use this to play any game we give it?';
+const a8 = 'No, as the complexity of the game increases you have to use more advance libraries and code for the same.';
+
+const q9 = 'Q9. What other important applications are there in this field?';
+const a9 = `It is currently used in micro biology to detect different patterns in the proteins and genes.`;
+
+const q10 = 'Q10. Is it necessary to watch Squid Game to be able to contest?';
+const a10 = `Since all content is being provided, you don't need to watch Squid Game for making a good design, but it will definitely help you make one that's relevant to the theme.`;
+
+const q11 = 'Q11. Can we add content of our own?';
+const a11 = 'You must add the content that is already provided. You may improvise when it comes to the optional features part.';
+
+const q12 = 'Q12. Can a person with a basic understanding of Arduino Uno participate?';
+const a12 = `Yes, one who is familiar with basic concepts of Arduino, Sensors and communication protocols of arduino can participate.`;
+
+const q13 = 'Q13. Do we have to use any online simulator for designing the circuits?';
+const a13 = 'There is no need of any online simulator but if you require then you can use circuitverse, EDA playground or other online/offline VHDL based simulator or any online circuit design simulator.';
+
+const q14 = `Q14. What is FizzBuzz's plagiarism policy?`;
+const a14 = 'All the submissions will be checked for plagiarism using a high end plag checker. If any kind of conspiracy is found then it will lead to direct disqualification.';
+
+const q15 = 'Q15. Can we skip one level and go to the next level?';
+const a15 = 'No. The next level can be unlocked only when all of the previous levels have been successfully completed. There would be five levels in total.';
+
+const q16 = 'Q16.';
+const a16 = '';
 const faqList = [
 	<Card que={q1} ans={a1} />,
 	<Card que={q2} ans={a2} />,
@@ -214,11 +234,11 @@ const FAQ = () => {
 			};
 		})(jQuery);
 
-		jQuery('#example1').loopScroll();
-		jQuery('#example2').loopScroll({ direction: 'downwards', speed: 120 });
-		jQuery('#example3').loopScroll();
-		jQuery('#example4').loopScroll({ direction: 'downwards', speed: 120 });
-		jQuery('#example5').loopScroll();
+		 jQuery('#example1').loopScroll();
+		// jQuery('#example2').loopScroll({ direction: 'downwards', speed: 120 });
+		// jQuery('#example3').loopScroll();
+		// jQuery('#example4').loopScroll({ direction: 'downwards', speed: 120 });
+		// jQuery('#example5').loopScroll();
 	});
 
 	function handler() {

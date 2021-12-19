@@ -13,7 +13,7 @@ export default class Home extends Component {
     this.state = {
       width: 0,
       height: 0,
-      token: localStorage.getItem("token"),
+      token: localStorage.getItem("playerId"),
       PopupProfile: false,
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
@@ -34,6 +34,7 @@ export default class Home extends Component {
 
   render() {
     if (this.state.width > 1030) {
+      console.log("token", this.state.token);
       return (
         <>
           {this.state.PopupProfile && (
@@ -63,7 +64,7 @@ export default class Home extends Component {
                     <div
                       onClick={() => {
                         this.setState({ token: null });
-                        localStorage.removeItem("token");
+                        localStorage.removeItem("id");
                         toast.success("Successfully LogOut!!")
                       }}
                     >
@@ -98,6 +99,15 @@ export default class Home extends Component {
       );
     } else {
       return (
+        <>
+        {this.state.PopupProfile && (
+          <Profile
+            onCloseProfile={() => {
+              this.setState({ PopupProfile: false });
+            }}
+            isWider="1"
+          />
+        )}
         <div id="home" className="home_mob container-fluid">
           <div className="top_div">
             <img src={centerSymbol} className="center_symbol_mob" alt=" "></img>
@@ -115,24 +125,20 @@ export default class Home extends Component {
                   <div
                     className="buttonGlow_mob"
                     onClick={() => {
+                      console.log('pressed')
                       this.setState({ PopupProfile: true });
                     }}
                   >
                     Profile
                   </div>
               )}
-              <div
-                className="buttonGlow_mob"
-                onClick={() => window.open(process.env.REACT_APP_BACKEND_URL)}
-              >
-                Log in
-              </div>
+              
               <div className="buttonGlow_mob">
                   {this.state.token ? (
                     <div
                       onClick={() => {
                         this.setState({ token: null });
-                        localStorage.removeItem("token");
+                        localStorage.clear();
                         toast.success("Successfully LogOut!!!")
                       }}
                     >
@@ -145,6 +151,7 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
+        </>
       );
     }
   }

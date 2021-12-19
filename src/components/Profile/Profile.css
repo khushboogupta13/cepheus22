@@ -9,18 +9,17 @@
 }
 
 .playerIdContainer {
-    height: 20%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    margin: 10px 0px;
 }
 
 .playerIDText {
     color: white;
     font-family: squidFont;
-    margin-right: 10px;
     font-size: 1.5em;
-    margin-top: 10px;
+    margin: 0px;
 }
 .playerId {
     border: 0px solid black;
@@ -29,7 +28,6 @@
     width: 50%;
     padding: 10px;
     height: 50px;
-    font-size: 1.5em; 
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -42,6 +40,7 @@
 
 .playerId > p {
     font-family: squidFont;
+    font-size: 1em;
 }
 
 .registeredEventsWrapper {
@@ -101,10 +100,11 @@
 .copyText{
     display: none;
     position: absolute;
-    right: 0px;
-    bottom: -45px;
+    right: -40px;
+    bottom: -10px;
     color: white;
     font-size: 12px;
+    font-weight: 600;
 }
 .copyIcon:hover + .copyText{
     display: block;
@@ -117,4 +117,92 @@
      color: white;
      font-size: 1.5em;
     font-family: squidFont;
+}
+
+.mobile-no-container {
+    color: white;
+    font-family: squidFont;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0px;
+}
+.mobile-no > p{
+    margin: 0px;
+    font-size: 1.5em;
+}
+.mobile-input-container {
+    border-radius: 20px;
+    width: 50%;
+}
+.mobile-input-container  > input {
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border-width: 0px;
+    border-radius: 10px;
+}
+.mobile-input-container  > input:focus{
+    outline-width: 0px;
+}
+
+.clg-name-container{
+    color: white;
+    font-family: squidFont;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0px;
+}
+.clg-name > p{
+    margin: 0px;
+    font-size: 1.5em;
+}
+.clg-input-container {
+    border-radius: 20px;
+    width: 50%;
+}
+
+.clg-input-container  > input {
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border-width: 0px;
+    border-radius: 10px;
+}
+.clg-input-container  > input:focus{
+    outline-width: 0px;
+}
+
+@media only screen and (max-width: 1030px){
+    .playerIDText {
+        font-size: 0.8em;
+    }
+    .playerId{
+        width: 60%;
+    }
+    .playerId > p {
+        font-size: 0.6em;
+    }
+    .copyText{
+        z-index: 10;
+        color: green;
+        right: 10px;
+        bottom: -18px;
+    }
+
+    .mobile-no > p{
+        margin: 0px;
+        font-size: 0.8em;
+    }
+    .mobile-input-container {
+        width: 60%;
+    }
+
+    .clg-input-container {
+        width: 60%;
+    }
+    .clg-name > p{
+        font-size: 0.8em;        
+    }
 }

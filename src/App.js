@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React, { useEffect } from "react";
+import Login from './components/LogIn/Login'
 import {
   Route,
   Switch,
@@ -21,10 +22,27 @@ const App = () => {
   function headerView() {
     console.log("window location", location.pathname === "/callback/");
     if (location.pathname === "/callback/") {
-      localStorage.setItem("token", location.search.substring(1));
-      //console.log("callback  called")
+      let paramString = location.search.split('?')[1];
+      let params_arr = paramString.split('&');
+      console.log(params_arr[0], params_arr[1]);
+      let playerId;
+      let is_profile_complete;
+      
+        let _pair = params_arr[0].split('=');
+        playerId = _pair[1];
+
+        _pair = params_arr[1].split('=');
+        is_profile_complete = _pair[1];
+        
+      
+      //console.log("callback  called",localStorage.getItem('id'))
       toast.success("Successfully Loged In");
-      history.push("/");
+      if(playerId && is_profile_complete === 'true'){
+        history.push("/");
+      }else if(playerId && is_profile_complete === 'false'){
+            history.push(`/completeProfile/?${playerId} `);
+      }
+      
     }
   }
   useEffect(() => {
@@ -37,6 +55,9 @@ const App = () => {
       <Switch>
         <Route path="/" exact>
           <SiteContainer />
+        </Route>
+        <Route path="/completeProfile">
+          <Login />
         </Route>
         <Route path="/event/:eventName" exact>
           <IndividualEvent />
