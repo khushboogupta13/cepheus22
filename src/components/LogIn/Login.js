@@ -54,14 +54,14 @@ export default function Login() {
               <div
                 className="signupButton"
                 onClick={async (e) => {
-                  const res = await axios.post(process.env.React_App_Backend_url+'/user/complete_profile', 
+                  const res = await axios.post(process.env.React_App_Backend_url+'user/complete_profile', 
                   { 
                     phone_no: mobile,
                     college: clg
                   },
                   {
                     headers: {                  
-                      'content-type': 'text/json',
+                      'content-type': 'application/json',
                       'Authorization': playerID,
                     }
                   });

@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState,useEffect } from "react";
 import { useLocation, useParams } from "react-router";
 import "./IndividualEvent.css";
 import data from "../Events/data.json";
@@ -19,6 +19,9 @@ const IndividualEvent = () => {
 
   const eventType = eventi.substring(0, eventi.indexOf("/"));
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  })
   if (eventType === "event") {
     event = data.event.find((e) => e.eventName === eventName);
   }
