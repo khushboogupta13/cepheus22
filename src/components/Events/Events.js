@@ -127,21 +127,21 @@ const WorkshopCarousel = () => {
                 <div>
                   <img
                     src={`${ baseURL + 'play_microbit.png' }`}
-                    style={{ width: '60vw', height: '70vw', marginTop:"3rem"}}
+                    style={{ width: '60vw', height: '65vw', marginTop:"3rem"}}
                   />
                 </div>
 
                 <div>
                   <img
                     src={`${ baseURL + 'bash_it.png' }`}
-                    style={{ width: '60vw', height: '70vw', marginTop:"3rem" }}
+                    style={{ width: '60vw', height: '65vw', marginTop:"3rem" }}
                   />
                 </div>
 
                 <div>
                   <img
                     src={`${ baseURL + 'hack_the_game.png' }`}
-                    style={{ width: '60vw', height: '70vw', marginTop:"3rem"}}
+                    style={{ width: '60vw', height: '65vw', marginTop:"3rem"}}
                   />
                 </div>
               </Slider>
@@ -151,29 +151,49 @@ const WorkshopCarousel = () => {
 
 const TalkCarousel = () => {
   return (
-
+    
     <div className="twoWorkshops">
-
-      <div className="d-flex justify-content-center" id = "boxes">
-          <div className="p-2 col-example text-left">
-            <div className="workshop" >
-                <Link to={`talks/roboticsCareer`}>
-                  <img src = {`${ baseURL + 'robotics_career.png' }`} alt = "Make a Career in Robotics" id = "workshop1" />
-                </Link>
-            </div>
-          </div>
-            
+      
+      <div className="talksDesktop">
+        <div className="d-flex justify-content-center" id = "boxes">
             <div className="p-2 col-example text-left">
               <div className="workshop" >
-                  <Link to={`talks/cybersecWebinar`}>
-                    <img src = {`${ baseURL + 'cybersec_webinar.png' }`} alt = "Cybersec Webinar" id = "workshop2" />
+                  <Link to={`talks/roboticsCareer`}>
+                    <img src = {`${ baseURL + 'robotics_career.png' }`} alt = "Make a Career in Robotics" id = "workshop1" />
                   </Link>
               </div>
             </div>
+              
+              <div className="p-2 col-example text-left">
+                <div className="workshop" >
+                    <Link to={`talks/cybersecWebinar`}>
+                      <img src = {`${ baseURL + 'cybersec_webinar.png' }`} alt = "Cybersec Webinar" id = "workshop2" />
+                    </Link>
+                </div>
+              </div>
 
-            
-
+              </div>
             </div>
+
+            {/* mobile view */}
+      <div className="talksMobile">
+        <Slider {...mobile_settings}>
+                <div>
+                  <img
+                    src={`${ baseURL + 'robotics_career.png' }`}
+                    style={{ width: '60vw', height: '65vw', marginTop:"3rem"}}
+                  />
+                </div>
+
+                <div>
+                  <img
+                    src={`${ baseURL + 'cybersec_webinar.png' }`}
+                    style={{ width: '60vw', height: '65vw', marginTop:"3rem" }}
+                  />
+                </div>
+              </Slider>
+      </div>
+
           </div>
 )}
 

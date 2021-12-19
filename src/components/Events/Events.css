@@ -127,7 +127,20 @@
   display:hidden;
 }
 
+.talksMobile{
+  display: none;
+}
+
 @media (max-width: 500px){
+
+  .talksMobile{
+    display:flex;
+    margin-left: 3.5rem;
+}
+
+.talksDesktop{
+    display: none;
+}
 
   .workshopsDesktop{
     display: none;
