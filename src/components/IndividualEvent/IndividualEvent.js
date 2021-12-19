@@ -1,14 +1,14 @@
-import React, { Fragment, useState,useEffect } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { useLocation, useParams } from "react-router";
 import "./IndividualEvent.css";
 import data from "../Events/data.json";
 import EventForm from "../Events/EventRegistrationForm/EventForm";
-import Register from './assets/register.png';
-import Rulebook from './assets/fest_rulebook.png'
+import Register from "./assets/register.png";
+import Rulebook from "./assets/fest_rulebook.png";
 /* eslint-disable spaced-comment */
 /// <reference types="react-scripts" />
 
-const baseURL = process.env.PUBLIC_URL + '/images/';
+const baseURL = process.env.PUBLIC_URL + "/images/";
 
 const IndividualEvent = () => {
   const { eventName } = useParams();
@@ -22,7 +22,7 @@ const IndividualEvent = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  })
+  }, []);
   if (eventType === "event") {
     event = data.event.find((e) => e.eventName === eventName);
   }
@@ -54,16 +54,21 @@ const IndividualEvent = () => {
       )}
       <div id="individualEvent" className="individualEvent">
         <div className="eventHeading">
-          <img src={`${ baseURL + event.eventHeading }`} alt="eventHeading" />
+          <img src={`${baseURL + event.eventHeading}`} alt="eventHeading" />
         </div>
 
         <div className="d-flex justify-content-center" id="mainContent">
           <div className="p-2 col-example text-left">
             <div className="poster">
-              <img id="eventPoster" src={`${ baseURL + event.posterURL }`} alt={event.eventName} id="poster" />
+              <img
+                id="eventPoster"
+                src={`${baseURL + event.posterURL}`}
+                alt={event.eventName}
+                id="poster"
+              />
             </div>
           </div>
-          
+
           <div className="p-2 col-example text-left">
             <div className="content">
               <p className="eventContent"> {event.content} </p>
@@ -71,15 +76,17 @@ const IndividualEvent = () => {
             </div>
 
             <div className="registerButton" onClick={formPopUp}>
-              <img src={Register} alt="Register" style={{maxWidth:"100%"}}/>
+              <img src={Register} alt="Register" style={{ maxWidth: "100%" }} />
             </div>
 
             <div className="rulebookButton">
-              <img src={Rulebook} alt="Fest Rulebook" style={{maxWidth:"100%"}}/>
+              <img
+                src={Rulebook}
+                alt="Fest Rulebook"
+                style={{ maxWidth: "100%" }}
+              />
             </div>
-
           </div>
-
         </div>
       </div>
     </Fragment>
