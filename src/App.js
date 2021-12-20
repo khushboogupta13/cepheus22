@@ -60,9 +60,7 @@ const App = () => {
 
   return (
     <div className="App">
-      {isLoading ? (
-        <Loader />
-      ) : (
+       (
         <>
           <Toaster />
           <Switch>
@@ -83,7 +81,7 @@ const App = () => {
             </Route>
           </Switch>
         </>
-      )}
+      )
     </div>
   );
 };

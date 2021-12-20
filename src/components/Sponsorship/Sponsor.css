@@ -1,0 +1,61 @@
+.heirarchy-name {
+  color: white;
+  font-family: squidFont;
+  font-size: 3em;
+}
+
+.lnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10em;
+}
+
+.lnContainer img {
+  width: 90%;
+  height: auto;
+}
+
+.lnContainer div {
+  color: white;
+  font-family: squidFont;
+  width: 100%;
+}
+
+.companiesContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.completeLevel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px 0 8px 0;
+}
+
+.pr-1 {
+  font-size: 20px;
+}
+.pr-2 {
+  font-size: 16px;
+}
+.pr-3 {
+  font-size: 14px;
+}
+.pr-4 {
+  font-size: 12px;
+}
+.pr-5 {
+  font-size: 11px;
+}
+.pr-6 {
+  font-size: 10px;
+}
+.pr-7 {
+  font-size: 9px;
+}
+.pr-8 {
+  font-size: 8px;
+}
