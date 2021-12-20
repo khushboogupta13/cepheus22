@@ -4,7 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React, { useEffect, useState } from "react";
-import Login from './components/LogIn/Login'
+import Login from './components/LogIn/Login';
+
 import {
   Route,
   Switch,
@@ -45,8 +46,9 @@ const App = () => {
         
       
       //console.log("callback  called",localStorage.getItem('id'))
-      toast.success("Successfully Loged In");
       if(playerId && is_profile_complete === 'true'){
+        localStorage.setItem('id', playerId);
+        localStorage.setItem('is_profile_complete', 'true');
         history.push("/");
       }else if(playerId && is_profile_complete === 'false'){
             history.push(`/completeProfile/?${playerId} `);
