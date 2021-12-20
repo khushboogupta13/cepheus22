@@ -119,12 +119,28 @@
   margin:auto;
 }
 
-
 #buttonMobile{
   display: none;
 }
 
+.workshopsMobile{
+  display:none;
+}
+
+.carousel{
+  box-shadow: 0 0 8px 8px grey;
+}
+
 @media (max-width: 500px){
+
+  .workshopsDesktop{
+    display: none;
+  }
+
+  .workshopsMobile{
+    display:flex;
+    margin-left: 4rem;
+  }
 
   #buttonMobile{
     display: flex;
