@@ -67,6 +67,9 @@
   .lImage, .rImage{
     display: none;
   }
+  .imagesContainer{
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 500px) {

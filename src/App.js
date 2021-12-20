@@ -60,27 +60,27 @@ const App = () => {
 
   return (
     <div className="App">
-       (
-        <>
-          <Toaster />
-          <Switch>
-            <Route path="/" exact>
-              <SiteContainer />
-            </Route>
-            <Route path="/completeProfile" exact>
-              <Login />
-            </Route>
-            <Route path="/event/:eventName" exact>
-              <IndividualEvent />
-            </Route>
-            <Route path="/workshops/:eventName" exact>
-              <IndividualEvent />
-            </Route>
-            <Route path="/talks/:eventName" exact>
-              <IndividualEvent />
-            </Route>
-          </Switch>
-        </>
+      {isLoading && <Loader />}
+      <>
+        <Toaster />
+        <Switch>
+          <Route path="/" exact>
+            <SiteContainer />
+          </Route>
+          <Route path="/completeProfile" exact>
+            <Login />
+          </Route>
+          <Route path="/event/:eventName" exact>
+            <IndividualEvent />
+          </Route>
+          <Route path="/workshops/:eventName" exact>
+            <IndividualEvent />
+          </Route>
+          <Route path="/talks/:eventName" exact>
+            <IndividualEvent />
+          </Route>
+        </Switch>
+      </>
       )
     </div>
   );
