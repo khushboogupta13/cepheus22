@@ -15,16 +15,18 @@ import {
 import SiteContainer from "./siteContainer";
 import toast, { Toaster } from "react-hot-toast";
 import Loader from "./components/Loader/Loader";
+import { nodeName } from "jquery";
 
 const App = () => {
   const history = useHistory();
   const location = useLocation();
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    console.log("Isloaded", isLoaded);
+    console.log("Isloaded", isLoading);
     setTimeout(() => {
-      setIsLoaded(true);
+      setIsLoading(false);
+      console.log("Isloaded", isLoading);
     }, 5000);
   }, []); // here
 
@@ -58,25 +60,30 @@ const App = () => {
 
   return (
     <div className="App">
-      {!isLoaded && <Loader />}
-      <Toaster />
-      <Switch>
-        <Route path="/" exact>
-          <SiteContainer />
-        </Route>
-        <Route path="/completeProfile" exact>
-          <Login />
-        </Route>
-        <Route path="/event/:eventName" exact>
-          <IndividualEvent />
-        </Route>
-        <Route path="/workshops/:eventName" exact>
-          <IndividualEvent />
-        </Route>
-        <Route path="/talks/:eventName" exact>
-          <IndividualEvent />
-        </Route>
-      </Switch>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          <Toaster />
+          <Switch>
+            <Route path="/" exact>
+              <SiteContainer />
+            </Route>
+            <Route path="/completeProfile" exact>
+              <Login />
+            </Route>
+            <Route path="/event/:eventName" exact>
+              <IndividualEvent />
+            </Route>
+            <Route path="/workshops/:eventName" exact>
+              <IndividualEvent />
+            </Route>
+            <Route path="/talks/:eventName" exact>
+              <IndividualEvent />
+            </Route>
+          </Switch>
+        </>
+      )}
     </div>
   );
 };
