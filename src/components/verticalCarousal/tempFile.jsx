@@ -77,8 +77,12 @@ const Temp = (props) => {
 						{items.map((item, i) => (
 							// <SwiperSlide style={{ zIndex: 10 }}>
 							<FlipCard
-								front={`${item.front}`}
-								back={`${item.back}`}
+								key={item.mail}
+								front={item.front}
+								event={item.event}
+								name={item.name}
+								contact={item.contact}
+								mail={item.mail}
 								zIndex={100 - j - i}
 								order={j}
 								anime={i + j}
