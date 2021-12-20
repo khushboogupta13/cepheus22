@@ -1,0 +1,107 @@
+.heirarchy-name {
+  color: #F24687;
+  font-family: squidFont;
+  font-size: 3em;
+  text-align: center;
+}
+
+.lnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10em;
+}
+
+.lnContainer img {
+  width: 90%;
+  height: auto;
+}
+
+.lnContainer div {
+  color: white;
+  font-family: squidFont;
+  width: 100%;
+  text-align: center;
+}
+
+.companiesContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.completeLevel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px 0 8px 0;
+}
+
+.pr-1 {
+  font-size: 1.25em;
+}
+.pr-2 {
+  font-size: 1em;
+}
+.pr-3 {
+  font-size: 0.875em;
+}
+.pr-4 {
+  font-size: 0.75em;
+}
+.pr-5 {
+  font-size: 0.6875em;
+}
+.pr-6 {
+  font-size: 0.625em;
+}
+.pr-7 {
+  font-size: 0.5625em;
+}
+.pr-8 {
+  font-size: 0.5em;
+}
+
+
+@media only screen and (max-width:1000px){
+  .outterContainer{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width:700px){
+  .outterContainer{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .outterContainer{
+    font-size: 8px;
+  }
+
+  .pr-1{
+    font-size: 1em;
+  }
+  .pr-2 {
+    font-size: 0.9em;
+  }
+  .pr-3 {
+    font-size: 0.8em;
+  }
+  .pr-4 {
+    font-size: 0.62em;
+  }
+  .pr-5 {
+    font-size: 0.6em;
+  }
+  .pr-6 {
+    font-size: 0.59em;
+  }
+  .pr-7 {
+    font-size: 0.58em;
+  }
+  .pr-8 {
+    font-size: 0.57em;
+  }
+}
