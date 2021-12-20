@@ -3,7 +3,7 @@
 	position: relative;
 	flex-direction: row;
 	justify-content: center;
-	margin-top: -6vw;
+	margin-top: -5.5vw;
 	/* animation: animatethis 0.2s ease;
 	animation: animatethis 0.2s ease;
 	-webkit-animation: animatethis 0.2s ease;
@@ -20,7 +20,7 @@
 	flex-direction: column;
 }
 .rowDiv:hover {
-	/* z-index: 1000 !important; */
+	z-index: 1000 !important;
 	animation: animatethis 0.4s ease;
 	animation: animatethis 0.4s ease;
 	-webkit-animation: animatethis 0.4s ease;
@@ -32,7 +32,7 @@
 .colDiv {
 	display: flex;
 	flex-direction: column;
-	padding-top: 8vw;
+	padding-top: 5vw;
 	width: 80%;
 	margin-left: 9%;
 	justify-content: center;
@@ -42,14 +42,14 @@
 @keyframes animatethis {
 	from {
 		z-index: 99;
-		transform: scale(1);
+		/* transform: scale(1); */
 	}
 	50% {
 		z-index: 99;
 	}
 	to {
 		z-index: 1000;
-		transform: scale(1.1);
+		/* transform: scale(1.1); */
 	}
 }
 .slick-slide:first-child {
@@ -87,7 +87,7 @@
 		display: flex;
 	}
 	.flip-card {
-		margin-top: -7vw;
+		margin-top: -12vw;
 	}
 	.flipped {
 		transform: translateX(0vw) rotateY(180deg);
@@ -95,7 +95,27 @@
 	.colDiv {
 		margin-top: 20vw;
 	}
+	.flip-card-back {
+		width: 70%;
+		/* color: white; */
+		transform: rotateY(180deg) translate(-22%, 12%) scale(1.1);
+	}
+	.circle-img {
+		width: 20vw;
+	}
+	.details {
+		font-size: 2vw !important;
+	}
+	.member__name {
+		font-size: 3vw !important;
+	}
 }
 .carousalDiv {
 	overflow: scroll;
+}
+.slick-slider {
+	width: 105%;
+}
+.slick-track:hover {
+	z-index: 1000 !important;
 }

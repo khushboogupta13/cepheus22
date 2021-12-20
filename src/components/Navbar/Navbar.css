@@ -22,25 +22,24 @@
 	width: 46%;
 	position: absolute;
 	/*top: 0.5em;*/
-	top:55%;
+	top: 55%;
 	transform: translateY(-50%);
 	display: flex;
 	overflow: scroll;
 }
 
 .navbar {
-	z-index: 100;
+	z-index: 1001;
 }
 
 @media only screen and (max-width: 1200px) {
 	.navbar {
 		font-size: 11px;
 	}
-	.stripContainer{
+	.stripContainer {
 		width: 70%;
-
 	}
-	.navElemsContainer{
+	.navElemsContainer {
 		width: 64.5%;
 	}
 }
@@ -54,11 +53,11 @@
 		top: 2em;
 	}
 
-	.stripContainer{
+	.stripContainer {
 		width: 150%;
 	}
 
-	.navElemsContainer{
+	.navElemsContainer {
 		width: 96%;
 	}
 }
