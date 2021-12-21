@@ -46,9 +46,9 @@ const App = () => {
       is_profile_complete = _pair[1];
 
       //console.log("callback  called",localStorage.getItem('id'))
-      if(playerId && is_profile_complete === 'true'){
-        localStorage.setItem('id', playerId);
-        localStorage.setItem('is_profile_complete', 'true');
+      if (playerId && is_profile_complete === "true") {
+        localStorage.setItem("id", playerId);
+        localStorage.setItem("is_profile_complete", "true");
         history.push("/");
       } else if (playerId && is_profile_complete === "false") {
         history.push(`/completeProfile/?${playerId} `);
@@ -62,26 +62,24 @@ const App = () => {
   return (
     <div className="App">
       {isLoading && <Loader />}
-      <>
-        <Toaster />
-        <Switch>
-          <Route path="/" exact>
-            <SiteContainer />
-          </Route>
-          <Route path="/completeProfile" exact>
-            <Login />
-          </Route>
-          <Route path="/event/:eventName" exact>
-            <IndividualEvent />
-          </Route>
-          <Route path="/workshops/:eventName" exact>
-            <IndividualEvent />
-          </Route>
-          <Route path="/talks/:eventName" exact>
-            <IndividualEvent />
-          </Route>
-        </Switch>
-      </>
+      <Toaster />
+      <Switch>
+        <Route path="/" exact>
+          <SiteContainer />
+        </Route>
+        <Route path="/completeProfile" exact>
+          <Login />
+        </Route>
+        <Route path="/event/:eventName" exact>
+          <IndividualEvent />
+        </Route>
+        <Route path="/workshops/:eventName" exact>
+          <IndividualEvent />
+        </Route>
+        <Route path="/talks/:eventName" exact>
+          <IndividualEvent />
+        </Route>
+      </Switch>
       )
     </div>
   );
