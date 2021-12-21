@@ -13,7 +13,7 @@ export default class Home extends Component {
     this.state = {
       width: 0,
       height: 0,
-      token: localStorage.getItem("playerId"),
+      token: localStorage.getItem("id"),
       PopupProfile: false,
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);

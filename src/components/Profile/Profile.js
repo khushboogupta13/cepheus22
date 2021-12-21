@@ -3,16 +3,38 @@ import "./Profile.css";
 import CopyIcon from "./copy.png";
 import Modal from "../UI/Modal";
 import { propTypes } from "react-bootstrap/esm/Image";
+import axios from "axios";
 
 const Profile = (props) => {
-  const playerId = "13w2iebdsoi9";
   const [copy, setCopy] = useState(false);
 
   function copyControlFunction() {
     const timer = setTimeout(() => setCopy(false), 3000);
     return () => clearTimeout(timer);
   }
+  const playerId = localStorage.getItem('id');
+  const is_profile_complete = localStorage.getItem('is_profile_complete');
 
+  useEffect(async () => {
+    console.log('Player',playerId,is_profile_complete);
+    if(playerId && is_profile_complete === 'true'){
+      
+      let data = await axios.get(
+        process.env.React_App_Backend_url+"user/profile",
+        {
+          headers: {
+          'content-type': 'application/json',
+          'Authorization': playerId
+        }
+      }
+      );
+      if(data.status === 200){
+        console.log("profile loaded",data);
+      }else{
+        console.log("error");
+      }
+    }
+  })
   return (
     <Modal onClose={props.onCloseProfile} isWider={props.isWider}>
       <div className="profile">

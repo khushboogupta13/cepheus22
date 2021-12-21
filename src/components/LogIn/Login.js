@@ -4,6 +4,7 @@ import leftImg from "./assets/left.svg";
 import rightImg from "./assets/right.svg";
 import welcome from "./assets/welcome.svg";
 import axios from "axios";
+import {  useHistory} from "react-router-dom";
 
 export default function Login() {
   const [playerID, setPlayerID] = useState(
@@ -11,6 +12,7 @@ export default function Login() {
   );
   const [mobile, setMobile] = useState();
   const [clg, setClg] = useState();
+  const history = useHistory();
   return (
     <div className="loginPage">
       <img src={leftImg} className="left_image" />
@@ -64,13 +66,16 @@ export default function Login() {
                     },
                     {
                       headers: {
-                        "content-type": "text/json",
-                        Authorization: playerID,
+                        "content-type": "application/json",
+                        "Authorization": playerID,
                       },
                     }
                   );
                   if (res.status == 200) {
-                    console.log("okk");
+                    localStorage.setItem("id",playerID);
+                    localStorage.setItem("is_profile_complete", 'true');
+                    history.push('/');
+                    
                   } else {
                     console.log("error!!");
                   }

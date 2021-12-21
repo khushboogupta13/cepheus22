@@ -240,11 +240,17 @@ const FAQ = () => {
 			};
 		})(jQuery);
 
-		 jQuery('#example1').loopScroll();
+		if(mobile){
+			jQuery('#example1').loopScroll({ direction: 'upwards', speed: 240 });
+		}
+		else{
+			jQuery('#example1').loopScroll({ direction: 'upwards', speed: 120 });
+		}
 		jQuery('#example2').loopScroll({ direction: 'downwards', speed: 120 });
 		jQuery('#example3').loopScroll();
 		jQuery('#example4').loopScroll({ direction: 'downwards', speed: 120 });
 		jQuery('#example5').loopScroll();
+	
 	});
 
 	function handler() {
