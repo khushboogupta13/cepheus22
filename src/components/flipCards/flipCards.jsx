@@ -4,14 +4,14 @@ import './flipCard.css';
 
 const FlipCard = (props) => {
 	const [flipped, set] = useState(false);
-	const { event, name, contact, mail } = props;
-	console.log(event, name, contact, mail);
+	const { event, name, contact, mail, url } = props;
 	return (
 		<div
 			className={`flip-card ${props.inViewport ? 'enter' : 'not-enter'}`}
 			onMouseEnter={() => setTimeout(() => set(true), 100)}
 			onMouseLeave={() => setTimeout(() => set(false), 200)}
 			style={{
+				display: props.off ? 'none' : 'flex',
 				zIndex: !flipped ? `${props.zIndex}` : '1000',
 				animationDelay: `${props.anime * 80}ms`,
 			}}>
@@ -27,27 +27,42 @@ const FlipCard = (props) => {
 							background: 'black',
 							alignItems: 'center',
 							justifyContent: 'space-between',
-							height: '40%',
+							height: '35%',
 							width: '100%',
 						}}>
 						<h1 className={'member__name'}>{name}</h1>
-						<img
-							className='circle-img'
-							src={process.env.PUBLIC_URL + '/images/Namami Shanker.jpg'}
-							alt='avatar_img'
-						/>
+						<img className='circle-img' src={process.env.PUBLIC_URL + '/' + url} alt='avatar_img' />
 					</div>
 					<div
 						style={{
-							height: '60%',
+							height: '65%',
 							width: '100%',
 							display: 'flex',
 							justifyContent: 'flex-start',
 							flexDirection: 'column',
 						}}>
-						<span style={{ width: '50%', fontSize: '0.8vw', color: 'white' }}>{event}</span>
-						<span style={{ width: '50%', fontSize: '0.8vw', color: 'white' }}>{contact}</span>
-						<span style={{ width: '50%', fontSize: '0.8vw', color: 'white' }}>{mail}</span>
+						<p
+							className='details'
+							style={{
+								fontSize: '0.8vw',
+							}}>
+							{event}
+						</p>
+						<br />
+						<p
+							className='details'
+							style={{
+								fontSize: '0.6vw',
+							}}>
+							{contact}
+						</p>
+						<p
+							className='details'
+							style={{
+								fontSize: '0.45vw',
+							}}>
+							{mail}
+						</p>
 					</div>
 				</div>
 			</div>

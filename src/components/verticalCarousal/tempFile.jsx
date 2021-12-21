@@ -2,6 +2,7 @@ import React, { useState, useCallback, useRef } from 'react';
 import FlipCard from '../flipCards/flipCards';
 import { useInViewport } from 'react-in-viewport';
 import './styles.css';
+import data from './data.json';
 import Slider from 'react-slick';
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import SwiperCore, { Pagination } from 'swiper';
@@ -11,7 +12,6 @@ import Slider from 'react-slick';
 // SwiperCore.use([Pagination]);
 /* eslint-disable */
 const Temp = (props) => {
-	const { images } = props;
 	const [index, set] = useState(0);
 	const onAction = useCallback((action) =>
 		set(
@@ -35,7 +35,7 @@ const Temp = (props) => {
 	return (
 		<div className='carousalDiv'>
 			<div className='colDiv' ref={myRef}>
-				{images.map((items, j) => (
+				{data.images.map((items, j) => (
 					<div className='rowDiv' style={{ zIndex: `${100 - j}` }}>
 						{/* <Swiper slidesPerView={5} spaceBetween={10}> */}
 						<Slider
@@ -57,9 +57,16 @@ const Temp = (props) => {
 								// <SwiperSlide style={{ zIndex: 10 }}>
 								<FlipCard
 									front={`${item.front}`}
-									back={`${item.back}`}
+									key={item.mail}
+									front={item.front}
+									event={item.event}
+									name={item.name}
+									contact={item.contact}
+									mail={item.mail}
 									zIndex={100 - j}
+									url={item.url}
 									order={j}
+									off={0}
 									anime={i + j}
 									inViewport={inViewport}
 								/>
@@ -70,7 +77,7 @@ const Temp = (props) => {
 						</Slider>
 					</div>
 				))}
-				{images.map((items, j) => (
+				{data.images.map((items, j) => (
 					<div className='rowDivMobile'>
 						{/* <Swiper slidesPerView={5} spaceBetween={10}> */}
 
@@ -84,15 +91,14 @@ const Temp = (props) => {
 								name={item.name}
 								contact={item.contact}
 								mail={item.mail}
+								off={item.off}
 								zIndex={100 - j - i}
 								order={j}
+								url={item.url}
 								anime={i + j}
 								inViewport={inViewport}
 							/>
-							// </SwiperSlide>
 						))}
-						{/* </Swiper> */}
-						{/* </Slider> */}
 					</div>
 				))}
 			</div>

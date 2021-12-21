@@ -6,7 +6,9 @@
 				"event": "Overall Coordinator",
 				"name": "Raghavendra Singh",
 				"contact": "7840010196",
-				"mail": "eg1@iitgoa.ac.in"
+				"mail": "eg1@iitgoa.ac.in",
+				"url": "images/Namami Shanker.jpg",
+				"off": 0
 			}
 		],
 		[
@@ -15,21 +17,27 @@
 				"event": "Overall Coordinator",
 				"name": "Raghavendra Singh",
 				"contact": "7840010196",
-				"mail": "eg2@iitgoa.ac.in"
+				"mail": "eg2@iitgoa.ac.in",
+				"off": 0,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Manager.png",
 				"event": "Overall Coordinator",
 				"name": "Raghavendra Singh",
 				"contact": "7840010196",
-				"mail": "eg3@iitgoa.ac.in"
+				"mail": "eg3@iitgoa.ac.in",
+				"off": 0,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Manager.png",
 				"event": "Overall Coordinator",
 				"name": "Raghavendra Singh",
 				"contact": "7840010196",
-				"mail": "eg4@iitgoa.ac.in"
+				"mail": "eg4@iitgoa.ac.in",
+				"off": 0,
+				"url": "images/Namami Shanker.jpg"
 			}
 		],
 		[
@@ -38,28 +46,36 @@
 				"event": "Overall Coordinator",
 				"name": "Raghavendra Singh",
 				"contact": "7840010196",
-				"mail": "eg5@iitgoa.ac.in"
+				"mail": "eg5@iitgoa.ac.in",
+				"off": 0,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Design Head.png",
 				"event": "Overall Coordinator",
 				"name": "Raghavendra Singh",
 				"contact": "7840010196",
-				"mail": "e6g@iitgoa.ac.in"
+				"mail": "e6g@iitgoa.ac.in",
+				"off": 0,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Design Head.png",
 				"event": "Overall Coordinator",
 				"name": "Raghavendra Singh",
 				"contact": "7840010196",
-				"mail": "eg7@iitgoa.ac.in"
+				"mail": "eg7@iitgoa.ac.in",
+				"off": 0,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Design Head.png",
 				"event": "Overall Coordinator",
 				"name": "Raghavendra Singh",
 				"contact": "7840010196",
-				"mail": "eg8@iitgoa.ac.in"
+				"mail": "eg8@iitgoa.ac.in",
+				"off": 0,
+				"url": "images/Namami Shanker.jpg"
 			}
 		],
 		[
@@ -68,91 +84,117 @@
 				"event": "Play with Micro:Bit",
 				"name": "Aryan Tomar",
 				"contact": "7840010196",
-				"mail": "aryan.tomar.20031@iitgoa.ac.in"
+				"mail": "aryan.tomar.20031@iitgoa.ac.in",
+				"off": 1,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Event Head.png",
 				"event": "Arduino's Trial",
 				"name": "Ganesh Vemula",
 				"contact": "8247342609",
-				"mail": "vemula.ganesh.20042@iitgoa.ac.in"
+				"mail": "vemula.ganesh.20042@iitgoa.ac.in",
+				"off": 1,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Event Head.png",
 				"event": "Treasure Hunt",
 				"name": "Khusboo Gupta",
 				"contact": "9819439458",
-				"mail": "khusboo.gupta.19031@iitgoa.ac.in"
+				"mail": "khusboo.gupta.19031@iitgoa.ac.in",
+				"off": 1,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Event Head.png",
-				"event": "How to make a career in Mechatronics",
+				"event": "Career in Mechatronics",
 				"name": "Khushi Chaudhary",
 				"contact": "8318921233",
-				"mail": "khushi.chaudhary.20063@iitgoa.ac.in"
+				"mail": "khushi.chaudhary.20063@iitgoa.ac.in",
+				"off": 1,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Event Head.png",
 				"event": "Lorem Ipsum",
 				"name": "Manali Naik",
 				"contact": "7248972507",
-				"mail": "manali.naik.20042@iitgoa.ac.in"
+				"mail": "manali.naik.20042@iitgoa.ac.in",
+				"off": 1,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Event Head.png",
 				"event": "CTF",
 				"name": "Moraya Prabhu",
 				"contact": "8693099824",
-				"mail": "moraya.20063@iitgoa.ac.in"
+				"mail": "moraya.20063@iitgoa.ac.in",
+				"off": 1,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Event Head.png",
 				"event": "HackOverflow",
 				"name": "Namami Shanker",
 				"contact": "8840273138",
-				"mail": "namami.shanker.19041@iitgoa.ac.in"
+				"mail": "namami.shanker.19041@iitgoa.ac.in",
+				"off": 1,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Event Head.png",
 				"event": "Circuital Dilemma",
 				"name": "Runal Palkar",
 				"contact": "9137884831",
-				"mail": "runal.palkar.20042@iitgoa.ac.in"
+				"mail": "runal.palkar.20042@iitgoa.ac.in",
+				"off": 1,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Event Head.png",
 				"event": "Beat the Street",
 				"name": "Shantanu Wagh",
 				"contact": "7875214466",
-				"mail": "shantanu.wagh.19032@iitgoa.ac.in"
+				"mail": "shantanu.wagh.19032@iitgoa.ac.in",
+				"off": 1,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Event Head.png",
 				"event": "FizzBuzz",
 				"name": "Soumya Raj",
 				"contact": "9650945193",
-				"mail": "soumya.shrivastva.19041@iitgoa.ac.in"
+				"mail": "soumya.shrivastva.19041@iitgoa.ac.in",
+				"off": 1,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Event Head.png",
 				"event": "HackTheGames",
 				"name": "Srajan Chourasia",
 				"contact": "6263498532",
-				"mail": "srajan.chourasia.20031@iitgoa.ac.in"
+				"mail": "srajan.chourasia.20031@iitgoa.ac.in",
+				"off": 1,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Event Head.png",
 				"event": "Bridge Builder",
 				"name": "Swadesh Choudhary",
 				"contact": "9584872076",
-				"mail": "swadesh.choudhary.19063@iitgoa.ac.in"
+				"mail": "swadesh.choudhary.19063@iitgoa.ac.in",
+				"off": 1,
+				"url": "images/Namami Shanker.jpg"
 			},
 			{
 				"front": "images/Event Head.png",
 				"event": "Bash It!",
 				"name": "Twisha Bansal",
 				"contact": "8288964340",
-				"mail": "twisha.bansal.19031@iitgoa.ac.in"
+				"mail": "twisha.bansal.19031@iitgoa.ac.in",
+				"off": 1,
+				"url": "images/Namami Shanker.jpg"
 			}
 		]
 	]

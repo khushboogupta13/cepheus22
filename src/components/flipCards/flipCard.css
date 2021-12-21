@@ -3,6 +3,7 @@
 	position: relative;
 	height: 13vw;
 	width: 16vw;
+	margin-left: 9%;
 	display: flex;
 	justify-content: center;
 	/* margin: 20px 15px; */
@@ -94,12 +95,23 @@
 	color: white;
 	transform: inherit;
 	font-size: 1vw !important;
+	margin-bottom: unset !important;
+	text-align: initial !important;
+	margin-left: 5%;
 }
 .circle-img {
-	border-radius: 50%;
+	border-radius: 10%;
 	/* border: 0.2vw solid #fff; */
-	width: 7vw;
-	margin: 28% 5% 0 0;
-	height: 7vw;
+	width: 6vw;
+	margin: 38% 2% 0 0;
+	/* height: 7vw; */
 	transform: inherit;
+}
+.details {
+	width: 50%;
+	color: white;
+	margin-bottom: unset !important;
+	word-break: normal;
+	text-align: initial !important;
+	margin-left: 5%;
 }
