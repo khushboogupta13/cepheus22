@@ -76,6 +76,7 @@ const Temp = (props) => {
 
 						{items.map((item, i) => (
 							// <SwiperSlide style={{ zIndex: 10 }}>
+							
 							<FlipCard
 								key={item.mail}
 								front={item.front}
