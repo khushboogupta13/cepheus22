@@ -27,8 +27,8 @@ const Temp = (props) => {
 		dots: false,
 		infinite: false,
 		speed: 500,
-		slidesToShow: 5,
-		slidesToScroll: 1,
+		slidesToShow: 6,
+		slidesToScroll: 3,
 		// width: 700,
 	};
 	// const image = images.reverse();
@@ -38,21 +38,7 @@ const Temp = (props) => {
 				{data.images.map((items, j) => (
 					<div className='rowDiv' style={{ zIndex: `${100 - j}` }}>
 						{/* <Swiper slidesPerView={5} spaceBetween={10}> */}
-						<Slider
-							{...settings}
-							{...{
-								responsive: [
-									{
-										breakpoint: 768,
-										settings: {
-											slidesToShow: 4,
-											slidesToScroll: 1,
-											infinite: false,
-											dots: false,
-										},
-									},
-								],
-							}}>
+						<Slider {...settings}>
 							{items.map((item, i) => (
 								// <SwiperSlide style={{ zIndex: 10 }}>
 								<FlipCard
@@ -66,6 +52,7 @@ const Temp = (props) => {
 									zIndex={100 - j}
 									url={item.url}
 									order={j}
+									label={item.label}
 									off={0}
 									anime={i + j}
 									inViewport={inViewport}
@@ -93,6 +80,7 @@ const Temp = (props) => {
 								off={item.off}
 								zIndex={100 - j - i}
 								order={j}
+								label={item.label}
 								url={item.url}
 								anime={i + j}
 								inViewport={inViewport}

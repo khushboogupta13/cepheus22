@@ -4,7 +4,7 @@ import './flipCard.css';
 
 const FlipCard = (props) => {
 	const [flipped, set] = useState(false);
-	const { event, name, contact, mail, url } = props;
+	const { event, name, contact, mail, url, label } = props;
 	return (
 		<div
 			className={`flip-card ${props.inViewport ? 'enter' : 'not-enter'}`}
@@ -17,7 +17,8 @@ const FlipCard = (props) => {
 			}}>
 			<div className={flipped ? 'flip-card-inner flipped' : 'flip-card-inner'}>
 				<div className={`flip-card-front ${flipped ? 'flip' : ''}`}>
-					<img src={process.env.PUBLIC_URL + '/' + props.front} alt='Avatar' className='avatar__image' />
+					{!label ? <p className='label'>{props.event}</p> : ''}
+					<img src={props.front} alt='Avatar' className='avatar__image' />
 				</div>
 				<div className='flip-card-back'>
 					{/* <img src={props.back} alt='Avatar' className='avatar__image' /> */}
@@ -31,7 +32,7 @@ const FlipCard = (props) => {
 							width: '100%',
 						}}>
 						<h1 className={'member__name'}>{name}</h1>
-						<img className='circle-img' src={process.env.PUBLIC_URL + '/' + url} alt='avatar_img' />
+						<img className='circle-img' src={url} alt='avatar_img' />
 					</div>
 					<div
 						style={{
@@ -60,6 +61,7 @@ const FlipCard = (props) => {
 							className='details'
 							style={{
 								fontSize: '0.45vw',
+								wordBreak: 'break-all',
 							}}>
 							{mail}
 						</p>

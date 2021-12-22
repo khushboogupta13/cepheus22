@@ -34,7 +34,7 @@
 	flex-direction: column;
 	padding-top: 5vw;
 	width: 80%;
-	margin-left: 9%;
+	margin-left: -8%;
 	justify-content: center;
 	/* align-items: center; */
 }
@@ -54,6 +54,9 @@
 }
 .slick-slide:first-child {
 	margin-left: -1%;
+}
+.slick-prev {
+	left: 20 px !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -102,6 +105,7 @@
 	}
 	.circle-img {
 		width: 20vw;
+		height: 24vw;
 	}
 	.details {
 		font-size: 2vw !important;
@@ -109,12 +113,19 @@
 	.member__name {
 		font-size: 3vw !important;
 	}
+	.label {
+		width: 100%;
+		margin-top: 48%;
+		font-size: 2.9vw;
+	}
 }
 .carousalDiv {
 	overflow: scroll;
+	display: flex;
+	justify-content: center;
 }
 .slick-slider {
-	width: 105%;
+	width: 110%;
 }
 .slick-track:hover {
 	z-index: 1000 !important;
