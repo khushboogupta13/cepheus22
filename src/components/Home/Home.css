@@ -188,6 +188,10 @@
 .buttonGlow:hover {
   animation: glowing 1300ms;
 }
+
+a {
+  color: black;
+}
 @keyframes glowing {
   0% {
     background-color: white;

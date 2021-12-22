@@ -68,7 +68,7 @@ const Profile = (props) => {
           <div className="registeredEvents">
             {!events ? (
               <div className="noEvents">
-                <p>No Events Registered</p>
+                <p>Event registration will start soon</p>
               </div>
             ) : (
               <></>

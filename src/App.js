@@ -51,6 +51,7 @@ const App = () => {
         localStorage.setItem("id", playerId);
         localStorage.setItem("is_profile_complete", "true");
         history.push("/");
+
       } else if (playerId && is_profile_complete === "false") {
         history.push(`/completeProfile/?${playerId} `);
       }

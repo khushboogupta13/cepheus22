@@ -190,13 +190,13 @@
 }
 @media only screen and (max-width: 1030px){
     .playerIDText {
-        font-size: 0.8em;
+        font-size: 1em;
     }
     .playerId{
         width: 60%;
     }
     .playerId > p {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
     .copyText{
         z-index: 10;
