@@ -8,7 +8,7 @@ import Rulebook from "./assets/fest_rulebook.png";
 /* eslint-disable spaced-comment */
 /// <reference types="react-scripts" />
 
-const baseURL = process.env.PUBLIC_URL + "/images/";
+const baseURL = "";
 
 const IndividualEvent = () => {
   const { eventName } = useParams();
@@ -58,7 +58,7 @@ const IndividualEvent = () => {
             <div className="poster">
               <img
                 id="eventPoster"
-                src={`${baseURL + event.posterURL}`}
+                src={`${event.posterURL}`}
                 alt={event.eventName}
                 id="poster"
               />
