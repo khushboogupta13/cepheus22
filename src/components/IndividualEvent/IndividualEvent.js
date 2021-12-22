@@ -13,11 +13,11 @@ const baseURL = process.env.PUBLIC_URL + "/images/";
 const IndividualEvent = () => {
   const { eventName } = useParams();
   const [PopupRegistration, setPopupRegistration] = useState(false);
-  
+
   let event;
   let eventi = useLocation();
   eventi = eventi.pathname.substring(1, eventi.pathname.length);
-  
+
   const eventType = eventi.substring(0, eventi.indexOf("/"));
 
   useEffect(() => {
@@ -53,7 +53,7 @@ const IndividualEvent = () => {
           <img src={`${baseURL + event.eventHeading}`} alt="eventHeading" />
         </div>
 
-        <div className="d-flex justify-content-center" id="mainContent">
+        <div className="d-flex justify-content-center blackBg" id="mainContent">
           <div className="p-2 col-example text-left">
             <div className="poster">
               <img
@@ -74,7 +74,6 @@ const IndividualEvent = () => {
             <div className="registerButton" onClick={formPopUp}>
               <img src={Register} alt="Register" style={{ maxWidth: "100%" }} />
             </div>
-          
           </div>
         </div>
       </div>
