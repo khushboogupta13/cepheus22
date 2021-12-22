@@ -1,114 +1,115 @@
-.individualEvent{
-      background-color: #131314;
-      color: white;
-      height: 120vh;
-      width: 100vw;
+.individualEvent {
+  background-color: #131314;
+  color: white;
+  height: 120vh;
+  width: 100vw;
+}
+.blackBg {
+  background-color: #131314;
 }
 
-.content{
-      background-color: #111111;
-      justify-content: space-evenly;
-      position: relative;
-      z-index: 100;
-      color: white;
-      display: flex;
-      flex: 5;
-      font-size: 1.5vw;
-      overflow: scroll;
-      overflow-x: hidden;
-      text-align: center;
-      border: solid 3px black;
-      border-radius: 30px;
-      padding: 15px;
-      box-shadow: inset black 0px 0px 30px 0px;
-      flex-direction: column;
-      width: 45vw;
-      max-height: 80vh !important;
-      margin-left: 3rem !important;
+.content {
+  background-color: #111111;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 100;
+  color: white;
+  display: flex;
+  flex: 5;
+  font-size: 1.5vw;
+  overflow: scroll;
+  overflow-x: hidden;
+  text-align: center;
+  border: solid 3px black;
+  border-radius: 30px;
+  padding: 15px;
+  box-shadow: inset black 0px 0px 30px 0px;
+  flex-direction: column;
+  width: 45vw;
+  max-height: 80vh !important;
+  margin-left: 3rem !important;
 }
 
-#poster{
-      width: 30vw;
-      margin-left: 2rem;
-      border-radius: 10px;
+#poster {
+  width: 30vw;
+  margin-left: 2rem;
+  border-radius: 10px;
 }
 
-#eventPoster{
-      border-width: 2rem;
-      border-color: white;
+#eventPoster {
+  border-width: 2rem;
+  border-color: white;
 }
 
-#mainContent{
-      display: flex;
-      align-items: center;
-      margin-top: -2rem;
+#mainContent {
+  display: flex;
+  align-items: center;
+  margin-top: -2rem;
 }
 
-.eventHeading{
-      margin-top: -2rem;
-      margin-bottom: 3rem;
+.eventHeading {
+  /* margin-top: -2rem; */
+  margin-bottom: 3rem;
 }
 
-.registerButton{
-      border-radius: 12px;
-      /* opacity: 80%; */
-      background-color: white;
-      width: 15vw;
-      margin-top: 2rem;
-      margin-left: 18rem;
+.registerButton {
+  border-radius: 12px;
+  /* opacity: 80%; */
+  background-color: white;
+  width: 15vw;
+  margin-top: 2rem;
+  margin-left: 18rem;
 }
 
-.registerButton:hover{
-      transform: scale(1.02) perspective(0px);
-      box-shadow: 0 10px 10px #131314;
-      cursor: pointer;
+.registerButton:hover {
+  transform: scale(1.02) perspective(0px);
+  box-shadow: 0 10px 10px #131314;
+  cursor: pointer;
 }
 
-.rulebookButton{
-      border-radius: 12px;
-      background-color: white;
-      width: 20vw;
-      margin-top: 2rem;
-      margin-left: 16rem;
+.rulebookButton {
+  border-radius: 12px;
+  background-color: white;
+  width: 20vw;
+  margin-top: 2rem;
+  margin-left: 16rem;
 }
 
-.rulebookButton:hover{
-      transform: scale(1.02) perspective(0px);
-      box-shadow: 0 10px 10px #131314;
-      cursor: pointer;
+.rulebookButton:hover {
+  transform: scale(1.02) perspective(0px);
+  box-shadow: 0 10px 10px #131314;
+  cursor: pointer;
 }
 
-@media (max-width: 500px){
-      
-      .registerButton{
-            width: 40vw;
-            margin-left: 2rem;
-      }
+@media (max-width: 500px) {
+  .registerButton {
+    width: 40vw;
+    margin-left: 2rem;
+  }
 
-      .rulebookButton{
-            width: 60vw;
-            margin-left: 0rem;
-      }
+  .rulebookButton {
+    width: 60vw;
+    margin-left: 0rem;
+  }
 
-      #mainContent{
-            flex-direction: column;
-      }
+  #mainContent {
+    flex-direction: column;
+  }
 
-      #poster{
-            width: 80vw;
-            margin-left: 0;
-      }
+  #poster {
+    width: 80vw;
+    margin-left: 0;
+  }
 
-      .content{
-            width: 60vw;
-            font-size: 4vw;
-            margin-left: 0 !important;
-            max-height: 50vh;
-      }
+  .content {
+    width: 60vw;
+    font-size: 4vw;
+    margin-left: 0 !important;
+    max-height: 50vh;
+  }
 
-      .eventHeading{
-            /* margin-top: -1.5rem; */
-            margin-bottom: 2rem;
-      }
+  .eventHeading {
+    /* margin-top: -1.5rem; */
+    margin-bottom: 2rem;
+  }
 }
-

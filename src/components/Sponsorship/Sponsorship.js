@@ -4,8 +4,23 @@ import rightImage from "./asset/rightSponsorImage.svg";
 import heading from "./asset/sponsorText.svg";
 import Sponsor from "./Sponsor";
 import React from "react";
+
 const hoverRobotics =
   "https://res.cloudinary.com/dijzrwmrb/image/upload/q_auto:eco/v1639985612/images/hover-wb_c07nl5.webp";
+const mrkTk =
+  "https://res.cloudinary.com/dijzrwmrb/image/upload/q_auto:eco/v1639985611/images/marktechpost-wb_nge8nn.webp";
+
+const cmpM =
+  "https://res.cloudinary.com/dijzrwmrb/image/upload/q_auto:eco/v1639985611/images/cm-wb_bfpwkt.webp";
+
+const gfg =
+  "https://res.cloudinary.com/dijzrwmrb/image/upload/q_auto:eco/v1639985611/images/gfg-wb_ymctns.webp";
+
+const mentX =
+  "https://res.cloudinary.com/dijzrwmrb/image/upload/q_auto:eco/v1639985612/images/mentor-wb_m53utr.webp";
+
+const ythInc =
+  "https://res.cloudinary.com/dijzrwmrb/image/upload/c_scale,q_auto:eco,w_1920/v1640066761/images/Yi_New_Logo_White_u5mpsl.webp";
 
 const sponsH = [
   {
@@ -19,7 +34,7 @@ const sponsH = [
     name: "Co-Sponsors",
     cls: "co-s",
     key: 2,
-    companies: [{ logo: hoverRobotics, name: "GEEKSFORGEEKS" }],
+    companies: [{ logo: gfg, name: "GEEKSFORGEEKS" }],
     isN: true,
   },
   // {
@@ -35,14 +50,14 @@ const sponsH = [
     name: "Merchandise-Sponsors",
     cls: "merch-s",
     key: 4,
-    companies: [{ logo: hoverRobotics, name: "Campus Memories" }],
+    companies: [{ logo: cmpM, name: "Campus Memories" }],
     isN: false,
   },
   {
     name: "Event Sponsors",
     cls: "event-s",
     key: 5,
-    companies: [{ logo: hoverRobotics, name: "Marktechpost" }],
+    companies: [{ logo: mrkTk, name: "Marktechpost" }],
     isN: false,
   },
   // {
