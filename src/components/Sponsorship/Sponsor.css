@@ -5,16 +5,20 @@
   text-align: center;
 }
 
+.outterContainer{
+  margin-bottom: 2em;
+}
+
 .lnContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 10em;
+  height: 10em;
 }
 
 .lnContainer img {
-  width: 90%;
-  height: auto;
+  height: 90%;
+  width: auto;
 }
 
 .lnContainer div {
