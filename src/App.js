@@ -4,7 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React, { useEffect, useState } from "react";
-import Login from "./components/LogIn/Login";
+import Login from './components/LogIn/Login';
+
 import {
   Route,
   Switch,
