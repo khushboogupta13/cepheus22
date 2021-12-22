@@ -1,6 +1,6 @@
 .home {
   display: flex;
-  background-image: url("https://res.cloudinary.com/dcydix7rc/image/upload/f_auto,q_auto/v1638350177/cepheus22/gackground_impkrn.jpg");
+  background-image: url("https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1500/v1638350177/cepheus22/gackground_impkrn.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
 
 .home_mob {
   display: flex;
-  background-image: url("https://res.cloudinary.com/dcydix7rc/image/upload/f_auto,q_auto/v1638350177/cepheus22/gackground_impkrn.jpg");
+  background-image: url("https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1500/v1638350177/cepheus22/gackground_impkrn.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

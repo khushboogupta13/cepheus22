@@ -3,21 +3,21 @@ import "./ScrollingGallery.css";
 import jQuery from "jquery";
 
 let images = [
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821666/cepheus22/stratathon_eh5han.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821662/cepheus22/beet_the_street_j36qde.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821666/cepheus22/Treasure_Hunt_paxokp.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821662/cepheus22/buider_bridge_lrboxl.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821666/cepheus22/Play_with_mirobit_mltk0q.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821664/cepheus22/hack_overflow_hjijzi.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821663/cepheus22/Cybersec_webinar_uaet7f.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821665/cepheus22/hackthegame-01_kho5gm.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821663/cepheus22/Fizzbuzz_gj7nak.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821663/cepheus22/circuitalDilemma-01_hwuswn.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821663/cepheus22/Bash_it_roykk6.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821663/cepheus22/Arduino_s_Trial_f4wioa.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821665/cepheus22/Make_a_career_in_robotics_orfsqj.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821665/cepheus22/Lorem_Imsum_sjghbu.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821662/cepheus22/capture_the_flag_kbplz1.png",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821666/cepheus22/stratathon_eh5han.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821662/cepheus22/beet_the_street_j36qde.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821666/cepheus22/Treasure_Hunt_paxokp.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821662/cepheus22/buider_bridge_lrboxl.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821666/cepheus22/Play_with_mirobit_mltk0q.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821664/cepheus22/hack_overflow_hjijzi.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821663/cepheus22/Cybersec_webinar_uaet7f.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821665/cepheus22/hackthegame-01_kho5gm.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821663/cepheus22/Fizzbuzz_gj7nak.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821663/cepheus22/circuitalDilemma-01_hwuswn.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821663/cepheus22/Bash_it_roykk6.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821663/cepheus22/Arduino_s_Trial_f4wioa.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821665/cepheus22/Make_a_career_in_robotics_orfsqj.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821665/cepheus22/Lorem_Imsum_sjghbu.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1639821662/cepheus22/capture_the_flag_kbplz1.webp",
 ];
 
 const Card = (props) => {
@@ -30,8 +30,8 @@ const Card = (props) => {
 /* eslint-disable */
 export default function ScrollingGallery(props) {
   useEffect(() => {
-    (function ($, undefined) {
-      $.fn.loopScroll = function (p_options) {
+    (function($, undefined) {
+      $.fn.loopScroll = function(p_options) {
         var options = $.extend(
           {
             direction: "upwards",
@@ -40,7 +40,7 @@ export default function ScrollingGallery(props) {
           p_options
         );
 
-        return this.each(function () {
+        return this.each(function() {
           var obj = $(this).find(".gallery");
           // var text_height = obj.find(".column_container").height();
           var start_y, end_y;
@@ -52,7 +52,7 @@ export default function ScrollingGallery(props) {
             end_y = -500;
           }
 
-          var animate = function () {
+          var animate = function() {
             // setup animation of specified block "obj"
             // calculate distance of animation
             var distance = Math.abs(end_y - parseInt(obj.css("top")));
@@ -64,7 +64,7 @@ export default function ScrollingGallery(props) {
               { top: end_y }, //scroll upwards
               (1000 * distance) / options.speed,
               "linear",
-              function () {
+              function() {
                 // scroll to start position
                 obj.css("top", start_y);
                 animate();
@@ -72,7 +72,10 @@ export default function ScrollingGallery(props) {
             );
           };
 
-          obj.find(".column_container").clone().appendTo(obj);
+          obj
+            .find(".column_container")
+            .clone()
+            .appendTo(obj);
 
           obj.css("top", start_y);
           animate(); // start animation
