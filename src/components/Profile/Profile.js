@@ -14,30 +14,29 @@ const Profile = (props) => {
     const timer = setTimeout(() => setCopy(false), 3000);
     return () => clearTimeout(timer);
   }
-  const playerId = localStorage.getItem('id');
-  const is_profile_complete = localStorage.getItem('is_profile_complete');
+  const playerId = localStorage.getItem("id");
+  const is_profile_complete = localStorage.getItem("is_profile_complete");
 
   useEffect(async () => {
-    console.log('Player',playerId,is_profile_complete);
-    if(playerId && is_profile_complete === 'true'){
-      
+    console.log("Player", playerId, is_profile_complete);
+    if (playerId && is_profile_complete === "true") {
       let data = await axios.get(
-        process.env.React_App_Backend_url+"user/profile",
+        process.env.React_App_Backend_url + "user/profile",
         {
           headers: {
-          'content-type': 'application/json',
-          'Authorization': playerId
+            "content-type": "application/json",
+            Authorization: playerId,
+          },
         }
-      }
       );
-      if(data.status === 200){
-        console.log("profile loaded",data);
+      if (data.status === 200) {
+        console.log("profile loaded", data);
         setEvents(data.events);
-      }else{
+      } else {
         console.log("error");
       }
     }
-  })
+  });
   return (
     <Modal onClose={props.onCloseProfile} isWider={props.isWider}>
       <div className="profile">
@@ -61,30 +60,34 @@ const Profile = (props) => {
             </div>
           </div>
         </div>
-        
+
         <div className="myEventsText">
           <p>My Events</p>
         </div>
         <div className="registeredEventsWrapper">
           <div className="registeredEvents">
-            {!events ? 
-            <div className="noEvents">
-              <p>No Events Registered</p>
-            </div>
-             : <></>}
-            {events?.map((event) => {
-              return(
-                <div className="eventCard">
-                <img
-                  src="https://techfest.org/2021/workshops/cyberethical.jpg"
-                  alt=""
-                />
-                <div className="eventInfo">
-                  <h2>EventName</h2>
-                </div>
+            {!events ? (
+              <div className="noEvents">
+                <p>No Events Registered</p>
               </div>
-              );
-            })}
+            ) : (
+              <></>
+            )}
+            {events == null
+              ? null
+              : events.map((event) => {
+                  return (
+                    <div className="eventCard">
+                      <img
+                        src="https://techfest.org/2021/workshops/cyberethical.jpg"
+                        alt=""
+                      />
+                      <div className="eventInfo">
+                        <h2>EventName</h2>
+                      </div>
+                    </div>
+                  );
+                })}
           </div>
         </div>
       </div>
