@@ -81,7 +81,7 @@ const App = () => {
           <IndividualEvent />
         </Route>
       </Switch>
-      )
+      
     </div>
   );
 };

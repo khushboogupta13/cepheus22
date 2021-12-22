@@ -8,6 +8,8 @@ import axios from "axios";
 const Profile = (props) => {
   const [copy, setCopy] = useState(false);
 
+  const [events, setEvents] = useState();
+
   function copyControlFunction() {
     const timer = setTimeout(() => setCopy(false), 3000);
     return () => clearTimeout(timer);
@@ -30,6 +32,7 @@ const Profile = (props) => {
       );
       if(data.status === 200){
         console.log("profile loaded",data);
+        setEvents(data.events);
       }else{
         console.log("error");
       }
@@ -58,76 +61,30 @@ const Profile = (props) => {
             </div>
           </div>
         </div>
-        <div className="mobile-no-container">
-          <div className="mobile-no">
-            <p>MobileNo: </p>
-          </div>
-          <div className="mobile-input-container">
-              <input type="text" placeholder="99999999999" />
-            </div>
-        </div>
-        <div className="clg-name-container">
-          <div className="clg-name">
-            <p>College: </p>
-          </div>
-          <div className="clg-input-container">
-              <input type="text" placeholder="IIT GOA" />
-            </div>
-        </div>
+        
         <div className="myEventsText">
           <p>My Events</p>
         </div>
         <div className="registeredEventsWrapper">
           <div className="registeredEvents">
-            <div className="eventCard">
-              <img
-                src="https://techfest.org/2021/workshops/cyberethical.jpg"
-                alt=""
-              />
-              <div className="eventInfo">
-                <h2>EventName</h2>
-              </div>
+            {!events ? 
+            <div className="noEvents">
+              <p>No Events Registered</p>
             </div>
-
-            <div className="eventCard">
-              <img
-                src="https://techfest.org/2021/workshops/cyberethical.jpg"
-                alt=""
-              />
-              <div className="eventInfo">
-                <h2>EventName</h2>
+             : <></>}
+            {events?.map((event) => {
+              return(
+                <div className="eventCard">
+                <img
+                  src="https://techfest.org/2021/workshops/cyberethical.jpg"
+                  alt=""
+                />
+                <div className="eventInfo">
+                  <h2>EventName</h2>
+                </div>
               </div>
-            </div>
-
-            <div className="eventCard">
-              <img
-                src="https://techfest.org/2021/workshops/cyberethical.jpg"
-                alt=""
-              />
-              <div className="eventInfo">
-                <h2>EventName</h2>
-              </div>
-            </div>
-
-            <div className="eventCard">
-              <img
-                src="https://techfest.org/2021/workshops/cyberethical.jpg"
-                alt=""
-              />
-              <div className="eventInfo">
-                <h2>EventName</h2>
-              </div>
-            </div>
-
-            <div className="eventCard">
-              <img
-                src="https://techfest.org/2021/workshops/cyberethical.jpg"
-                alt=""
-              />
-              <div className="eventInfo">
-                <h2>EventName</h2>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </div>
