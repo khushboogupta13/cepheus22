@@ -48,6 +48,7 @@ const IndividualEvent = () => {
           isWider="0"
         />
       )}
+      <div className="regSoon">Registration will be starting soon!</div>
       <div id="individualEvent" className="individualEvent">
         <div className="eventHeading">
           <img src={`${baseURL + event.eventHeading}`} alt="eventHeading" />
@@ -71,9 +72,9 @@ const IndividualEvent = () => {
               <p> Team size: {event.size}</p>
             </div>
 
-            <div className="registerButton" onClick={formPopUp}>
+            {/* <div className="registerButton" onClick={formPopUp}>
               <img src={Register} alt="Register" style={{ maxWidth: "100%" }} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

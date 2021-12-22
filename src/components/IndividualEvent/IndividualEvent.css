@@ -8,6 +8,12 @@
   background-color: #131314;
 }
 
+.regSoon{
+  text-align: center;
+  background-color: rgb(165, 165, 40);
+  font-weight: bold;
+}
+
 .content {
   background-color: #111111;
   justify-content: space-evenly;
