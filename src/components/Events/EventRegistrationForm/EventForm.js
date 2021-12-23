@@ -14,9 +14,7 @@ const EventForm = (props) => {
 
   const getNumObj = (objNum) => {
     setShowObjFillForm(true);
-    console.log(objNum);
   };
-  console.log(props.teamSize);
   return (
     <Modal onClose={props.onCloseForm} isWider={props.isWider}>
       {!showObjFillForm && (

@@ -18,7 +18,6 @@ const Profile = (props) => {
   const is_profile_complete = localStorage.getItem("is_profile_complete");
 
   useEffect(async () => {
-    console.log("Player", playerId, is_profile_complete);
     if (playerId && is_profile_complete === "true") {
       let data = await axios.get(
         process.env.React_App_Backend_url + "user/profile",
@@ -30,10 +29,7 @@ const Profile = (props) => {
         }
       );
       if (data.status === 200) {
-        console.log("profile loaded", data);
         setEvents(data.events);
-      } else {
-        console.log("error");
       }
     }
   });
