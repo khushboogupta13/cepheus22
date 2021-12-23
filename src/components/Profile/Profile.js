@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./Profile.css";
 import CopyIcon from "./copy.png";
 import Modal from "../UI/Modal";
-import { propTypes } from "react-bootstrap/esm/Image";
 import axios from "axios";
 
 const Profile = (props) => {
