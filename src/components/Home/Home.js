@@ -1,10 +1,10 @@
-import React, { Component, Profiler } from "react";
+import React, { Component } from "react";
 import "./Home.css";
 import leftSymbol from "./assets/leftSymbol.svg";
 import centerSymbol from "./assets/centerSymbol.svg";
 import cepheusLogo from "./assets/cepheusLogo.svg";
 import ScrollingGallery from "./scrollingGallery/ScrollingGallery";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import Profile from "../Profile/Profile";
 
 export default class Home extends Component {

@@ -3,8 +3,8 @@ import { useLocation, useParams } from "react-router";
 import "./IndividualEvent.css";
 import data from "../Events/data.json";
 import EventForm from "../Events/EventRegistrationForm/EventForm";
-import Register from "./assets/register.png";
-import Rulebook from "./assets/fest_rulebook.png";
+// import Register from "./assets/register.png";
+// import Rulebook from "./assets/fest_rulebook.png";
 /* eslint-disable spaced-comment */
 /// <reference types="react-scripts" />
 
@@ -30,9 +30,9 @@ const IndividualEvent = () => {
     event = data.workshops.find((e) => e.eventName === eventName);
   }
 
-  const formPopUp = () => {
-    setPopupRegistration(true);
-  };
+  // const formPopUp = () => {
+  //   setPopupRegistration(true);
+  // };
 
   const hideEventRegistrationFormHandler = () => {
     setPopupRegistration(false);
