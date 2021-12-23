@@ -25,19 +25,31 @@ const ythInc =
 const xpaAi =
   "https://res.cloudinary.com/cepheus22/image/upload/v1640178332/samples/WhatsApp_Image_2021-12-19_at_11.29.54_AM_hl7g7r.jpg";
 
+const stkGro =
+  "https://res.cloudinary.com/cepheus22/image/upload/v1640235129/samples/StockGro_logo_-_Black_Font_-_White_Background_-_Copy_uxctia.png";
+
+const grbOn =
+  "https://res.cloudinary.com/cepheus22/image/upload/v1640235760/grabonin_xxkr7d.jpg";
+
 const sponsH = [
   {
     name: "Title Sponsor",
     cls: "title-s",
     key: 1,
-    companies: [{ logo: xpaAi, name: "X0PA AI" }],
+    companies: [{ logo: xpaAi, name: "X0PA AI", webL: "https://x0pa.com/" }],
     isN: true,
   },
   {
     name: "Co-Sponsors",
     cls: "co-s",
     key: 2,
-    companies: [{ logo: gfg, name: "GEEKSFORGEEKS" }],
+    companies: [
+      {
+        logo: gfg,
+        name: "GEEKSFORGEEKS",
+        webL: "https://www.geeksforgeeks.org/",
+      },
+    ],
     isN: true,
   },
   // {
@@ -53,14 +65,31 @@ const sponsH = [
     name: "Merchandise-Sponsors",
     cls: "merch-s",
     key: 4,
-    companies: [{ logo: cmpM, name: "Campus Memories" }],
+    companies: [
+      {
+        logo: cmpM,
+        name: "Campus Memories",
+        webL: "http://cepheusmemories.co.in/",
+      },
+    ],
     isN: false,
   },
   {
     name: "Event Sponsors",
     cls: "event-s",
     key: 5,
-    companies: [{ logo: mrkTk, name: "Marktechpost" }],
+    companies: [
+      {
+        logo: mrkTk,
+        name: "Marktechpost",
+        webL: "https://www.marktechpost.com/",
+      },
+      {
+        logo: stkGro,
+        name: "Stock Gro",
+        webL: "https://www.stockgro.club/",
+      },
+    ],
     isN: false,
   },
   // {
@@ -73,14 +102,22 @@ const sponsH = [
     name: "Savings Partner",
     cls: "saving-s",
     key: 7,
-    companies: [{ logo: hoverRobotics, name: "Grab-On" }],
+    companies: [
+      { logo: grbOn, name: "Grab-On", webL: "https://www.grabon.in/" },
+    ],
     isN: false,
   },
   {
     name: "Coupons Partner",
     cls: "cpn-s",
     key: 8,
-    companies: [{ logo: hoverRobotics, name: "Hover Robotics" }],
+    companies: [
+      {
+        logo: hoverRobotics,
+        name: "Hover Robotics",
+        webL: "https://hoverrobotix.com/",
+      },
+    ],
     isN: false,
   },
 ];

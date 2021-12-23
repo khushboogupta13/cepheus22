@@ -2,6 +2,11 @@ import React from "react";
 import "./Sponsor.css";
 
 const Sponsor = (props) => {
+
+  const URLopenerHandler=()=>{
+    
+  }
+
   return (
     <div className={`${props.details.cls} outterContainer`}>
       <div className={`prUnique-${props.details.key} completeLevel`}>

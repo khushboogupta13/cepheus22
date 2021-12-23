@@ -1,7 +1,7 @@
 import React from 'react';
 import Temp from '../verticalCarousal/tempFile';
 import './ContactUs.css';
-import contact from './Contact us.svg';
+import contact from './Contact us.png';
 
 const ContactUs = () => {
 	return (
