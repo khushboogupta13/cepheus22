@@ -179,6 +179,7 @@ const Events = () => {
                   borderRadius: "10px",
                   background: "#333",
                   color: "#fff",
+                  zIndex: 2000,
                 },
               });
             }}
@@ -190,7 +191,20 @@ const Events = () => {
 
       <div className="d-flex justify-content-center" id="boxesMobile">
         <div className="p-2 col-example text-left">
-          <div className="buttons" id="buttonMobile">
+          <div
+            className="buttons"
+            id="buttonMobile"
+            onClick={() => {
+              toast("Coming Soon!!", {
+                style: {
+                  borderRadius: "10px",
+                  background: "#333",
+                  color: "#fff",
+                  zIndex: 2000,
+                },
+              });
+            }}
+          >
             <img src={Rulebook} alt="rulebook" id="talkImgMobile" />
           </div>
         </div>
