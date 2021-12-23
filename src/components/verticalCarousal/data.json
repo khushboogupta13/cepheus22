@@ -2,7 +2,7 @@
   "images": [
     [
       {
-        "front": "cepheus22/images/Overall.png",
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_471/v1640192194/cepheusImages/Overall_d0q0un.webp",
         "event": "Overall Coordinator",
         "name": "Raghvendra Singh",
         "contact": "9785075997",
@@ -14,7 +14,7 @@
     ],
     [
       {
-        "front": "cepheus22/images/Manager.png",
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
         "event": "Manager",
         "name": "Gaurav Yadav",
         "contact": "8901985251",
@@ -24,7 +24,7 @@
         "label": 1
       },
       {
-        "front": "cepheus22/images/Manager.png",
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
         "event": "Manager",
         "name": "Kartikey Sharma",
         "contact": "8384078124",
@@ -34,7 +34,7 @@
         "label": 1
       },
       {
-        "front": "cepheus22/images/Manager.png",
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
         "event": "Manager",
         "name": "Saurabh Kuradkar",
         "contact": "7083447880",
