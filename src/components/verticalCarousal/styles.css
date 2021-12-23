@@ -97,6 +97,8 @@
 	}
 	.colDiv {
 		margin-top: 20vw;
+		justify-content: unset;
+		height: 90vh;
 	}
 	.flip-card-back {
 		width: 70%;

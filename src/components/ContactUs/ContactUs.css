@@ -1,20 +1,26 @@
 .contactUs {
-  height: 100vh;
-  width: 100%;
-  scroll-snap-align: start;
-  background-color: #131314;
+	height: 100vh;
+	width: 100%;
+	scroll-snap-align: start;
+	background-color: #131314;
 }
 .heading_c {
-  /* margin-top: -3vw; */
-  margin-left: 5vw;
-  width: 47vw;
+	/* margin-top: -3vw; */
+	margin-left: 5vw;
+	width: 47vw;
 }
 
 @media only screen and (max-width: 768px) {
-  .contactUs {
-    height: 100%;
-  }
-  .flip-card-back {
-    box-shadow: none;
-  }
+	.contactUs {
+		height: 100vh;
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+	}
+	.flip-card-back {
+		box-shadow: none;
+	}
+	.carousalDiv {
+		height: 90vh;
+	}
 }
