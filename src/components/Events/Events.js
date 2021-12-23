@@ -112,6 +112,7 @@ const WorkshopCarousel = () => {
             <img
               src={`${baseURL + "play_microbit.png"}`}
               style={{ width: "60vw", height: "65vw", marginTop: "3rem" }}
+              alt="Microbit"
             />
           </div>
 
@@ -119,6 +120,7 @@ const WorkshopCarousel = () => {
             <img
               src={`${baseURL + "bash_it.png"}`}
               style={{ width: "60vw", height: "65vw", marginTop: "3rem" }}
+              alt="bash it"
             />
           </div>
 
@@ -126,6 +128,7 @@ const WorkshopCarousel = () => {
             <img
               src={`${baseURL + "hack_the_game.png"}`}
               style={{ width: "60vw", height: "65vw", marginTop: "3rem" }}
+              alt="hack_the_game"
             />
           </div>
 
@@ -133,6 +136,7 @@ const WorkshopCarousel = () => {
             <img
               src={`${baseURL + "robotics_career.png"}`}
               style={{ width: "60vw", height: "65vw", marginTop: "3rem" }}
+              alt="robotics"
             />
           </div>
         </Slider>
@@ -217,6 +221,7 @@ const Events = () => {
         <img
           src={BlackLine}
           style={{ marginTop: "-11rem", zIndex: 1, position: "relative" }}
+          alt="blackline"
         />
       </div>
 
