@@ -16,6 +16,7 @@
   align-items: center;
   height: 10em;
   padding: 0 1em 0 1em;
+  cursor: pointer;
 }
 
 .lnContainer img {

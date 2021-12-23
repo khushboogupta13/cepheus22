@@ -3,8 +3,8 @@ import "./Sponsor.css";
 
 const Sponsor = (props) => {
 
-  const URLopenerHandler=()=>{
-    
+  const URLopenerHandler=(webL)=>{
+    window.open(webL,'mywindow');
   }
 
   return (
@@ -14,7 +14,7 @@ const Sponsor = (props) => {
         <div className="companiesContainer">
           {props.details.companies.map((company) => {
             return (
-              <div className="lnContainer">
+              <div className="lnContainer" href={company.webL} onClick={()=>{URLopenerHandler(company.webL)}}>
                 <img src={company.logo} />
                 {props.details.isN && <div>{company.name}</div>}
               </div>
