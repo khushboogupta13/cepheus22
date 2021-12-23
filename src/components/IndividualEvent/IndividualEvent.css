@@ -8,6 +8,12 @@
   background-color: #131314;
 }
 
+.regSoon {
+  text-align: center;
+  background-color: white;
+  font-weight: bold;
+}
+
 .content {
   background-color: #111111;
   justify-content: space-evenly;
@@ -48,6 +54,8 @@
 }
 
 .eventHeading {
+  margin: auto;
+  width: 90vw;
   /* margin-top: -2rem; */
   margin-bottom: 3rem;
 }
@@ -110,6 +118,9 @@
 
   .eventHeading {
     /* margin-top: -1.5rem; */
+    width: 90vw;
+    margin: auto;
+
     margin-bottom: 2rem;
   }
 }

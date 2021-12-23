@@ -48,7 +48,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 75%;
+    height: 85%;
 }
 .registeredEvents {
     overflow-y: scroll;
@@ -111,7 +111,6 @@
 }
 
 .myEventsText {
-    height: 5%;
     display: flex;
     justify-content: center;
      color: white;
@@ -174,15 +173,30 @@
     outline-width: 0px;
 }
 
+.noEvents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid white;
+    height: 90%;
+
+}
+.noEvents > p{
+    font-size: 2em;
+    color: white;
+    font-family: squidFont;
+    width: 50%;
+    text-align: center;
+}
 @media only screen and (max-width: 1030px){
     .playerIDText {
-        font-size: 0.8em;
+        font-size: 1em;
     }
     .playerId{
         width: 60%;
     }
     .playerId > p {
-        font-size: 0.6em;
+        font-size: 0.9em;
     }
     .copyText{
         z-index: 10;
@@ -204,5 +218,19 @@
     }
     .clg-name > p{
         font-size: 0.8em;        
+    }
+
+    .eventCard{
+        height: 50%;
+        width: 80%;
+    }
+    .noEvents > p{
+        font-size: 1.8em;
+        width: 90%;
+    }
+    .noEvents {
+
+        height: 70%;
+    
     }
 }

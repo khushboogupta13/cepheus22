@@ -3,21 +3,20 @@ import "./ScrollingGallery.css";
 import jQuery from "jquery";
 
 let images = [
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821666/cepheus22/stratathon_eh5han.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821662/cepheus22/beet_the_street_j36qde.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821666/cepheus22/Treasure_Hunt_paxokp.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821662/cepheus22/buider_bridge_lrboxl.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821666/cepheus22/Play_with_mirobit_mltk0q.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821664/cepheus22/hack_overflow_hjijzi.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821663/cepheus22/Cybersec_webinar_uaet7f.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821665/cepheus22/hackthegame-01_kho5gm.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821663/cepheus22/Fizzbuzz_gj7nak.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821663/cepheus22/circuitalDilemma-01_hwuswn.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821663/cepheus22/Bash_it_roykk6.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821663/cepheus22/Arduino_s_Trial_f4wioa.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821665/cepheus22/Make_a_career_in_robotics_orfsqj.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821665/cepheus22/Lorem_Imsum_sjghbu.png",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_1920/v1639821662/cepheus22/capture_the_flag_kbplz1.png",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194958/cepheus22/posters/arduino_trial_ndjgnz.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194958/cepheus22/posters/treasure_hunt_b1eu2y.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194957/cepheus22/posters/stratathon_prpgjl.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194957/cepheus22/posters/squid_ctf_qpjp0x.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194956/cepheus22/posters/robotics_career_vigass.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194956/cepheus22/posters/play_microbit_hxq2b2.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194955/cepheus22/posters/hackoverflow_jd2aky.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194955/cepheus22/posters/lorem_ipsum_dniwh5.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194955/cepheus22/posters/hack_the_game_qua2bi.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194955/cepheus22/posters/fizzbuzz_cyckhr.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194953/cepheus22/posters/circuital_dilemma_wcasj9.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194953/cepheus22/posters/builder_bridge_dtec3n.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194953/cepheus22/posters/beat_the_street_h8h5ez.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194953/cepheus22/posters/bash_it_wf8mz7.webp",
 ];
 
 const Card = (props) => {
@@ -30,8 +29,8 @@ const Card = (props) => {
 /* eslint-disable */
 export default function ScrollingGallery(props) {
   useEffect(() => {
-    (function ($, undefined) {
-      $.fn.loopScroll = function (p_options) {
+    (function($, undefined) {
+      $.fn.loopScroll = function(p_options) {
         var options = $.extend(
           {
             direction: "upwards",
@@ -40,7 +39,7 @@ export default function ScrollingGallery(props) {
           p_options
         );
 
-        return this.each(function () {
+        return this.each(function() {
           var obj = $(this).find(".gallery");
           // var text_height = obj.find(".column_container").height();
           var start_y, end_y;
@@ -52,7 +51,7 @@ export default function ScrollingGallery(props) {
             end_y = -500;
           }
 
-          var animate = function () {
+          var animate = function() {
             // setup animation of specified block "obj"
             // calculate distance of animation
             var distance = Math.abs(end_y - parseInt(obj.css("top")));
@@ -64,7 +63,7 @@ export default function ScrollingGallery(props) {
               { top: end_y }, //scroll upwards
               (1000 * distance) / options.speed,
               "linear",
-              function () {
+              function() {
                 // scroll to start position
                 obj.css("top", start_y);
                 animate();
@@ -72,7 +71,10 @@ export default function ScrollingGallery(props) {
             );
           };
 
-          obj.find(".column_container").clone().appendTo(obj);
+          obj
+            .find(".column_container")
+            .clone()
+            .appendTo(obj);
 
           obj.css("top", start_y);
           animate(); // start animation
@@ -109,19 +111,17 @@ export default function ScrollingGallery(props) {
               <Card image={images[3]} />
               <Card image={images[4]} />
               <Card image={images[5]} />
-              <Card image={images[7]} />
+              <Card image={images[6]} />
             </div>
           ) : (
             <div className="column_container">
-              <Card image={images[6]} />
-
+              <Card image={images[7]} />
               <Card image={images[8]} />
               <Card image={images[9]} />
               <Card image={images[10]} />
               <Card image={images[11]} />
               <Card image={images[12]} />
               <Card image={images[13]} />
-              <Card image={images[14]} />
             </div>
           )}
         </div>
@@ -136,18 +136,17 @@ export default function ScrollingGallery(props) {
               <Card image={images[3]} />
               <Card image={images[4]} />
               <Card image={images[5]} />
-              {/* <Card image={images[7]} /> */}
+              <Card image={images[6]} />
             </div>
           ) : (
             <div className="column_container">
-              <Card image={images[6]} />
+              <Card image={images[7]} />
               <Card image={images[8]} />
-              {/* <Card image={images[9]} /> */}
-              {/* <Card image={images[10]} /> */}
-              {/* <Card image={images[11]} /> */}
+              <Card image={images[9]} />
+              <Card image={images[10]} />
+              <Card image={images[11]} />
               <Card image={images[12]} />
               <Card image={images[13]} />
-              <Card image={images[14]} />
             </div>
           )}
         </div>

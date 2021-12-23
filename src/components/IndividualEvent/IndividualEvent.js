@@ -3,12 +3,12 @@ import { useLocation, useParams } from "react-router";
 import "./IndividualEvent.css";
 import data from "../Events/data.json";
 import EventForm from "../Events/EventRegistrationForm/EventForm";
-import Register from "./assets/register.png";
-import Rulebook from "./assets/fest_rulebook.png";
+// import Register from "./assets/register.png";
+// import Rulebook from "./assets/fest_rulebook.png";
 /* eslint-disable spaced-comment */
 /// <reference types="react-scripts" />
 
-const baseURL = process.env.PUBLIC_URL + "/images/";
+const baseURL = "";
 
 const IndividualEvent = () => {
   const { eventName } = useParams();
@@ -30,9 +30,9 @@ const IndividualEvent = () => {
     event = data.workshops.find((e) => e.eventName === eventName);
   }
 
-  const formPopUp = () => {
-    setPopupRegistration(true);
-  };
+  // const formPopUp = () => {
+  //   setPopupRegistration(true);
+  // };
 
   const hideEventRegistrationFormHandler = () => {
     setPopupRegistration(false);
@@ -48,6 +48,7 @@ const IndividualEvent = () => {
           isWider="0"
         />
       )}
+      <div className="regSoon">Registration will be starting soon!</div>
       <div id="individualEvent" className="individualEvent">
         <div className="eventHeading">
           <img src={`${baseURL + event.eventHeading}`} alt="eventHeading" />
@@ -58,7 +59,7 @@ const IndividualEvent = () => {
             <div className="poster">
               <img
                 id="eventPoster"
-                src={`${baseURL + event.posterURL}`}
+                src={`${event.posterURL}`}
                 alt={event.eventName}
                 id="poster"
               />
@@ -71,9 +72,9 @@ const IndividualEvent = () => {
               <p> Team size: {event.size}</p>
             </div>
 
-            <div className="registerButton" onClick={formPopUp}>
+            {/* <div className="registerButton" onClick={formPopUp}>
               <img src={Register} alt="Register" style={{ maxWidth: "100%" }} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

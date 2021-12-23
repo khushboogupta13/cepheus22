@@ -1,10 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import Lottie from "react-lottie-player";
 import "./Loader.css";
 import animationData from "./assets/load.json";
 
 const Loader = () => {
-  console.log("Rendering");
   return (
     <div className="loader__div">
       <Lottie
@@ -15,6 +14,5 @@ const Loader = () => {
     </div>
   );
 };
-
 
 export default Loader;

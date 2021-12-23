@@ -8,13 +8,13 @@ import React from "react";
 const hoverRobotics =
   "https://res.cloudinary.com/dijzrwmrb/image/upload/q_auto:eco/v1639985612/images/hover-wb_c07nl5.webp";
 const mrkTk =
-  "https://res.cloudinary.com/cepheus22/image/upload/v1640179039/samples/WHITE-LOGO-2_hf0reo.png";
+  "https://res.cloudinary.com/cepheus22/image/upload/v1640179039/samples/WHITE-LOGO-2_hf0reo.webp";
 
 const cmpM =
-  "https://res.cloudinary.com/cepheus22/image/upload/v1640178112/samples/Campus_memories_logo_c2w0sf.png";
+  "https://res.cloudinary.com/cepheus22/image/upload/v1640178112/samples/Campus_memories_logo_c2w0sf.webp";
 
 const gfg =
-  "https://res.cloudinary.com/cepheus22/image/upload/v1640179091/samples/GFG_LOGO-3_1_kxtdlj.png";
+  "https://res.cloudinary.com/cepheus22/image/upload/v1640179091/samples/GFG_LOGO-3_1_kxtdlj.webp";
 
 const mentX =
   "https://res.cloudinary.com/dijzrwmrb/image/upload/q_auto:eco/v1639985612/images/mentor-wb_m53utr.webp";
@@ -23,7 +23,7 @@ const ythInc =
   "https://res.cloudinary.com/dijzrwmrb/image/upload/c_scale,q_auto:eco,w_1920/v1640066761/images/Yi_New_Logo_White_u5mpsl.webp";
 
 const xpaAi =
-  "https://res.cloudinary.com/cepheus22/image/upload/v1640178332/samples/WhatsApp_Image_2021-12-19_at_11.29.54_AM_hl7g7r.jpg";
+  "https://res.cloudinary.com/cepheus22/image/upload/v1640178332/samples/WhatsApp_Image_2021-12-19_at_11.29.54_AM_hl7g7r.webp";
 
 const stkGro =
   "https://res.cloudinary.com/cepheus22/image/upload/v1640235129/samples/StockGro_logo_-_Black_Font_-_White_Background_-_Copy_uxctia.png";
