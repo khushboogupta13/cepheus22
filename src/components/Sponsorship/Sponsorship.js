@@ -69,18 +69,18 @@ const sponsH = [
   //   key: 6,
   //   companies: [{ logo: hoverRobotics, name: "HOVER ROBOTICS" }],
   // },
-  {
-    name: "Savings Partner",
-    cls: "saving-s",
-    key: 7,
-    companies: [{ logo: hoverRobotics, name: "Grab-On" }],
-    isN: false,
-  },
+  // {
+  //   name: "Savings Partner",
+  //   cls: "saving-s",
+  //   key: 7,
+  //   companies: [{ logo: hoverRobotics, name: "Grab-On" }],
+  //   isN: false,
+  // },
   {
     name: "Coupons Partner",
     cls: "cpn-s",
     key: 8,
-    companies: [{ logo: hoverRobotics, name: "Hover Robotics" }],
+    companies: [{ logo: hoverRobotics, name: "Hover Robotics" },],
     isN: false,
   },
 ];

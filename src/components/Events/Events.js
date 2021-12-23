@@ -13,6 +13,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import data from './data.json'
+import toast from 'react-hot-toast';
 
 const baseURL = process.env.PUBLIC_URL + '/images/';
 
@@ -180,7 +181,19 @@ const Events=()=>{
           </div>
 
           <div className="p-2 col-example text-left">
-            <div className="buttons" id = "button3" >
+            <div className="buttons" id = "button3" onClick={() => 
+            {
+              toast('Coming Soon!!',
+                {
+                  style: {
+                    borderRadius: '10px',
+                    background: '#333',
+                    color: '#fff',
+                  },
+                }
+              );
+            }
+            }>
               <img src = {Rulebook} alt = "Rulebook" id="talkImg" />
             </div>
           </div>
