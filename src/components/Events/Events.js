@@ -109,33 +109,15 @@ const WorkshopCarousel = () => {
 
       <div className="workshopsMobile">
         <Slider {...mobile_settings}>
-          <div>
-            <img
-              src={`${baseURL + "play_microbit.png"}`}
-              style={{ width: "60vw", height: "65vw", marginTop: "3rem" }}
-            />
-          </div>
-
-          <div>
-            <img
-              src={`${baseURL + "bash_it.png"}`}
-              style={{ width: "60vw", height: "65vw", marginTop: "3rem" }}
-            />
-          </div>
-
-          <div>
-            <img
-              src={`${baseURL + "hack_the_game.png"}`}
-              style={{ width: "60vw", height: "65vw", marginTop: "3rem" }}
-            />
-          </div>
-
-          <div>
-            <img
-              src={`${baseURL + "robotics_career.png"}`}
-              style={{ width: "60vw", height: "65vw", marginTop: "3rem" }}
-            />
-          </div>
+          {data.workshops.map((item) => (
+            <Link to={`workshops/${item.eventName}`}>
+              <img
+                src={`${baseURL + item.posterURL}`}
+                alt=""
+                style={{ width: "60vw", height: "65vw", marginTop: "3rem" }}
+              />
+            </Link>
+          ))}
         </Slider>
       </div>
     </div>
@@ -197,6 +179,7 @@ const Events = () => {
                   borderRadius: "10px",
                   background: "#333",
                   color: "#fff",
+                  zIndex: 2000,
                 },
               });
             }}
@@ -208,7 +191,20 @@ const Events = () => {
 
       <div className="d-flex justify-content-center" id="boxesMobile">
         <div className="p-2 col-example text-left">
-          <div className="buttons" id="buttonMobile">
+          <div
+            className="buttons"
+            id="buttonMobile"
+            onClick={() => {
+              toast("Coming Soon!!", {
+                style: {
+                  borderRadius: "10px",
+                  background: "#333",
+                  color: "#fff",
+                  zIndex: 2000,
+                },
+              });
+            }}
+          >
             <img src={Rulebook} alt="rulebook" id="talkImgMobile" />
           </div>
         </div>
@@ -218,6 +214,7 @@ const Events = () => {
         <img
           src={BlackLine}
           style={{ marginTop: "-11rem", zIndex: 1, position: "relative" }}
+          alt="blackline"
         />
       </div>
 

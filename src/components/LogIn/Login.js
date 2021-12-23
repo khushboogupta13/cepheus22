@@ -15,9 +15,9 @@ export default function Login() {
   const history = useHistory();
   return (
     <div className="loginPage">
-      <img src={leftImg} className="left_image" />
-      <img src={rightImg} className="right_image" />
-      <img src={welcome} className="welcome_title" />
+      <img src={leftImg} className="left_image" alt="left" />
+      <img src={rightImg} className="right_image" alt="RIGHT" />
+      <img src={welcome} className="welcome_title" alt="wlcome" />
       <div className="welcome_mobile">Welcome</div>
 
       <div className="mainContent">
@@ -71,7 +71,7 @@ export default function Login() {
                       },
                     }
                   );
-                  if (res.status == 200) {
+                  if (res.status === 200) {
                     localStorage.setItem("id", playerID);
                     localStorage.setItem("is_profile_complete", "true");
                     history.push("/");

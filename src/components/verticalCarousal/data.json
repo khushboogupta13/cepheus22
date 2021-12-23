@@ -1,221 +1,221 @@
 {
-	"images": [
-		[
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_471/v1640192194/cepheusImages/Overall_d0q0un.webp",
-				"event": "Overall Coordinator",
-				"name": "Raghvendra Singh",
-				"contact": "9785075997",
-				"mail": "gstechnical@iitgoa.ac.in",
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/q_auto:eco/v1640155509/cepheusImages/Raghvendra-Singh_ghbhb0.webp",
-				"off": 0,
-				"label": 1
-			}
-		],
-		[
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Manager",
-				"name": "Gaurav Yadav",
-				"contact": "8901985251",
-				"mail": "gaurav.yadav.19031@iitgoa.ac.in",
-				"off": 0,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_481/v1640156247/cepheusImages/Gaurav_Yadav_syscx7.webp",
-				"label": 0
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Manager",
-				"name": "Kartikey Sharma",
-				"contact": "8384078124",
-				"mail": "kartikey.sharma.19041@iitgoa.ac.in",
-				"off": 0,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_458/v1640156081/cepheusImages/Kartikey_Sharma_ayn3x8.webp",
-				"label": 0
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Manager",
-				"name": "Saurabh Kuradkar",
-				"contact": "7083447880",
-				"mail": "kuradkar.shamdeo.19063@iitgoa.ac.in",
-				"off": 0,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_526/v1640156303/cepheusImages/Saurabh_Kuradkar_j3naj4.webp",
-				"label": 0
-			}
-		],
-		[
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Finance Head",
-				"name": "Sahil Verma",
-				"contact": "8168060418",
-				"mail": "sahilverma817@gmail.com",
-				"off": 0,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/q_auto:eco/v1640155826/cepheusImages/Sahil-Verma_BR_CSE_srfgmd.webp",
-				"label": 0
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "PR & Social Media Head",
-				"name": "Surya Shukla",
-				"contact": "9889798381",
-				"mail": "surya.shukla.19041@iitgoa.ac.in",
-				"off": 0,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_473/v1640156567/cepheusImages/Surya_Shukla_r24bnj.webp",
-				"label": 0
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Design Head",
-				"name": "Naveen Mahanwal",
-				"contact": "7027262990",
-				"mail": "naveen.19041@iitgoa.ac.in",
-				"off": 0,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_471/v1640156570/cepheusImages/IMG_20211221_180343_jpnsji.webp",
-				"label": 0
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Sponsorship Head",
-				"name": "Akshay Kumar Jaiswal",
-				"contact": "8957484280",
-				"mail": "akshay.jaiswal.19031@iitgoa.ac.in",
-				"off": 0,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_435/v1640158439/cepheusImages/Akshay_Kumar_Jaiswal_s717iv.webp",
-				"label": 0
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Content Writing Head",
-				"name": "Svara Mehta",
-				"contact": "9699048994",
-				"mail": "svara.mehta.19063@iitgoa.ac.in",
-				"off": 0,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_450/v1640156569/cepheusImages/Svara_Mehta_mfxyvb.webp"
-			}
-		],
-		[
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Treasure Hunt",
-				"name": "Khusbhoo Gupta",
-				"contact": "9819439458",
-				"mail": "khusboo.gupta.19031@iitgoa.ac.in",
-				"off": 1,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_452/v1640159057/cepheusImages/khushboo_gupta_frtnh7.webp"
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "FizzBuzz",
-				"name": "Soumya Raj",
-				"contact": "9650945193",
-				"mail": "soumya.shrivastva.19041@iitgoa.ac.in",
-				"off": 1,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_485/v1640158973/cepheusImages/Soumya_Raj_urovuc.webp"
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "HackOverflow",
-				"name": "Namami Shanker",
-				"contact": "8840273138",
-				"mail": "namami.shanker.19041@iitgoa.ac.in",
-				"off": 1,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_454/v1640159047/cepheusImages/Namami_Shanker_1_xvk7sv.webp"
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Bash It!",
-				"name": "Twisha Bansal",
-				"contact": "8288964340",
-				"mail": "twisha.bansal.19031@iitgoa.ac.in",
-				"off": 1,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/q_auto:eco/v1640158969/cepheusImages/twishabansal_bbmypl.webp"
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Lorem Ipsum",
-				"name": "Manali Naik",
-				"contact": "7248972507",
-				"mail": "manali.naik.20042@iitgoa.ac.in",
-				"off": 1,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_499/v1640159050/cepheusImages/Manali_Naik_nxenv5.webp"
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Career in Mechatronics",
-				"name": "Khushi Chaudhary",
-				"contact": "8318921233",
-				"mail": "khushi.chaudhary.20063@iitgoa.ac.in",
-				"off": 1,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_441/v1640159054/cepheusImages/Khushi_Chaudhary_ep7ian.webp"
-			},
+  "images": [
+    [
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_471/v1640192194/cepheusImages/Overall_d0q0un.webp",
+        "event": "Overall Coordinator",
+        "name": "Raghvendra Singh",
+        "contact": "9785075997",
+        "mail": "gstechnical@iitgoa.ac.in",
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/q_auto:eco/v1640155509/cepheusImages/Raghvendra-Singh_ghbhb0.webp",
+        "off": 0,
+        "label": 1
+      }
+    ],
+    [
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Manager",
+        "name": "Gaurav Yadav",
+        "contact": "8901985251",
+        "mail": "gaurav.yadav.19031@iitgoa.ac.in",
+        "off": 0,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_481/v1640156247/cepheusImages/Gaurav_Yadav_syscx7.webp",
+        "label": 1
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Manager",
+        "name": "Kartikey Sharma",
+        "contact": "8384078124",
+        "mail": "kartikey.sharma.19041@iitgoa.ac.in",
+        "off": 0,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_458/v1640156081/cepheusImages/Kartikey_Sharma_ayn3x8.webp",
+        "label": 1
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Manager",
+        "name": "Saurabh Kuradkar",
+        "contact": "7083447880",
+        "mail": "kuradkar.shamdeo.19063@iitgoa.ac.in",
+        "off": 0,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_526/v1640156303/cepheusImages/Saurabh_Kuradkar_j3naj4.webp",
+        "label": 1
+      }
+    ],
+    [
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "PR & Social Media Head",
+        "name": "Surya Shukla",
+        "contact": "9889798381",
+        "mail": "surya.shukla.19041@iitgoa.ac.in",
+        "off": 0,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_473/v1640156567/cepheusImages/Surya_Shukla_r24bnj.webp",
+        "label": 0
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Design Head",
+        "name": "Naveen Mahanwal",
+        "contact": "7027262990",
+        "mail": "naveen.19041@iitgoa.ac.in",
+        "off": 0,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_471/v1640156570/cepheusImages/IMG_20211221_180343_jpnsji.webp",
+        "label": 0
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Finance Head",
+        "name": "Sahil Verma",
+        "contact": "8168060418",
+        "mail": "sahilverma817@gmail.com",
+        "off": 0,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/q_auto:eco/v1640155826/cepheusImages/Sahil-Verma_BR_CSE_srfgmd.webp",
+        "label": 0
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Sponsorship Head",
+        "name": "Akshay Kumar Jaiswal",
+        "contact": "8957484280",
+        "mail": "akshay.jaiswal.19031@iitgoa.ac.in",
+        "off": 0,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_435/v1640158439/cepheusImages/Akshay_Kumar_Jaiswal_s717iv.webp",
+        "label": 0
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Content Writing Head",
+        "name": "Svara Mehta",
+        "contact": "9699048994",
+        "mail": "svara.mehta.19063@iitgoa.ac.in",
+        "off": 0,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_450/v1640156569/cepheusImages/Svara_Mehta_mfxyvb.webp"
+      }
+    ],
+    [
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Treasure Hunt",
+        "name": "Khusbhoo Gupta",
+        "contact": "9819439458",
+        "mail": "khusboo.gupta.19031@iitgoa.ac.in",
+        "off": 1,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_452/v1640159057/cepheusImages/khushboo_gupta_frtnh7.webp"
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "FizzBuzz",
+        "name": "Soumya Raj",
+        "contact": "9650945193",
+        "mail": "soumya.shrivastva.19041@iitgoa.ac.in",
+        "off": 1,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_485/v1640158973/cepheusImages/Soumya_Raj_urovuc.webp"
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "HackOverflow",
+        "name": "Namami Shanker",
+        "contact": "8840273138",
+        "mail": "namami.shanker.19041@iitgoa.ac.in",
+        "off": 1,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_454/v1640159047/cepheusImages/Namami_Shanker_1_xvk7sv.webp"
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Bash It!",
+        "name": "Twisha Bansal",
+        "contact": "8288964340",
+        "mail": "twisha.bansal.19031@iitgoa.ac.in",
+        "off": 1,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/q_auto:eco/v1640158969/cepheusImages/twishabansal_bbmypl.webp"
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Lorem Ipsum",
+        "name": "Manali Naik",
+        "contact": "7248972507",
+        "mail": "manali.naik.20042@iitgoa.ac.in",
+        "off": 1,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_499/v1640159050/cepheusImages/Manali_Naik_nxenv5.webp"
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Career in Mechatronics",
+        "name": "Khushi Chaudhary",
+        "contact": "8318921233",
+        "mail": "khushi.chaudhary.20063@iitgoa.ac.in",
+        "off": 1,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_441/v1640159054/cepheusImages/Khushi_Chaudhary_ep7ian.webp"
+      },
 
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "CTF",
-				"name": "Moraya Prabhu",
-				"contact": "8693099824",
-				"mail": "moraya.20063@iitgoa.ac.in",
-				"off": 1,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_493/v1640159051/cepheusImages/Moraya_Prabhu_noez5y.webp"
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Play with Micro:Bit",
-				"name": "Aryan Tomar",
-				"contact": "7840010196",
-				"mail": "aryan.tomar.20031@iitgoa.ac.in",
-				"off": 1,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_446/v1640159088/cepheusImages/ARYAN_TOMAR_tgr39d.webp"
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Arduino's Trial",
-				"name": "Ganesh Vemula",
-				"contact": "8247342609",
-				"mail": "vemula.ganesh.20042@iitgoa.ac.in",
-				"off": 1,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_435/v1640159062/cepheusImages/Ganesh_vemula_ob9hrw.webp"
-			},
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "CTF",
+        "name": "Moraya Prabhu",
+        "contact": "8693099824",
+        "mail": "moraya.20063@iitgoa.ac.in",
+        "off": 1,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_493/v1640159051/cepheusImages/Moraya_Prabhu_noez5y.webp"
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Play with Micro:Bit",
+        "name": "Aryan Tomar",
+        "contact": "7840010196",
+        "mail": "aryan.tomar.20031@iitgoa.ac.in",
+        "off": 1,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_446/v1640159088/cepheusImages/ARYAN_TOMAR_tgr39d.webp"
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Arduino's Trial",
+        "name": "Ganesh Vemula",
+        "contact": "8247342609",
+        "mail": "vemula.ganesh.20042@iitgoa.ac.in",
+        "off": 1,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_435/v1640159062/cepheusImages/Ganesh_vemula_ob9hrw.webp"
+      },
 
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Circuital Dilemma",
-				"name": "Runal Palkar",
-				"contact": "9137884831",
-				"mail": "runal.palkar.20042@iitgoa.ac.in",
-				"off": 1,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_461/v1640159045/cepheusImages/Runal_zpykyr.webp"
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Beat the Street",
-				"name": "Shantanu Wagh",
-				"contact": "7875214466",
-				"mail": "shantanu.wagh.19032@iitgoa.ac.in",
-				"off": 1,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/q_auto:eco/v1640158977/cepheusImages/Shatanu_Wagh_prepkb.webp"
-			},
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Circuital Dilemma",
+        "name": "Runal Palkar",
+        "contact": "9137884831",
+        "mail": "runal.palkar.20042@iitgoa.ac.in",
+        "off": 1,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_461/v1640159045/cepheusImages/Runal_zpykyr.webp"
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Beat the Street",
+        "name": "Shantanu Wagh",
+        "contact": "7875214466",
+        "mail": "shantanu.wagh.19032@iitgoa.ac.in",
+        "off": 1,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/q_auto:eco/v1640158977/cepheusImages/Shatanu_Wagh_prepkb.webp"
+      },
 
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "HackTheGames",
-				"name": "Srajan Chourasia",
-				"contact": "6263498532",
-				"mail": "srajan.chourasia.20031@iitgoa.ac.in",
-				"off": 1,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_524/v1640158971/cepheusImages/Srajan_Chourasia_ehqgc7.webp"
-			},
-			{
-				"front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
-				"event": "Bridge Builder",
-				"name": "Swadesh Choudhary",
-				"contact": "9584872076",
-				"mail": "swadesh.choudhary.19063@iitgoa.ac.in",
-				"off": 1,
-				"url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_450/v1640158968/cepheusImages/Swadesh-Choudhary_ok1edr.webp"
-			}
-		]
-	]
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "HackTheGames",
+        "name": "Srajan Chourasia",
+        "contact": "6263498532",
+        "mail": "srajan.chourasia.20031@iitgoa.ac.in",
+        "off": 1,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_524/v1640158971/cepheusImages/Srajan_Chourasia_ehqgc7.webp"
+      },
+      {
+        "front": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_545/v1640160240/cepheusImages/General_aopas5.webp",
+        "event": "Bridge Builder",
+        "name": "Swadesh Choudhary",
+        "contact": "9584872076",
+        "mail": "swadesh.choudhary.19063@iitgoa.ac.in",
+        "off": 1,
+        "url": "https://res.cloudinary.com/dmsa1uerl/image/upload/c_scale,q_auto:eco,w_450/v1640158968/cepheusImages/Swadesh-Choudhary_ok1edr.webp"
+      }
+    ]
+  ]
 }

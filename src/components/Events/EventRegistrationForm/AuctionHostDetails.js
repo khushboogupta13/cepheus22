@@ -1,21 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
 
-import { useState } from "react";
+// import { useState } from "react";
 import classes from "./AuctionHostDetails.module.css";
 
 const AuctionHostDetails = (props) => {
   const teamSize = props.teamSize;
-  const [idInp, setidInp] = useState("");
-  const [passIsValid, setPassIsValid] = useState(false);
+  // const [idInp, setidInp] = useState("");
+  // const [passIsValid, setPassIsValid] = useState(false);
 
-  const idChangeHandler = (event) => {
-    setidInp(event.target.value);
-    if (idInp.trim().length >= 8) {
-      setPassIsValid(true);
-    } else {
-      setPassIsValid(false);
-    }
-  };
+  // const idChangeHandler = (event) => {
+  //   setidInp(event.target.value);
+  //   if (idInp.trim().length >= 8) {
+  //     setPassIsValid(true);
+  //   } else {
+  //     setPassIsValid(false);
+  //   }
+  // };
 
   const playersDetails = [];
   for (var i = 0; i < teamSize; i++) {

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Lottie from "react-lottie-player";
 import "./Loader.css";
 import animationData from "./assets/load.json";

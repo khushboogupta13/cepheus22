@@ -9,14 +9,12 @@ import Login from "./components/LogIn/Login";
 import {
   Route,
   Switch,
-  useParams,
   useHistory,
   useLocation,
 } from "react-router-dom";
 import SiteContainer from "./siteContainer";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import Loader from "./components/Loader/Loader";
-import { nodeName } from "jquery";
 
 const App = () => {
   const history = useHistory();
