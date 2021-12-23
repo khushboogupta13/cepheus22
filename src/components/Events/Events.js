@@ -109,37 +109,15 @@ const WorkshopCarousel = () => {
 
       <div className="workshopsMobile">
         <Slider {...mobile_settings}>
-          <div>
-            <img
-              src={`${baseURL + "play_microbit.png"}`}
-              style={{ width: "60vw", height: "65vw", marginTop: "3rem" }}
-              alt="Microbit"
-            />
-          </div>
-
-          <div>
-            <img
-              src={`${baseURL + "bash_it.png"}`}
-              style={{ width: "60vw", height: "65vw", marginTop: "3rem" }}
-              alt="bash it"
-            />
-          </div>
-
-          <div>
-            <img
-              src={`${baseURL + "hack_the_game.png"}`}
-              style={{ width: "60vw", height: "65vw", marginTop: "3rem" }}
-              alt="hack_the_game"
-            />
-          </div>
-
-          <div>
-            <img
-              src={`${baseURL + "robotics_career.png"}`}
-              style={{ width: "60vw", height: "65vw", marginTop: "3rem" }}
-              alt="robotics"
-            />
-          </div>
+          {data.workshops.map((item) => (
+            <Link to={`workshops/${item.eventName}`}>
+              <img
+                src={`${baseURL + item.posterURL}`}
+                alt=""
+                style={{ width: "60vw", height: "65vw", marginTop: "3rem" }}
+              />
+            </Link>
+          ))}
         </Slider>
       </div>
     </div>
