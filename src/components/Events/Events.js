@@ -8,6 +8,7 @@ import Workshop from "./assets/workshopButton.png";
 import Doll from "./assets/Doll.svg";
 import Kids from "./assets/Kids.svg";
 import BlackLine from "./assets/blackLine.svg";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
