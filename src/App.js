@@ -6,12 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { useEffect, useState } from "react";
 import Login from "./components/LogIn/Login";
 
-import {
-  Route,
-  Switch,
-  useHistory,
-  useLocation,
-} from "react-router-dom";
+import { Route, Switch, useHistory, useLocation } from "react-router-dom";
 import SiteContainer from "./siteContainer";
 import { Toaster } from "react-hot-toast";
 import Loader from "./components/Loader/Loader";
@@ -43,7 +38,7 @@ const App = () => {
       if (playerId && is_profile_complete === "true") {
         localStorage.setItem("id", playerId);
         localStorage.setItem("is_profile_complete", "true");
-        history.push("/");
+        history.replace("/");
       } else if (playerId && is_profile_complete === "false") {
         history.push(`/completeProfile/?${playerId} `);
       }
