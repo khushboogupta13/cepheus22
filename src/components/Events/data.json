@@ -77,8 +77,14 @@
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194958/cepheus22/headings/stratathon_malo96.svg",
       "size": 1,
       "posterURL": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194957/cepheus22/posters/stratathon_prpgjl.webp",
-
       "content": "What if we told you that you could play games and learn at the same time? This event, being conducted in collaboration with DTU, will give participants a chance to employ their mental faculties into solving strategy based games involving the complex but beautiful concepts of Game Theory.  The event consists of a number of intriguing mind-based games on day-to-day situations. Participants will be facing opponents in multiplayer 1v1 formats and only a few selected after each round will proceed to the finals. After each game, participants can observe the scores to try and exploit their opponent’s weaknesses, while themselves playing to their strength! Get, set, Strategize!"
+    },
+    {
+      "eventName":"mlHackathon",
+      "eventHeading" : "",
+      "size" : 1,
+      "posterURL" : "",
+      "content" : "This ingeniously curated hackathon incorporates the real-world situations encountered by most of us. Participants will be required to develop a chatbot that can answer users’ queries related to certain jobs using the information provided to it. Using their knowledge and skills, participants can make the chatbot as human-like as possible, in order to reflect on the flexibility of the context of the questions."
     }
   ],
   "workshops": [
@@ -111,8 +117,14 @@
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194956/cepheus22/headings/robotics_career_ppktyr.svg",
       "size": 1,
       "posterURL": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194956/cepheus22/posters/robotics_career_vigass.webp",
-
       "content": "Robotics is a mixture of science, engineering and technology. Considered as a high-end professional career, there is a demand for robotic engineers which we only expect to grow in the future. In this talk by Sarthak Upadhyay from Addverb, we’ll learn how to successfully make an excellent career in Robotics."
+    },
+    {
+      "eventName" : "gfgWebinar",
+      "eventHeading" : "",
+      "size":1,
+      "posterURL":"",
+      "content": "A webinar conducted by GeeksforGeeks, a platform used by millions of students to learn various topics. GFG has been one of the most prominent organizations in providing resources and opportunities for students in DSA and CS fundamentals and helping students crack internships and grab placements in top-tech companies."
     }
   ]
 }
