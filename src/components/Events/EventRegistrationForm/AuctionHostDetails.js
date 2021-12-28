@@ -18,7 +18,7 @@ const AuctionHostDetails = (props) => {
   // };
 
   const playersDetails = [];
-  for (var i = 0; i < teamSize; i++) {
+  for (var i = 0; i < teamSize-1; i++) {
     const playerDetail = (
       <div className={classes.input}>
         <label htmlFor={`playerid${i + 2}`}> Player ID {i + 2}:</label>
