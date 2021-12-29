@@ -50,6 +50,10 @@
   color: white;
   border: none;
   box-shadow: 0px 0px 10px 1px rgb(30, 146, 30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .no_btn{
   font-family: squidFont;
@@ -62,7 +66,10 @@
   border: none;
   margin-left: 5%;
   box-shadow: 0px 0px 10px 1px rgb(211, 0, 0);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .btn_container{

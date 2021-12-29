@@ -88,7 +88,11 @@ const AuctionHostDetails = (props) => {
           }
       } 
 
-      
+      if(!teamName){
+        return toast.error("Please enter a team name!")
+      }
+      console.log("members: " ,members)
+
       axios.post(process.env.React_App_Backend_url+"team/register",
         {
             team_name: teamName,
@@ -138,12 +142,12 @@ const AuctionHostDetails = (props) => {
         <hr className={classes.bline} />
         <h5 className={classes.confmsg}>Are you sure you want to register?</h5>
         <div className={classes.btn_container}>
-          <button className={classes.yes_btn}  onClick={registerEventHandler}>
+          <div className={classes.yes_btn}  onClick={registerEventHandler}>
             O
-          </button>
-          <button className={classes.no_btn} onClick={props.onCloseForm}>
+          </div>
+          <div className={classes.no_btn} onClick={props.onCloseForm}>
             X
-          </button>
+          </div>
         </div>
       </form>
     </div>
