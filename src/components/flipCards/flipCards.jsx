@@ -58,9 +58,9 @@ const FlipCard = (props) => {
 							{contact}
 						</p>
 						<p
-							className='details'
+							className='details mailD'
 							style={{
-								fontSize: '0.45vw',
+								fontSize: '0.55vw',
 								wordBreak: 'break-all',
 							}}>
 							{mail}
