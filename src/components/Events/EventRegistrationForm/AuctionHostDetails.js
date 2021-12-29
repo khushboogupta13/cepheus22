@@ -14,15 +14,15 @@ const AuctionHostDetails = (props) => {
 
   const playerIdInput = [
     <div className={classes.input}>
-        <label htmlFor={`playerid2`}> Player ID 2:</label>
+        <label htmlFor={`playerid2`}> <p>Player</p> <p>ID 2:</p> </label>
         <input id={`playerid2`} type="text" placeholder="88888888" value={member1} onChange={(e) => setMember1(e.target.value)} />
     </div>,
     <div className={classes.input}>
-      <label htmlFor={`playerid3`}> Player ID 3:</label>
+      <label htmlFor={`playerid3`}> <p>Player</p> <p>ID 3:</p> </label>
       <input id={`playerid3`} type="text" placeholder="88888888" value={member2} onChange={(e) => setMember2(e.target.value)} />
     </div>,
     <div className={classes.input}>
-      <label htmlFor={`playerid4`}> Player ID 4:</label>
+      <label htmlFor={`playerid4`}>  <p>Player</p> <p>ID 4:</p> </label>
       <input id={`playerid4`} type="text" placeholder="88888888" value={member3} onChange={(e) => setMember3(e.target.value)} />
     </div>,
   ];
