@@ -96,12 +96,19 @@ const sponsH = [
     ],
     isN: false,
   },
-  // {
-  //   name: "Media Partner",
-  //   cls: "media-s",
-  //   key: 6,
-  //   companies: [{ logo: hoverRobotics, name: "HOVER ROBOTICS" }],
-  // },
+  {
+    name: "Media Partner",
+    cls: "media-s",
+    key: 6,
+    companies: [
+      {
+        logo: ythInc,
+        name: "Youth Incorporated",
+        webL: "https://youthincmag.com/",
+      },
+    ],
+    isN: false,
+  },
   {
     name: "Savings Partner",
     cls: "saving-s",
@@ -120,11 +127,6 @@ const sponsH = [
         logo: hoverRobotics,
         name: "Hover Robotics",
         webL: "https://hoverrobotix.com/",
-      },
-      {
-        logo: ythInc,
-        name: "Youth Incorporated",
-        webL: "https://youthincmag.com/",
       },
     ],
     isN: false,
