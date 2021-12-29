@@ -1,6 +1,7 @@
 {
   "event": [
     {
+      "event_id": "b5d75e74-e889-4cb7-825d-8e7e5edc6f34",
       "eventName": "treasureHunt",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194958/cepheus22/headings/treasure_hunt_v5zzfh.svg",
       "size": 1,
@@ -9,6 +10,7 @@
       "content": "The Treasure Hunt is going to be organised in several levels, each level being a knockout event. Participants would be given fun challenges in the technical domain ranging from coding challenges to cryptography, and much more. "
     },
     {
+      "event_id": "81fb33ae-688f-4e38-ab9c-4940e2c8a10b",
       "eventName": "fizzBuzz",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194954/cepheus22/headings/fizzbuzz_qupuvy.svg",
       "size": 1,
@@ -17,6 +19,7 @@
       "content": "FizzBuzz is a competitive coding contest. It will have 3 different rounds 2-3 hrs long. The difficulty level will gradually increase after every round. But do not fret, even if you are an absolute beginner, this event ensures that everyone, nomatter what their level is, will get something to solve. Do you have what it takes to survive Fizzbuzz and come out on the top?"
     },
     {
+      "event_id": "aa07e9dd-cf54-4659-9d9c-acb8355b36d4",
       "eventName": "beatTheStreet",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194952/cepheus22/headings/beat_the_street_g3x5jb.svg",
       "size": 1,
@@ -25,6 +28,7 @@
       "content": "Whether you are a newbie to the trading and investing world or have some prior experience in markets, Cepheus brings to you its first ever mock trading competition organised by Alpha (Finance Club of IIT GOA). The stakes are high and so are the rewards. The trading of assets will happen with virtual money but the winners on the leaderboard (ranking based on profits made) can walk home with cash prizes and more."
     },
     {
+      "event_id": "",
       "eventName": "arduinosTrial",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194958/cepheus22/headings/arduino_trial_oyhgoc.svg",
       "size": 2,
@@ -33,6 +37,7 @@
       "content": "In this event participants get an opportunity to test their skills of Arduino programming, opening doors to infinite possibilities along the way. The event is conducted in 2 rounds, with each round spanning over 3 hours. In each round, participants are quizzed to hone their theoretical knowledge of Arduino and its working, and given gripping problem statements to devise creative solutions for."
     },
     {
+      "event_id": "75c845e9-c6e1-47be-9071-7a810904a56e",
       "eventName": "loremIpsum",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194956/cepheus22/headings/lorem_ipsum_ddzxqq.svg",
       "size": 1,
@@ -41,6 +46,7 @@
       "content": "Lorem Ipsum is a website designing event. In this event, you will be given a very basic Wikipedia page which you must redesign with reference to the theme ‘Squid Game’, within a given time period of 4 hours. It’s time to get those creative juices flowing and put your designing skills to test!"
     },
     {
+      "event_id": "50fcba06-97c1-4666-8db5-de512a67a8b1",
       "eventName": "ctf",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194957/cepheus22/headings/squid_ctf_gjp9tw.svg",
       "size": 4,
@@ -49,6 +55,7 @@
       "content": "This 3-day Capture The Flag contest involves participants testing themselves in the domains of Infosec while being subjected to the intriguing theme of the show Squid Game. The participants securing maximum points till the end of the contest will be declared the winners!"
     },
     {
+      "event_id": "c6d157a1-9ef9-4771-8cd5-80a36eda9d80",
       "eventName": "builderBridge",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194952/cepheus22/headings/builder_bridge_vt4ans.svg",
       "size": 4,
@@ -57,6 +64,7 @@
       "content": "This competition involves participants making a Module Type Truss Bridge using CAD. The bridge is to be made using different panels and components for easy installation, with the links between the components being made using Pins only. Rolled or Welded sections will be allowed to make truss members - all this, keeping in mind the dimensional constraints given in the contest manual."
     },
     {
+      "event_id": "0cedfcda-c890-4f90-a2c4-bb216c922491",
       "eventName": "circuitalDilemma",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194953/cepheus22/headings/circuital_dilemma_vibbjc.svg",
       "size": 3,
@@ -65,6 +73,7 @@
       "content": "This event offers you an opportunity to test your digital circuit problem-solving skills using logic and innovation while retaining the spirit of collective learning. The two-stage submission process involves tackling some real-life problems while being constrained to a given time."
     },
     {
+      "event_id": "c32ab44c-bc89-4966-8034-5d93c940d59c",
       "eventName": "hackOverflow",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194955/cepheus22/headings/hackoverflow_mb2hx2.svg",
       "size": 3,
@@ -73,6 +82,7 @@
       "content": "HackOverflow is a 36-hour long hackathon, where you will compete against other teams to build an application that solves a technological problem. Join in groups of 3 in this race against time to win HackOverflow."
     },
     {
+      "event_id": "c8a68c8d-5b5d-4ff4-8ee9-9b32681a52c5",
       "eventName": "stratathon",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194958/cepheus22/headings/stratathon_malo96.svg",
       "size": 1,
@@ -83,6 +93,7 @@
   ],
   "workshops": [
     {
+      "event_id": "ea69d84c-24c2-4744-a801-4a15830de611",
       "eventName": "hackTheGames",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194955/cepheus22/headings/hack_the_game_gxpern.svg",
       "posterURL": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194955/cepheus22/posters/hack_the_game_qua2bi.webp",
@@ -91,6 +102,7 @@
       "content": "Imagine if you can dominate a video game without the use of your mouse or keyboard. Template matching can help you grind resources, get a higher score and when paired with neural networks possibilities are endless. We will show you how to do this and a lot more, using opencv python module for Template matching and then apply this with some other modules to automate a game in real time in the Workshop and then we will conduct a Hackathon where you can apply what you are taught to compete and win amazing prizes."
     },
     {
+      "event_id": "f61b9595-1500-4c2d-99a0-1e88736ecdcd",
       "eventName": "bashIt",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194952/cepheus22/headings/bash_it_lezokk.svg",
       "posterURL": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194953/cepheus22/posters/bash_it_wf8mz7.webp",
@@ -99,6 +111,7 @@
       "content": "In this workshop, you will learn to write Shell Scripts for Bash, the world-famous login shell for most Linux distributions. Bash is an essential skill in development fields like Cloud technology, Linux system administration, DevOps and much more. Where 90% of the world's technological infrastructure runs on Linux, you should not leave behind this incredible skill on your way to becoming a software developer. Don't have a Linux system? No worries! We will take care of that. So, be prepared to be amazed by the power of bash and its automation capabilities."
     },
     {
+      "event_id": "4a1536b8-a9bf-4b91-ad12-154625149650",
       "eventName": "playWithMicro",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194957/cepheus22/headings/play_microbit_r4veas.svg",
       "posterURL": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194956/cepheus22/posters/play_microbit_hxq2b2.webp",
@@ -107,6 +120,7 @@
       "content": "Play with Micro:bit is an interactive avenue for newcomers to learn more about Micro:bit, its implications, and programming, thus enabling them to delve deeper into the world of the amazingly handy device. The workshop will also include the building of small-scale beginner-friendly projects to give participants a hands-on experience!"
     },
     {
+      "event_id": "ed625e5d-6712-4e1e-ae46-deeb6cdcc73c",
       "eventName": "roboticsCareer",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194956/cepheus22/headings/robotics_career_ppktyr.svg",
       "size": 1,

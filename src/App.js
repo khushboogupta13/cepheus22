@@ -40,7 +40,7 @@ const App = () => {
         localStorage.setItem("is_profile_complete", "true");
         history.replace("/");
       } else if (playerId && is_profile_complete === "false") {
-        history.push(`/completeProfile/?${playerId} `);
+        history.push(`/completeProfile/?${playerId}`);
       }
     }
   }
