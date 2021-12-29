@@ -3,20 +3,20 @@ import "./ScrollingGallery.css";
 import jQuery from "jquery";
 
 let images = [
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194958/cepheus22/posters/arduino_trial_ndjgnz.webp",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194958/cepheus22/posters/treasure_hunt_b1eu2y.webp",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194957/cepheus22/posters/stratathon_prpgjl.webp",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194957/cepheus22/posters/squid_ctf_qpjp0x.webp",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194956/cepheus22/posters/robotics_career_vigass.webp",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194956/cepheus22/posters/play_microbit_hxq2b2.webp",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194955/cepheus22/posters/hackoverflow_jd2aky.webp",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194955/cepheus22/posters/lorem_ipsum_dniwh5.webp",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194955/cepheus22/posters/hack_the_game_qua2bi.webp",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194955/cepheus22/posters/fizzbuzz_cyckhr.webp",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194953/cepheus22/posters/circuital_dilemma_wcasj9.webp",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194953/cepheus22/posters/builder_bridge_dtec3n.webp",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194953/cepheus22/posters/beat_the_street_h8h5ez.webp",
-  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194953/cepheus22/posters/bash_it_wf8mz7.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742313/cepheus22/NewPosters/Treasure_Hunt_qwu3g8.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742314/cepheus22/NewPosters/Fizzbuzz_s3wnm3.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742313/cepheus22/NewPosters/beet_the_street_aq245k.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742313/cepheus22/NewPosters/Arduino_s_trail_f1mjle.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742315/cepheus22/NewPosters/Lorem_Imsum_tzpruk.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742313/cepheus22/NewPosters/capture_the_flag_dh3vsa.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742313/cepheus22/NewPosters/buider_bridge_ilkdaa.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742314/cepheus22/NewPosters/GFG_webinar_xsg0zl.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742315/cepheus22/NewPosters/Make_a_career_in_robotics_tbjdmk.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742315/cepheus22/NewPosters/Play_with_mirobit_byln3f.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742314/cepheus22/NewPosters/Hack_the_game_kidtgb.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742315/cepheus22/NewPosters/ML_hackathon_vqmn7y.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742314/cepheus22/NewPosters/hack_overflow_no2syo.webp",
+  "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742314/cepheus22/NewPosters/Circulital_dilemma_xkyjwa.webp",
 ];
 
 const Card = (props) => {
