@@ -54,10 +54,12 @@ const AuctionHostDetails = (props) => {
       }
       ).then((res) => {
         if(res.status === 201){
-          console.log("successfully solo registration")
+          console.log("successfully solo registration");
+          toast.success("Successfully registered!!")
         }
       }).catch((err) => {
-          console.log("error",err.response.status)
+          console.log("error",err.response.status);
+          toast.error(err.response.data.message)
       });
     } 
     else if(teamSize > 1){
@@ -103,9 +105,11 @@ const AuctionHostDetails = (props) => {
       ).then((res) => {
         if(res.status === 201) {
           console.log("success team register");
+          toast.success("successfully registerd!!")
         }
       }).catch((err) => {
         console.log("error team register",err.response.status)
+        toast.error(err.response.data.message);
       });
       
     }
@@ -134,7 +138,7 @@ const AuctionHostDetails = (props) => {
         <hr className={classes.bline} />
         <h5 className={classes.confmsg}>Are you sure you want to register?</h5>
         <div className={classes.btn_container}>
-          <button className={classes.yes_btn}  onClick={() => registerEventHandler()}>
+          <button className={classes.yes_btn}  onClick={registerEventHandler}>
             O
           </button>
           <button className={classes.no_btn} onClick={props.onCloseForm}>
