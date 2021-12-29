@@ -63,6 +63,7 @@ export default class Home extends Component {
                       onClick={() => {
                         this.setState({ token: null });
                         localStorage.removeItem("id");
+                        localStorage.clear();
                         toast.success("Successfully LogOut!!");
                       }}
                     >

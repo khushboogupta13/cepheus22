@@ -10,28 +10,31 @@ const Profile = (props) => {
   const [events, setEvents] = useState();
 
   function copyControlFunction() {
+
     const timer = setTimeout(() => setCopy(false), 3000);
     return () => clearTimeout(timer);
   }
   const playerId = localStorage.getItem("id");
   const is_profile_complete = localStorage.getItem("is_profile_complete");
-
   useEffect(async () => {
+
     if (playerId && is_profile_complete === "true") {
-      let data = await axios.get(
-        process.env.React_App_Backend_url + "user/profile",
+      await axios.get(
+        process.env.React_App_Backend_url + "user/registered_events",
         {
           headers: {
             "content-type": "application/json",
             Authorization: playerId,
           },
         }
-      );
-      if (data.status === 200) {
-        setEvents(data.events);
-      }
+      ).then((res) => {
+          setEvents(res.data.events);
+      }).catch(err => {
+        console.log("error",err)
+      });
+      
     }
-  });
+  },[events]);
   return (
     <Modal onClose={props.onCloseProfile} isWider={props.isWider}>
       <div className="profile">
@@ -63,7 +66,7 @@ const Profile = (props) => {
           <div className="registeredEvents">
             {!events ? (
               <div className="noEvents">
-                <p>Event registration will start soon</p>
+                <p>No Events</p>
               </div>
             ) : (
               <></>
@@ -74,11 +77,11 @@ const Profile = (props) => {
                   return (
                     <div className="eventCard">
                       <img
-                        src="https://techfest.org/2021/workshops/cyberethical.jpg"
-                        alt=""
+                        src={event.image_src}
+                        alt={event.name}
                       />
                       <div className="eventInfo">
-                        <h2>EventName</h2>
+                        <h2>{event.name}</h2>
                       </div>
                     </div>
                   );

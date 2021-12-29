@@ -8,11 +8,12 @@ import { useHistory } from "react-router-dom";
 
 export default function Login() {
   const [playerID, setPlayerID] = useState(
-    window.location.search.split("?")[1]
+    window.location.hash.split("?")[1]
   );
   const [mobile, setMobile] = useState();
   const [clg, setClg] = useState();
   const history = useHistory();
+  console.log("my player id",playerID);
   return (
     <div className="loginPage">
       <img src={leftImg} className="left_image" alt="left" />
@@ -66,8 +67,8 @@ export default function Login() {
                     },
                     {
                       headers: {
-                        "content-type": "application/json",
-                        Authorization: playerID,
+                        "Content-type": "application/json; charset=UTF-8",
+                        "Authorization": playerID,
                       },
                     }
                   );

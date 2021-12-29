@@ -5,6 +5,7 @@ import data from "../Events/data.json";
 import EventForm from "../Events/EventRegistrationForm/EventForm";
 import Register from "./assets/register.png";
 import Rulebook from "./assets/fest_rulebook.png";
+import toast from "react-hot-toast";
 /* eslint-disable spaced-comment */
 /// <reference types="react-scripts" />
 
@@ -19,7 +20,7 @@ const IndividualEvent = () => {
   eventi = eventi.pathname.substring(1, eventi.pathname.length);
 
   const eventType = eventi.substring(0, eventi.indexOf("/"));
-
+  const myPlayerId = localStorage.getItem("id");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -31,7 +32,12 @@ const IndividualEvent = () => {
   }
 
   const formPopUp = () => {
-    setPopupRegistration(true);
+    if(!myPlayerId){
+      toast.error('Please Login to Register');
+    }else{
+      setPopupRegistration(true);
+    }
+    
   };
 
   const hideEventRegistrationFormHandler = () => {
@@ -45,6 +51,7 @@ const IndividualEvent = () => {
           onCloseForm={hideEventRegistrationFormHandler}
           teamSize={event.size}
           eventName={eventName}
+          eventId={event.event_id}
           isWider="0"
         />
       )}

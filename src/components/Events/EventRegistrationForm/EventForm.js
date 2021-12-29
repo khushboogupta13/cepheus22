@@ -8,19 +8,14 @@ import AuctionHostDetails from "./AuctionHostDetails";
 const EventForm = (props) => {
   const [showObjFillForm, setShowObjFillForm] = useState(false);
 
-  // const showObjForm = () => {
-  //   setShowObjFillForm(true);
-  // };
-
-  // const getNumObj = (objNum) => {
-  //   setShowObjFillForm(true);
-  // };
+  
   return (
     <Modal onClose={props.onCloseForm} isWider={props.isWider}>
       {!showObjFillForm && (
         <AuctionHostDetails
           teamSize={props.teamSize}
           eventName={props.eventName}
+          eventId={props.eventId}
           onCloseForm={props.onCloseForm}
         />
       )}
