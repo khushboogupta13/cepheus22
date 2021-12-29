@@ -50,7 +50,7 @@ const App = () => {
 
   return (
     <div className="App">
-      {/* {isLoading && <Loader />} */}
+      {isLoading && <Loader />}
       <Toaster />
       <Switch>
         <Route path="/" exact>
