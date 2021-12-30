@@ -4,9 +4,10 @@ import CopyIcon from "./copy.png";
 import Modal from "../UI/Modal";
 import axios from "axios";
 
+
 const Profile = (props) => {
   const [copy, setCopy] = useState(false);
-
+  const [isLoading, setIsLoading] = useState(true);
   const [events, setEvents] = useState();
 
   function copyControlFunction() {
@@ -29,6 +30,7 @@ const Profile = (props) => {
         }
       ).then((res) => {
           setEvents(res.data.events);
+          setIsLoading(false);
       }).catch(err => {
         console.log("error",err)
       });
@@ -64,15 +66,15 @@ const Profile = (props) => {
         </div>
         <div className="registeredEventsWrapper">
           <div className="registeredEvents">
-            {!events ? (
-              <div className="noEvents">
-                <p>No Events</p>
-              </div>
-            ) : (
-              <></>
-            )}
-            {events == null
-              ? null
+            {events == null ? (
+              <div className="noEvents" >
+                <p>Loading...</p>
+              </div> 
+            ):
+            (events.length === 0
+              ? <div className="noEvents">
+                  <p>No Events Registered</p>
+                </div>
               : events.map((event) => {
                   return (
                     <div className="eventCard">
@@ -85,7 +87,8 @@ const Profile = (props) => {
                       </div>
                     </div>
                   );
-                })}
+                })
+            )}
           </div>
         </div>
       </div>

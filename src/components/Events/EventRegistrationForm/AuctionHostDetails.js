@@ -14,15 +14,15 @@ const AuctionHostDetails = (props) => {
 
   const playerIdInput = [
     <div className={classes.input}>
-        <label htmlFor={`playerid2`}> Player ID 2:</label>
+        <label htmlFor={`playerid2`}> <p>Player</p> <p>ID 2:</p> </label>
         <input id={`playerid2`} type="text" placeholder="88888888" value={member1} onChange={(e) => setMember1(e.target.value)} />
     </div>,
     <div className={classes.input}>
-      <label htmlFor={`playerid3`}> Player ID 3:</label>
+      <label htmlFor={`playerid3`}> <p>Player</p> <p>ID 3:</p> </label>
       <input id={`playerid3`} type="text" placeholder="88888888" value={member2} onChange={(e) => setMember2(e.target.value)} />
     </div>,
     <div className={classes.input}>
-      <label htmlFor={`playerid4`}> Player ID 4:</label>
+      <label htmlFor={`playerid4`}>  <p>Player</p> <p>ID 4:</p> </label>
       <input id={`playerid4`} type="text" placeholder="88888888" value={member3} onChange={(e) => setMember3(e.target.value)} />
     </div>,
   ];
@@ -54,10 +54,12 @@ const AuctionHostDetails = (props) => {
       }
       ).then((res) => {
         if(res.status === 201){
-          console.log("successfully solo registration")
+          console.log("successfully solo registration");
+          toast.success("Successfully registered!!")
         }
       }).catch((err) => {
-          console.log("error",err.response.status)
+          console.log("error",err.response.status);
+          toast.error(err.response.data.message)
       });
     } 
     else if(teamSize > 1){
@@ -86,7 +88,11 @@ const AuctionHostDetails = (props) => {
           }
       } 
 
-      
+      if(!teamName){
+        return toast.error("Please enter a team name!")
+      }
+      console.log("members: " ,members)
+
       axios.post(process.env.React_App_Backend_url+"team/register",
         {
             team_name: teamName,
@@ -103,9 +109,11 @@ const AuctionHostDetails = (props) => {
       ).then((res) => {
         if(res.status === 201) {
           console.log("success team register");
+          toast.success("successfully registerd!!")
         }
       }).catch((err) => {
         console.log("error team register",err.response.status)
+        toast.error(err.response.data.message);
       });
       
     }
@@ -134,12 +142,12 @@ const AuctionHostDetails = (props) => {
         <hr className={classes.bline} />
         <h5 className={classes.confmsg}>Are you sure you want to register?</h5>
         <div className={classes.btn_container}>
-          <button className={classes.yes_btn}  onClick={() => registerEventHandler()}>
+          <div className={classes.yes_btn}  onClick={registerEventHandler}>
             O
-          </button>
-          <button className={classes.no_btn} onClick={props.onCloseForm}>
+          </div>
+          <div className={classes.no_btn} onClick={props.onCloseForm}>
             X
-          </button>
+          </div>
         </div>
       </form>
     </div>
