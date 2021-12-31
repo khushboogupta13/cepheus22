@@ -58,7 +58,9 @@ const AuctionHostDetails = (props) => {
           toast.success("Successfully registered!!")
         }
       }).catch((err) => {
-          console.log("error",err.response.status);
+        if(!err.response){
+          return toast.error("Network error");
+        }
           toast.error(err.response.data.message? err.response.data.message : "Error! Try again")
       });
     } 
@@ -112,7 +114,9 @@ const AuctionHostDetails = (props) => {
           toast.success("successfully registerd!!")
         }
       }).catch((err) => {
-        console.log("error team register",err.response.data)
+        if(!err.response){
+          return toast.error("Network error");
+        }
         toast.error(err.response.data.message? err.response.data.message : "Error! Try again");
       });
       
