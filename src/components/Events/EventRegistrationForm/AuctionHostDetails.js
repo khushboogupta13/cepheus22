@@ -59,7 +59,7 @@ const AuctionHostDetails = (props) => {
         }
       }).catch((err) => {
           console.log("error",err.response.status);
-          toast.error(err.response.data)
+          toast.error(err.response.data.message? err.response.data.message : "Error! Try again")
       });
     } 
     else if(teamSize > 1){
@@ -113,7 +113,7 @@ const AuctionHostDetails = (props) => {
         }
       }).catch((err) => {
         console.log("error team register",err.response.data)
-        toast.error(err.response.data);
+        toast.error(err.response.data.message? err.response.data.message : "Error! Try again");
       });
       
     }
