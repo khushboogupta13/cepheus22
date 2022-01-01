@@ -21,7 +21,7 @@ export default [
   },
   {
     name: "HackTheGames",
-    icon: competeIcon,
+    icon: workshopIcon,
     date: 7,
     start_time: "11:00 AM",
     end_time: "",
@@ -133,7 +133,7 @@ export default [
   },
   {
     name: "DTU-Stratathon",
-    icon: workshopIcon,
+    icon: competeIcon,
     date: 9,
     start_time: "1:00 PM",
     end_time: "4:00 PM",
