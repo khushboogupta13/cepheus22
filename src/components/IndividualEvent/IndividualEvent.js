@@ -1,13 +1,15 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { useLocation, useParams } from "react-router";
 import "./IndividualEvent.css";
 import data from "../Events/data.json";
 import EventForm from "../Events/EventRegistrationForm/EventForm";
-import Register from './assets/register.svg';
+import Register from "./assets/register.png";
+import Rulebook from "./assets/fest_rulebook.png";
+import toast from "react-hot-toast";
 /* eslint-disable spaced-comment */
 /// <reference types="react-scripts" />
 
-const baseURL = process.env.PUBLIC_URL + '/images/';
+const baseURL = "";
 
 const IndividualEvent = () => {
   const { eventName } = useParams();
@@ -18,20 +20,24 @@ const IndividualEvent = () => {
   eventi = eventi.pathname.substring(1, eventi.pathname.length);
 
   const eventType = eventi.substring(0, eventi.indexOf("/"));
-
+  const myPlayerId = localStorage.getItem("id");
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   if (eventType === "event") {
     event = data.event.find((e) => e.eventName === eventName);
   }
   if (eventType === "workshops") {
     event = data.workshops.find((e) => e.eventName === eventName);
   }
-  if (eventType === "talks") {
-    event = data.talks.find((e) => e.eventName === eventName);
-  }
-  console.log(event.posterURL);
 
   const formPopUp = () => {
-    setPopupRegistration(true);
+    if(!myPlayerId){
+      toast.error('Please Login to Register');
+    }else{
+      setPopupRegistration(true);
+    }
+    
   };
 
   const hideEventRegistrationFormHandler = () => {
@@ -45,21 +51,27 @@ const IndividualEvent = () => {
           onCloseForm={hideEventRegistrationFormHandler}
           teamSize={event.size}
           eventName={eventName}
+          eventId={event.event_id}
           isWider="0"
         />
       )}
       <div id="individualEvent" className="individualEvent">
         <div className="eventHeading">
-          <img src={`${ baseURL + event.eventHeading }`} alt="eventHeading" />
+          <img src={`${baseURL + event.eventHeading}`} alt="eventHeading" />
         </div>
 
-        <div className="d-flex justify-content-center" id="mainContent">
+        <div className="d-flex justify-content-center blackBg" id="mainContent">
           <div className="p-2 col-example text-left">
             <div className="poster">
-              <img id="eventPoster" src={`${ baseURL + event.posterURL }`} alt={event.eventName} id="poster" />
+              <img
+                id="eventPoster"
+                src={`${event.posterURL}`}
+                alt={event.eventName}
+                id="poster"
+              />
             </div>
           </div>
-          
+
           <div className="p-2 col-example text-left">
             <div className="content">
               <p className="eventContent"> {event.content} </p>
@@ -67,12 +79,9 @@ const IndividualEvent = () => {
             </div>
 
             <div className="registerButton" onClick={formPopUp}>
-              <img src={Register} alt="register" />
+              <img src={Register} alt="Register" style={{ maxWidth: "100%" }} />
             </div>
-
-            {/* <button className="registerButton" onClick={formPopUp}>Register</button> */}
           </div>
-
         </div>
       </div>
     </Fragment>

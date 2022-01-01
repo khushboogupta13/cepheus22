@@ -1,0 +1,114 @@
+.heirarchy-name {
+  color: white;
+  font-family: squidFont;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.outterContainer{
+  margin-bottom: 2em;
+}
+
+.lnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10em;
+  padding: 0 1em 0 1em;
+  cursor: pointer;
+}
+
+.lnContainer img {
+  height: 90%;
+  width: auto;
+}
+
+.lnContainer div {
+  color: white;
+  font-family: squidFont;
+  width: 100%;
+  text-align: center;
+}
+
+.companiesContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.completeLevel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px 0 8px 0;
+}
+
+.prUnique-1 {
+  font-size: 1.25em;
+}
+.prUnique-2 {
+  font-size: 1em;
+}
+.prUnique-3 {
+  font-size: 0.875em;
+}
+.prUnique-4 {
+  font-size: 0.75em;
+}
+.prUnique-5 {
+  font-size: 0.6875em;
+}
+.prUnique-6 {
+  font-size: 0.625em;
+}
+.prUnique-7 {
+  font-size: 0.5625em;
+}
+.prUnique-8 {
+  font-size: 0.5em;
+}
+
+
+@media only screen and (max-width:1000px){
+  .outterContainer{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width:700px){
+  .outterContainer{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .outterContainer{
+    font-size: 8px;
+  }
+
+  .prUnique-1{
+    font-size: 1em;
+  }
+  .prUnique-2 {
+    font-size: 0.9em;
+  }
+  .prUnique-3 {
+    font-size: 0.8em;
+  }
+  .prUnique-4 {
+    font-size: 0.62em;
+  }
+  .prUnique-5 {
+    font-size: 0.6em;
+  }
+  .prUnique-6 {
+    font-size: 0.59em;
+  }
+  .prUnique-7 {
+    font-size: 0.58em;
+  }
+  .prUnique-8 {
+    font-size: 0.57em;
+  }
+}

@@ -5,16 +5,22 @@
 	background-color: #131314;
 }
 .heading_c {
-	margin-top: -3vw;
-	margin-left: 53vw;
+	/* margin-top: -3vw; */
+	margin-left: 5vw;
 	width: 47vw;
 }
 
 @media only screen and (max-width: 768px) {
 	.contactUs {
-		height: 100%;
+		height: 100vh;
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
 	}
 	.flip-card-back {
 		box-shadow: none;
+	}
+	.carousalDiv {
+		height: 90vh;
 	}
 }

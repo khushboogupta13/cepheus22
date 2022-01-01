@@ -1,8 +1,7 @@
 import React from 'react';
 import Temp from '../verticalCarousal/tempFile';
-import data from './data.json';
 import './ContactUs.css';
-import contact from './Contact us.svg';
+import contact from './Contact us.png';
 
 const ContactUs = () => {
 	return (
@@ -11,9 +10,9 @@ const ContactUs = () => {
 				className='headingContainer mod'
 				// style={{  }}
 			>
-				<img src={contact} alt='' />
+				<img src={contact} alt='' className='heading_c' />
 			</div>
-			<Temp images={data.images} />
+			<Temp />
 		</div>
 	);
 };

@@ -1,10 +1,10 @@
-import React, { Component, Profiler } from "react";
+import React, { Component } from "react";
 import "./Home.css";
 import leftSymbol from "./assets/leftSymbol.svg";
 import centerSymbol from "./assets/centerSymbol.svg";
 import cepheusLogo from "./assets/cepheusLogo.svg";
 import ScrollingGallery from "./scrollingGallery/ScrollingGallery";
-import toast,{Toaster} from 'react-hot-toast';
+import toast from "react-hot-toast";
 import Profile from "../Profile/Profile";
 
 export default class Home extends Component {
@@ -13,7 +13,7 @@ export default class Home extends Component {
     this.state = {
       width: 0,
       height: 0,
-      token: localStorage.getItem("playerId"),
+      token: localStorage.getItem("id"),
       PopupProfile: false,
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
@@ -21,7 +21,6 @@ export default class Home extends Component {
   componentDidMount() {
     this.updateWindowDimensions();
     window.addEventListener("resize", this.updateWindowDimensions);
-    console.log(this.state.token);
   }
 
   componentWillUnmount() {
@@ -34,7 +33,6 @@ export default class Home extends Component {
 
   render() {
     if (this.state.width > 1030) {
-      console.log("token", this.state.token);
       return (
         <>
           {this.state.PopupProfile && (
@@ -53,7 +51,7 @@ export default class Home extends Component {
                   <div
                     className="buttonGlow"
                     onClick={() => {
-                       this.setState({PopupProfile:true});
+                      this.setState({ PopupProfile: true });
                     }}
                   >
                     Profile
@@ -65,13 +63,16 @@ export default class Home extends Component {
                       onClick={() => {
                         this.setState({ token: null });
                         localStorage.removeItem("id");
-                        toast.success("Successfully LogOut!!")
+                        localStorage.clear();
+                        toast.success("Successfully LogOut!!");
                       }}
                     >
                       Log out
                     </div>
                   ) : (
-                    <a href={process.env.React_App_Backend_url+"user/login"}>Log in</a>
+                    <a href={process.env.React_App_Backend_url + "user/login"}>
+                      Log in
+                    </a>
                   )}
                 </div>
               </div>
@@ -100,57 +101,62 @@ export default class Home extends Component {
     } else {
       return (
         <>
-        {this.state.PopupProfile && (
-          <Profile
-            onCloseProfile={() => {
-              this.setState({ PopupProfile: false });
-            }}
-            isWider="1"
-          />
-        )}
-        <div id="home" className="home_mob container-fluid">
-          <div className="top_div">
-            <img src={centerSymbol} className="center_symbol_mob" alt=" "></img>
-            <div className="number_text_mob">
-              <img src={cepheusLogo} className="fes_title_mob" alt=" " />
-              22
+          {this.state.PopupProfile && (
+            <Profile
+              onCloseProfile={() => {
+                this.setState({ PopupProfile: false });
+              }}
+              isWider="1"
+            />
+          )}
+          <div id="home" className="home_mob container-fluid">
+            <div className="top_div">
+              <img
+                src={centerSymbol}
+                className="center_symbol_mob"
+                alt=" "
+              ></img>
+              <div className="number_text_mob">
+                <img src={cepheusLogo} className="fes_title_mob" alt=" " />
+                22
+              </div>
+              <div className="title_text_mob">
+                ANNUAL TECHNICAL FEST OF IITGOA
+              </div>
             </div>
-            <div className="title_text_mob">
-              ANNUAL TECHNICAL FEST OF IITGOA
-            </div>
-          </div>
-          <div className="bottom_div">
-            <div className="buttonsDiv_mob">
-              {this.state.token && (
+            <div className="bottom_div">
+              <div className="buttonsDiv_mob">
+                {this.state.token && (
                   <div
                     className="buttonGlow_mob"
                     onClick={() => {
-                      console.log('pressed')
                       this.setState({ PopupProfile: true });
                     }}
                   >
                     Profile
                   </div>
-              )}
-              
-              <div className="buttonGlow_mob">
+                )}
+
+                <div className="buttonGlow_mob">
                   {this.state.token ? (
                     <div
                       onClick={() => {
                         this.setState({ token: null });
                         localStorage.clear();
-                        toast.success("Successfully LogOut!!!")
+                        toast.success("Successfully LogOut!!!");
                       }}
                     >
                       Log out
                     </div>
                   ) : (
-                    <a href={process.env.React_App_Backend_url+"user/login"}>Log in</a>
+                    <a href={process.env.React_App_Backend_url + "user/login"}>
+                      Log in
+                    </a>
                   )}
                 </div>
+              </div>
             </div>
           </div>
-        </div>
         </>
       );
     }
