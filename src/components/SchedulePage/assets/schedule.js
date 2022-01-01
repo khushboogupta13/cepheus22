@@ -117,7 +117,7 @@ export default [
   },
   {
     name: "Bash It!",
-    icon: competeIcon,
+    icon: workshopIcon,
     date: 9,
     start_time: "10:00 AM",
     end_time: "12:00 PM",
