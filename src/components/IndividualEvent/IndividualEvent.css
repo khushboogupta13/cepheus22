@@ -1,8 +1,11 @@
 .individualEvent {
   background-color: #131314;
   color: white;
-  height: 120vh;
+  height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .blackBg {
   background-color: #131314;
@@ -25,7 +28,6 @@
   font-size: 1.5vw;
   overflow: scroll;
   overflow-x: hidden;
-  text-align: center;
   border: solid 3px black;
   border-radius: 30px;
   padding: 15px;
@@ -34,12 +36,19 @@
   width: 45vw;
   max-height: 80vh !important;
   margin-left: 3rem !important;
+  font-family: 'Ubunut',sans-serif;
+}
+.p-team{
+  text-align: center;
+  font-weight: bold;
 }
 
-#poster {
+.poster {
   width: 30vw;
   margin-left: 2rem;
   border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px black;
+
 }
 
 #eventPoster {
@@ -54,10 +63,16 @@
 }
 
 .eventHeading {
-  margin: auto;
-  width: 90vw;
+  width: 70vw;
   /* margin-top: -2rem; */
-  margin-bottom: 3rem;
+  margin: 0 auto 0 auto;
+  
+  
+}
+
+.eventHeading img{
+  width: auto;
+  height: 100%;
 }
 
 .registerButton {
@@ -66,7 +81,13 @@
   background-color: white;
   width: 15vw;
   margin-top: 2rem;
-  margin-left: 18rem;
+  /*
+  margin-left: 15px; */
+}
+.text-button-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .registerButton:hover {
@@ -92,7 +113,6 @@
 @media (max-width: 500px) {
   .registerButton {
     width: 40vw;
-    margin-left: 2rem;
   }
 
   .rulebookButton {
@@ -104,9 +124,13 @@
     flex-direction: column;
   }
 
-  #poster {
-    width: 80vw;
+  .poster{
+    width: 55%;
     margin-left: 0;
+  }
+  #poster{
+    width: 100%;
+    height: auto;
   }
 
   .content {
@@ -119,8 +143,14 @@
   .eventHeading {
     /* margin-top: -1.5rem; */
     width: 90vw;
-    margin: auto;
+    margin: 0 auto 0 auto;
 
     margin-bottom: 2rem;
+  }
+
+  .posterContainer{
+    display: flex;
+    justify-content: center !important;
+    margin-bottom: 10px;
   }
 }
