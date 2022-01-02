@@ -8,7 +8,7 @@ export default [
     icon: competeIcon,
     date: 7,
     start_time: "10:00 AM",
-    end_time: "",
+    end_time: "72 hrs",
     id: 1,
   },
   {
@@ -16,7 +16,7 @@ export default [
     icon: competeIcon,
     date: 7,
     start_time: "10:00 AM",
-    end_time: "",
+    end_time: "72 hrs",
     id: 2,
   },
   {
@@ -24,7 +24,7 @@ export default [
     icon: workshopIcon,
     date: 7,
     start_time: "11:00 AM",
-    end_time: "",
+    end_time: "48 hrs",
     id: 3,
   },
   {
@@ -32,7 +32,7 @@ export default [
     icon: competeIcon,
     date: 7,
     start_time: "1:00 PM",
-    end_time: "",
+    end_time: "36 hrs",
     id: 4,
   },
   {
@@ -40,7 +40,7 @@ export default [
     icon: competeIcon,
     date: 7,
     start_time: "1:00 PM",
-    end_time: "",
+    end_time: "48 hrs",
     id: 5,
   },
   {
@@ -48,7 +48,7 @@ export default [
     icon: competeIcon,
     date: 7,
     start_time: "1:00 PM",
-    end_time: "",
+    end_time: "12 hrs",
     id: 6,
   },
   {
@@ -72,7 +72,7 @@ export default [
     icon: competeIcon,
     date: 7,
     start_time: "7:00 PM",
-    end_time: "",
+    end_time: "9:00 PM",
     id: 9,
   },
   {
@@ -80,7 +80,7 @@ export default [
     icon: competeIcon,
     date: 8,
     start_time: "10:00 AM",
-    end_time: "",
+    end_time: "24 hrs",
     id: 10,
   },
   {
@@ -146,5 +146,21 @@ export default [
     start_time: "7:00 PM",
     end_time: "9:00 PM",
     id: 18,
+  },
+  {
+    name: "Fizzbuzz",
+    icon: competeIcon,
+    date: 8,
+    start_time: "7:00 PM",
+    end_time: "9:00 PM",
+    id: 19,
+  },
+  {
+    name: "Fizzbuzz",
+    icon: competeIcon,
+    date: 9,
+    start_time: "4:00 PM",
+    end_time: "7:00 PM",
+    id: 20,
   },
 ];
