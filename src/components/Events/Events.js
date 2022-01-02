@@ -173,15 +173,8 @@ const Events = () => {
           <div
             className="buttons"
             id="button3"
-            onClick={() => {
-              toast("Coming Soon!!", {
-                style: {
-                  borderRadius: "10px",
-                  background: "#333",
-                  color: "#fff",
-                  zIndex: 2000,
-                },
-              });
+            onClick={() => {           
+              window.open("https://drive.google.com/file/d/1QQAe46dLrgQlvj0TuqOVKaKhDD4fUy9z/view?usp=sharing", "_blank")
             }}
           >
             <img src={Rulebook} alt="Rulebook" id="talkImg" />
@@ -195,17 +188,12 @@ const Events = () => {
             className="buttons"
             id="buttonMobile"
             onClick={() => {
-              toast("Coming Soon!!", {
-                style: {
-                  borderRadius: "10px",
-                  background: "#333",
-                  color: "#fff",
-                  zIndex: 2000,
-                },
-              });
+              
+              window.open("https://drive.google.com/file/d/1QQAe46dLrgQlvj0TuqOVKaKhDD4fUy9z/view?usp=sharing", "_blank")
             }}
           >
             <img src={Rulebook} alt="rulebook" id="talkImgMobile" />
+            
           </div>
         </div>
       </div>
