@@ -61,7 +61,7 @@ const IndividualEvent = () => {
         </div>
 
         <div className="d-flex justify-content-center blackBg" id="mainContent">
-          <div className="p-2 col-example text-left">
+          <div className="p-2 posterContainer col-example text-left">
             <div className="poster">
               <img
                 id="eventPoster"
@@ -72,10 +72,10 @@ const IndividualEvent = () => {
             </div>
           </div>
 
-          <div className="p-2 col-example text-left">
+          <div className="p-2 col-example text-button-wrapper">
             <div className="content">
               <p className="eventContent"> {event.content} </p>
-              <p style={{margin:'0px'}}> Team size: {event.size}</p>
+              <p className="p-team"> Team size: {event.size}</p>
               {event.deadline && <p style={{margin:'0px'}}>Deadline: {event.deadline}</p>}
             </div>
 
