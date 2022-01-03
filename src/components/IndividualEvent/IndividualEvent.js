@@ -75,12 +75,22 @@ const IndividualEvent = () => {
           <div className="p-2 col-example text-left">
             <div className="content">
               <p className="eventContent"> {event.content} </p>
-              <p> Team size: {event.size}</p>
+              <p style={{margin:'0px'}}> Team size: {event.size}</p>
+              {event.deadline && <p style={{margin:'0px'}}>Deadline: {event.deadline}</p>}
             </div>
 
-            <div className="registerButton" onClick={formPopUp}>
+            <div className="registerButton" onClick={() => {
+              if(event.registration){
+                formPopUp();
+              }else{
+                toast.error("Registration Ended!!")
+              }
+              
+            }}>
               <img src={Register} alt="Register" style={{ maxWidth: "100%" }} />
             </div>
+             
+            
           </div>
         </div>
       </div>

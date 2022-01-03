@@ -128,6 +128,11 @@ const sponsH = [
         name: "Hover Robotics",
         webL: "https://hoverrobotix.com/",
       },
+      { 
+        logo: mentX, 
+        name: "MentorX", 
+        webL: "https://thementorx.com/", 
+      },
     ],
     isN: false,
   },
