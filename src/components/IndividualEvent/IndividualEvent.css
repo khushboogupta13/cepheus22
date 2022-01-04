@@ -1,11 +1,8 @@
 .individualEvent {
   background-color: #131314;
   color: white;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 .blackBg {
   background-color: #131314;
@@ -28,6 +25,7 @@
   font-size: 1.5vw;
   overflow: scroll;
   overflow-x: hidden;
+  text-align: center;
   border: solid 3px black;
   border-radius: 30px;
   padding: 15px;
@@ -36,19 +34,12 @@
   width: 45vw;
   max-height: 80vh !important;
   margin-left: 3rem !important;
-  font-family: 'Ubunut',sans-serif;
-}
-.p-team{
-  text-align: center;
-  font-weight: bold;
 }
 
-.poster {
+#poster {
   width: 30vw;
   margin-left: 2rem;
   border-radius: 10px;
-  box-shadow: 10px 10px 10px 10px black;
-
 }
 
 #eventPoster {
@@ -63,16 +54,10 @@
 }
 
 .eventHeading {
-  width: 70vw;
+  margin: auto;
+  width: 90vw;
   /* margin-top: -2rem; */
-  margin: 0 auto 0 auto;
-  
-  
-}
-
-.eventHeading img{
-  width: auto;
-  height: 100%;
+  margin-bottom: 3rem;
 }
 
 .registerButton {
@@ -81,13 +66,7 @@
   background-color: white;
   width: 15vw;
   margin-top: 2rem;
-  /*
-  margin-left: 15px; */
-}
-.text-button-wrapper{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-left: 18rem;
 }
 
 .registerButton:hover {
@@ -113,6 +92,7 @@
 @media (max-width: 500px) {
   .registerButton {
     width: 40vw;
+    margin-left: 2rem;
   }
 
   .rulebookButton {
@@ -124,18 +104,14 @@
     flex-direction: column;
   }
 
-  .poster{
-    width: 55%;
+  #poster {
+    width: 80vw;
     margin-left: 0;
-  }
-  #poster{
-    width: 100%;
-    height: auto;
   }
 
   .content {
     width: 60vw;
-    font-size: 3.5vw;
+    font-size: 4vw;
     margin-left: 0 !important;
     max-height: 50vh;
   }
@@ -143,14 +119,8 @@
   .eventHeading {
     /* margin-top: -1.5rem; */
     width: 90vw;
-    margin: 0 auto 0 auto;
+    margin: auto;
 
     margin-bottom: 2rem;
-  }
-
-  .posterContainer{
-    display: flex;
-    justify-content: center !important;
-    margin-bottom: 10px;
   }
 }

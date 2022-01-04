@@ -61,7 +61,7 @@ const IndividualEvent = () => {
         </div>
 
         <div className="d-flex justify-content-center blackBg" id="mainContent">
-          <div className="p-2 posterContainer col-example text-left">
+          <div className="p-2 col-example text-left">
             <div className="poster">
               <img
                 id="eventPoster"
@@ -72,25 +72,24 @@ const IndividualEvent = () => {
             </div>
           </div>
 
-          <div className="p-2 col-example text-button-wrapper">
+          <div className="p-2 col-example text-left">
             <div className="content">
               <p className="eventContent"> {event.content} </p>
-              <p className="p-team"> Team size: {event.size}</p>
-              {event.deadline && <p style={{margin:'0px'}}>Deadline: {event.deadline}</p>}
+              <p> Team size: {event.size}</p>
+              {event.deadline && <p>Deadline: {event.deadline}</p>}
             </div>
 
             <div className="registerButton" onClick={() => {
               if(event.registration){
                 formPopUp();
               }else{
-                toast.error("Registration Ended!!")
+                toast.error("Registration Closed!!");
               }
               
-            }}>
+             }
+            }>
               <img src={Register} alt="Register" style={{ maxWidth: "100%" }} />
             </div>
-             
-            
           </div>
         </div>
       </div>
