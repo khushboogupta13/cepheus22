@@ -27,7 +27,7 @@ const CompetitionCarousel = () => {
     slidesToScroll: 1,
     cssEase: "linear",
     centerPadding: 0,
-    arrows: false,
+    /* arrows: false, */
     focusOnSelect: true,
     autoplay: true,
     autoplaySpeed: 1500,
@@ -71,7 +71,7 @@ const mobile_settings = {
   slidesToScroll: 1,
   cssEase: "linear",
   centerPadding: 0,
-  arrows: false,
+  /* arrows: false, */
   focusOnSelect: true,
   autoplay: true,
   autoplaySpeed: 1500,

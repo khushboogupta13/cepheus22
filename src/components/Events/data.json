@@ -2,6 +2,8 @@
   "event": [
     {
       "event_id": "b5d75e74-e889-4cb7-825d-8e7e5edc6f34",
+      "registration": true,
+      "deadline": "6th January 11:59 PM",
       "eventName": "treasureHunt",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194958/cepheus22/headings/treasure_hunt_v5zzfh.svg",
       "size": 1,
@@ -11,6 +13,8 @@
     },
     {
       "event_id": "81fb33ae-688f-4e38-ab9c-4940e2c8a10b",
+      "registration": true,
+      "deadline": "6th January, 11:59 PM",
       "eventName": "fizzBuzz",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194954/cepheus22/headings/fizzbuzz_qupuvy.svg",
       "size": 1,
@@ -20,6 +24,7 @@
     },
     {
       "event_id": "aa07e9dd-cf54-4659-9d9c-acb8355b36d4",
+      "registration": false,
       "eventName": "beatTheStreet",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194952/cepheus22/headings/beat_the_street_g3x5jb.svg",
       "size": 1,
@@ -29,6 +34,8 @@
     },
     {
       "event_id": "a0df6d9d-4812-4c03-870e-365ada88a4b8",
+      "registration": true,
+      "deadline": "6th January, 5:00 PM",
       "eventName": "arduinosTrial",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194958/cepheus22/headings/arduino_trial_oyhgoc.svg",
       "size": 2,
@@ -38,6 +45,8 @@
     },
     {
       "event_id": "75c845e9-c6e1-47be-9071-7a810904a56e",
+      "registration": true,
+      "deadline": "8th January, 2 PM",
       "eventName": "loremIpsum",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194956/cepheus22/headings/lorem_ipsum_ddzxqq.svg",
       "size": 1,
@@ -47,6 +56,7 @@
     },
     {
       "event_id": "50fcba06-97c1-4666-8db5-de512a67a8b1",
+      "registration": true,
       "eventName": "ctf",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194957/cepheus22/headings/squid_ctf_gjp9tw.svg",
       "size": 4,
@@ -56,6 +66,7 @@
     },
     {
       "event_id": "c6d157a1-9ef9-4771-8cd5-80a36eda9d80",
+      "registration": true,
       "eventName": "builderBridge",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194952/cepheus22/headings/builder_bridge_vt4ans.svg",
       "size": 4,
@@ -65,6 +76,8 @@
     },
     {
       "event_id": "0cedfcda-c890-4f90-a2c4-bb216c922491",
+      "registration": true,
+      "deadline": "6th Januay, 7:00 PM",
       "eventName": "circuitalDilemma",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194953/cepheus22/headings/circuital_dilemma_vibbjc.svg",
       "size": 3,
@@ -74,6 +87,7 @@
     },
     {
       "event_id": "c32ab44c-bc89-4966-8034-5d93c940d59c",
+      "registration": true,
       "eventName": "hackOverflow",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194955/cepheus22/headings/hackoverflow_mb2hx2.svg",
       "size": 3,
@@ -83,6 +97,8 @@
     },
     {
       "event_id": "c8a68c8d-5b5d-4ff4-8ee9-9b32681a52c5",
+      "registration": true,
+      "deadline": "9th January 11:59 PM",
       "eventName": "stratathon",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194958/cepheus22/headings/stratathon_malo96.svg",
       "size": 1,
@@ -91,6 +107,7 @@
     },
     {
       "event_id": "0a421458-8f03-4502-83c6-10c75ab6f9a5",
+      "registration": true,
       "eventName": "mlHackathon",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742394/cepheus22/headings/ml_hackathon_vcum1s.svg",
       "size": 1,
@@ -101,6 +118,8 @@
   "workshops": [
     {
       "event_id": "ea69d84c-24c2-4744-a801-4a15830de611",
+      "registration": true,
+      "deadline": "6th January 10:00 PM",
       "eventName": "hackTheGames",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194955/cepheus22/headings/hack_the_game_gxpern.svg",
       "posterURL": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742314/cepheus22/NewPosters/Hack_the_game_kidtgb.webp",
@@ -110,6 +129,7 @@
     },
     {
       "event_id": "f61b9595-1500-4c2d-99a0-1e88736ecdcd",
+      "registration": true,
       "eventName": "bashIt",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194952/cepheus22/headings/bash_it_lezokk.svg",
       "posterURL": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742313/cepheus22/NewPosters/Bash_it_allfkc.webp",
@@ -119,6 +139,7 @@
     },
     {
       "event_id": "4a1536b8-a9bf-4b91-ad12-154625149650",
+      "registration": true,
       "eventName": "playWithMicro",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194957/cepheus22/headings/play_microbit_r4veas.svg",
       "posterURL": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742315/cepheus22/NewPosters/Play_with_mirobit_byln3f.webp",
@@ -128,6 +149,8 @@
     },
     {
       "event_id": "ed625e5d-6712-4e1e-ae46-deeb6cdcc73c",
+      "registration": true,
+      "deadline": "7th January, 11:59 PM",
       "eventName": "roboticsCareer",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194956/cepheus22/headings/robotics_career_ppktyr.svg",
       "size": 1,
@@ -136,6 +159,7 @@
     },
     {
       "event_id": "67c07b4c-0712-4e9f-9dd9-e746c55c74f9",
+      "registration": true,
       "eventName": "gfgWebinar",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742394/cepheus22/headings/gfg_webinar_akqmwl.svg",
       "size": 1,

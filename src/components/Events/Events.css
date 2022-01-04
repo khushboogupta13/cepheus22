@@ -131,6 +131,21 @@
   box-shadow: 0 0 8px 8px grey;
 }
 
+button.slick-arrow.slick-next::before {
+  margin-left: -17vw;
+}
+
+.workshopsDesktop > .event_slider > .slick-slider.slick-initialized > button.slick-arrow.slick-next::before {
+  margin-left: -30vw;
+}
+
+
+@media only screen and (max-width: 1200px) {
+   .workshopsDesktop > .event_slider > .slick-slider.slick-initialized > button.slick-arrow.slick-next::before {
+    margin-left: -25vw;
+  }
+}
+
 @media (max-width: 500px){
 
   .workshopsDesktop{
