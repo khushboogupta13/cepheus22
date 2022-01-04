@@ -26,7 +26,7 @@ const stkGro =
   "https://res.cloudinary.com/cepheus22/image/upload/v1640235129/samples/StockGro_logo_-_Black_Font_-_White_Background_-_Copy_uxctia.png";
 
 const grbOn =
-  "https://res.cloudinary.com/cepheus22/image/upload/v1640235760/grabonin_xxkr7d.jpg";
+  "https://res.cloudinary.com/cepheus22/image/upload/v1641315849/Grabon_logo_uhloj3.png";
 
 const ythInc =
   "https://res.cloudinary.com/cepheus22/image/upload/v1640541908/Yi_New_Logo_White_kqqwwr.png";
