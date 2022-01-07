@@ -76,7 +76,7 @@ const IndividualEvent = () => {
             <div className="content">
               <p className="eventContent"> {event.content} </p>
               <p> Team size: {event.size}</p>
-              \
+              
             </div>
 
             <div className="registerButton" onClick={() => {
