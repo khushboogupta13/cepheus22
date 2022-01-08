@@ -97,7 +97,7 @@
     },
     {
       "event_id": "c8a68c8d-5b5d-4ff4-8ee9-9b32681a52c5",
-      "registration": true,
+      "registration": false,
       "deadline": "8th January 11:59 PM",
       "eventName": "stratathon",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194958/cepheus22/headings/stratathon_malo96.svg",
@@ -129,7 +129,7 @@
     },
     {
       "event_id": "f61b9595-1500-4c2d-99a0-1e88736ecdcd",
-      "registration": true,
+      "registration": false,
       "eventName": "bashIt",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194952/cepheus22/headings/bash_it_lezokk.svg",
       "posterURL": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742313/cepheus22/NewPosters/Bash_it_allfkc.webp",
@@ -159,7 +159,7 @@
     },
     {
       "event_id": "67c07b4c-0712-4e9f-9dd9-e746c55c74f9",
-      "registration": true,
+      "registration": false,
       "eventName": "gfgWebinar",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742394/cepheus22/headings/gfg_webinar_akqmwl.svg",
       "size": 1,
