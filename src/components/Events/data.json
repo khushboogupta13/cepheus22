@@ -45,7 +45,7 @@
     },
     {
       "event_id": "75c845e9-c6e1-47be-9071-7a810904a56e",
-      "registration": true,
+      "registration": false,
       "deadline": "8th January, 2 PM",
       "eventName": "loremIpsum",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194956/cepheus22/headings/lorem_ipsum_ddzxqq.svg",
@@ -76,7 +76,7 @@
     },
     {
       "event_id": "0cedfcda-c890-4f90-a2c4-bb216c922491",
-      "registration": true,
+      "registration": false,
       "deadline": "7th Januay, 4:00 PM",
       "eventName": "circuitalDilemma",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194953/cepheus22/headings/circuital_dilemma_vibbjc.svg",
@@ -97,7 +97,7 @@
     },
     {
       "event_id": "c8a68c8d-5b5d-4ff4-8ee9-9b32681a52c5",
-      "registration": true,
+      "registration": false,
       "deadline": "8th January 11:59 PM",
       "eventName": "stratathon",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194958/cepheus22/headings/stratathon_malo96.svg",
@@ -129,7 +129,7 @@
     },
     {
       "event_id": "f61b9595-1500-4c2d-99a0-1e88736ecdcd",
-      "registration": true,
+      "registration": false,
       "eventName": "bashIt",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194952/cepheus22/headings/bash_it_lezokk.svg",
       "posterURL": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742313/cepheus22/NewPosters/Bash_it_allfkc.webp",
@@ -139,7 +139,7 @@
     },
     {
       "event_id": "4a1536b8-a9bf-4b91-ad12-154625149650",
-      "registration": true,
+      "registration": false,
       "eventName": "playWithMicro",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194957/cepheus22/headings/play_microbit_r4veas.svg",
       "posterURL": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742315/cepheus22/NewPosters/Play_with_mirobit_byln3f.webp",
@@ -149,7 +149,7 @@
     },
     {
       "event_id": "ed625e5d-6712-4e1e-ae46-deeb6cdcc73c",
-      "registration": true,
+      "registration": false,
       "deadline": "7th January, 11:59 PM",
       "eventName": "roboticsCareer",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640194956/cepheus22/headings/robotics_career_ppktyr.svg",
@@ -159,7 +159,7 @@
     },
     {
       "event_id": "67c07b4c-0712-4e9f-9dd9-e746c55c74f9",
-      "registration": true,
+      "registration": false,
       "eventName": "gfgWebinar",
       "eventHeading": "https://res.cloudinary.com/dcydix7rc/image/upload/c_scale,q_auto:eco,w_500/v1640742394/cepheus22/headings/gfg_webinar_akqmwl.svg",
       "size": 1,
