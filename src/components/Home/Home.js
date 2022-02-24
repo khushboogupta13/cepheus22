@@ -75,6 +75,11 @@ export default class Home extends Component {
                     </a>
                   )}
                 </div>
+                <a href="https://cepheusmemories.co.in/" target="_blank">
+                  <button class="button-1" role="button">
+                    Buy Merchandise
+                  </button>
+                </a>
               </div>
             </div>
             <div className="center_div">
@@ -154,6 +159,11 @@ export default class Home extends Component {
                     </a>
                   )}
                 </div>
+                <a href="https://cepheusmemories.co.in/" target="_blank">
+                  <button class="button-1" role="button">
+                    Buy Merchandise
+                  </button>
+                </a>
               </div>
             </div>
           </div>
